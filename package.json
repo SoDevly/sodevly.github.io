@@ -1,7 +1,7 @@
 {
   "version": "1.0.1",
-  "name": "gatsby-starter-blog-and-cv",
-  "description": "Gatsby starter for Blog and CV",
+  "name": "soheeblog",
+  "description": "Blog By Sohee'",
   "main": "n/a",
   "private": false,
   "scripts": {

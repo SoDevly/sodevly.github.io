@@ -1,12 +1,11 @@
 module.exports = {
-  url: 'https://gatsby-starter-blog-and-cv.netlify.app',
+  url: 'https://zdlath.github.io',
   pathPrefix: '/',
-  title: 'Blog by Marat Dospolov',
-  keywords:
-    'account surfer, trello bookmark, trello, productivity, javascript, Marat Dospolov, choosy windows, browser selector',
-  subtitle: 'Developer. Optimizer. Learner.',
+  title: 'Blog By Sohee',
+  keywords: 'developer, reactnative, android, ios, app',
+  subtitle: 'Mobile App Developer',
   copyright: '© 2020 | Kyiv, Ukraine',
-  disqusShortname: 'dospolov',
+  disqusShortname: 'Sohee',
   postsPerPage: 20,
   googleAnalyticsId: 'UA-6589522-7',
   menu: [
@@ -20,20 +19,18 @@ module.exports = {
     }
   ],
   author: {
-    name: 'Marat Dospolov',
+    name: 'Sohee',
     photo: '/photo.jpg',
-    bio: 'Developer. Optimizer. Learner.',
+    bio: 'Mobile App Developer',
     contacts: {
-      // don't remove fields, just make them empty string ''
-      // https://github.com/gatsbyjs/gatsby/issues/2392
-      github: 'dospolov',
-      twitter: 'marat_dospolov',
-      linkedin: 'dospolov',
-      telegram: 'dospolov',
-      instagram: 'dospolov',
-      facebook: 'dospolov',
+      github: '',
+      twitter: '',
+      linkedin: '',
+      telegram: '',
+      instagram: '',
+      facebook: '',
       email: '',
-      rss: '/rss.xml'
+      rss: ''
     }
   }
 }
