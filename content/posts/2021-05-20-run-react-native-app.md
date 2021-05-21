@@ -29,7 +29,7 @@ npx react-native init [프로젝트명]
 npx react-native run-ios
 ```
 iOS앱이 실행됩니다.  
-![](/posts/run_ios.png)
+![](/media/run_ios.png)
 
 
 <br></br>
@@ -40,7 +40,7 @@ iOS앱이 실행됩니다.
 npx react-native run-android
 ```
 Android앱이 실행됩니다.  
-![](/posts/run_android.png)
+![](/media/run_android.png)
 
 
 <br></br>

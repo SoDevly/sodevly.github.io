@@ -113,13 +113,13 @@ react-native: n/a - not inside a React Native project directory
 Xcode는 iOS 개발 툴입니다. React Native로 iOS 앱을 개발하기 위해서는 꼭 필요합니다.
 
 앱 스토어에서 Xcode를 검색하여 설치합니다.  
-![](/posts/install_xcode.png)
+![](/media/install_xcode.png)
 
 Xcode > Preferences > Locations > Command Line Tools이 잘 설정 되었는지 확인합니다.
-![](/posts/setting_xcode1.png)
+![](/media/setting_xcode1.png)
 
 Xcode > Preferences > Components에서 원하는 iOS 버전의 시뮬레이터를 설치합니다.  
-![](/posts/setting_xcode2.png)
+![](/media/setting_xcode2.png)
 
 <br></br>
 
@@ -179,17 +179,17 @@ Android Studio는 Android 개발 툴입니다. React Native로 Android 앱을 �
 > Android Studio 사이트 : https://developer.android.com/studio
 
 Android Studio 사이트에서 다운로드 받아 설치합니다.  
-![](/posts/install_androidstudio1.png)
+![](/media/install_androidstudio1.png)
 
 Configure > SDK Manager에서 SDK Platform을 설치합니다    
-![](/posts/install_androidstudio2.png)
+![](/media/install_androidstudio2.png)
 
 
 <br></br>
 
 # Android Studio 환경 변수 설정
 Android Studio SDK 환경 설정 화면에서 Android SDK 위치를 확인합니다.  
-![](/posts/setting_androidstudio1.png)
+![](/media/setting_androidstudio1.png)
 
 ~/.bash_profile 파일 또는 ~/.zshrc 파일을 열고 아래와 같이 환경 변수를 추가합니다.
 ```
