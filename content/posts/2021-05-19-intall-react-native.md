@@ -106,6 +106,25 @@ react-native-cli: 2.0.1
 react-native: n/a - not inside a React Native project directory
 ```
 
+<br></br>
+
+# Yarn 설치 (선택)
+Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다.  
+npm을 사용해도 되지만 Yarn이 더 빠르고 더 안전합니다.
+
+아래 명령어를 실행하여 Yarn를 설치합니다.
+```
+brew install yarn
+```
+아래 명령어를 실행하여 Yarn가 잘 설치되었는지 확인합니다.
+```
+yarn --version
+```
+잘 설치되었다면 아래와 같이 Yarn 버전을 확인할 수 있습니다.
+```
+1.22.10
+```
+
 
 <br></br>
 
@@ -211,6 +230,17 @@ Android Debug Bridge version 1.0.41
 Version 31.0.0-7110759
 Installed as [Android SDK 위치]/platform-tools/adb
 ```
+
+<br></br>
+
+# VSCode 설치(선택)
+React Native 코드를 편집할 때 사용합니다.  
+WebStorm, Atom 등등 다른 에디터/IDE를 사용하셔도 됩니다.  
+>Visual Studio 사이트 : https://code.visualstudio.com/
+
+Visual Studio 사이트에서 다운로드 받아 설치합니다.  
+![](/media/install_vscode1.png)
+
 
 <br></br>
 
