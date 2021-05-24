@@ -4,7 +4,7 @@ module.exports = {
   title: 'Blog By Sohee',
   keywords: 'developer, reactnative, android, ios, app',
   subtitle: 'Mobile App Developer',
-  copyright: '© 2020 | Kyiv, Ukraine',
+  copyright: '',
   disqusShortname: 'Sohee',
   postsPerPage: 20,
   googleAnalyticsId: 'UA-6589522-7',
@@ -23,13 +23,13 @@ module.exports = {
     photo: '/photo.jpg',
     bio: 'Mobile App Developer',
     contacts: {
-      github: '',
+      github: 'https://github.com/zdlath',
       twitter: '',
       linkedin: '',
       telegram: '',
       instagram: '',
       facebook: '',
-      email: '',
+      email: 'zdlath@gmail.com',
       rss: ''
     }
   }
