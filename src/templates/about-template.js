@@ -1,16 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import CV from '../components/CV'
+import About from '../components/About'
 import { useSiteMetadata } from '../hooks'
 
-const CvTemplate = () => {
+const AboutTemplate = () => {
   const { author } = useSiteMetadata()
 
   return (
-    <Layout title={`${author.name} | CV`} className="bg-black">
-      <CV />
+    <Layout title={`${author.name} | About`} className="bg-black">
+      <About />
     </Layout>
   )
 }
 
-export default CvTemplate
+export default AboutTemplate

@@ -29,8 +29,8 @@ const createPages = async ({ graphql, actions }) => {
   })
 
   createPage({
-    path: '/cv',
-    component: path.resolve('./src/templates/cv-template.js')
+    path: '/about',
+    component: path.resolve('./src/templates/about-template.js')
   })
 
   // Posts and pages from markdown

@@ -14,8 +14,8 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'CV',
-      path: '/cv'
+      label: 'About',
+      path: '/about'
     }
   ],
   author: {

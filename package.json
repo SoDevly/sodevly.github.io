@@ -14,27 +14,16 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "repository": "https://github.com/dospolov/gatsby-starter-blog-and-cv",
-  "author": "Marat Dospolov <marat.dospolov@gmail.com>",
+  "repository": "ttps://github.com/zdlath",
+  "author": "Sohee Lim <zdlath@gmail.com>",
   "license": "MIT",
   "keywords": [
-    "gatsby",
-    "graphql",
-    "netlify",
-    "netlify-cms",
-    "pagination",
-    "ant-design",
-    "tailwind",
-    "categories",
-    "tags",
-    "static",
-    "lost",
-    "blog",
-    "minimal",
-    "react",
-    "theme",
-    "starter",
-    "disqus"
+    "developer",
+    "react naitve",
+    "android",
+    "ios",
+    "mobile",
+    "app"
   ],
   "dependencies": {
     "@ant-design/icons": "^4.1.0",
