@@ -7,7 +7,7 @@ module.exports = {
   copyright: '',
   disqusShortname: 'Sohee',
   postsPerPage: 20,
-  googleAnalyticsId: 'UA-6589522-7',
+  googleAnalyticsId: 'G-SCH4TVRYBN',
   menu: [
     {
       label: 'Blog',
