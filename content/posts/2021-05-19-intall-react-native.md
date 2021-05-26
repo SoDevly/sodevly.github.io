@@ -3,11 +3,11 @@ template: post
 title: React Native 설치 가이드
 slug: /posts/install-react-native
 draft: false
-priority: 2
+priority: 3
 date: 2021-05-19T00:46:37.121Z
 description: >-
   React Native 설치 가이드 입니다.
-category: programming
+category: Programming
 tags:
   - React Native
 ---
