@@ -5,10 +5,13 @@ import Comments from './Comments'
 import Content from './Content'
 import Tags from './Tags'
 import getCategoryColor from '../../utils/get-category-color'
+import Adsense from './Adsense'
+import { useSiteMetadata } from '../../hooks'
 
 const AntContent = Layout.Content
 
 const Post = ({ post, allCategories }) => {
+  const { adClient, adPostTop, adPostBottom } = useSiteMetadata()
   const { html } = post
   const { tagSlugs, slug, categorySlug } = post.fields
   const { tags, date, category } = post.frontmatter
@@ -26,6 +29,8 @@ const Post = ({ post, allCategories }) => {
 
   return (
     <AntContent className="p-10">
+      <Adsense adClient={adClient} adSlot={adPostTop}/>
+
       <Link className="" to="/">
         ← All Articles
       </Link>
@@ -46,6 +51,8 @@ const Post = ({ post, allCategories }) => {
         {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}
         <Divider type="vertical" />
       </div>
+
+      <Adsense adClient={adClient} adSlot={adPostBottom}/>
 
       <div className="mt-10">
         <Comments postSlug={slug} postTitle={post.frontmatter.title} />

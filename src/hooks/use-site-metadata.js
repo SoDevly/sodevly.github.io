@@ -31,6 +31,13 @@ const useSiteMetadata = () => {
             copyright
             disqusShortname
             keywords
+            adsense {
+              adClient
+              adSlot {
+                adPostTop
+                adPostBottom
+              }
+            }
           }
         }
       }

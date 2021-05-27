@@ -8,6 +8,13 @@ module.exports = {
   disqusShortname: 'Sohee',
   postsPerPage: 20,
   googleAnalyticsId: 'G-SCH4TVRYBN',
+  adsense: {
+    adClient: "ca-pub-3153449982002378",
+    adSlot: {
+      adPostTop: "9712287921",
+      adPostBottom: "6515510456"
+    }
+  },
   menu: [
     {
       label: 'Blog',

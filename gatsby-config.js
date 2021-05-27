@@ -10,7 +10,14 @@ module.exports = {
     copyright: siteConfig.copyright,
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
-    author: siteConfig.author
+    author: siteConfig.author,
+    adsense: {
+      adClient: siteConfig.adsense.adClient,
+      adSlot: {
+        adPostTop: siteConfig.adsense.adSlot.adPostTop,
+        adPostBottom: siteConfig.adsense.adSlot.adPostBottom
+      }
+    }
   },
   plugins: [
     {
