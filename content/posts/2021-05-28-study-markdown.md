@@ -1,12 +1,12 @@
 ---
 template: post
-title: 마크다운(Markdown) 입력 정리
+title: 마크다운(Markdown) 문법 정리
 slug: /posts/study-markdown
 draft: false
 priority: 0
 date: 2021-05-28T00:46:37.121Z
 description: >-
-  마크다운(Markdown) 입력 정리
+  마크다운(Markdown) 문법 정리
 category: Programming
 tags:
   - Markdown
@@ -33,7 +33,6 @@ tags:
 #### h4
 ##### h5
 ###### h6
-
 <br></br>
 <br></br>
 
@@ -74,7 +73,6 @@ tags:
 첫 번째 문단입니다.
 <br></br>
 두 번째 문단입니다.
-
 <br></br>
 <br></br>
 
@@ -101,7 +99,6 @@ _Italic_
 ~~Cancel~~  
 <u>밑줄</u>  
 <mark>형광펜</mark>
-
 <br></br>
 <br></br>
 
@@ -116,7 +113,6 @@ _Italic_
 ```
 **[결과]**  
 >인용문
-
 <br></br>
 <br></br>
 
@@ -136,7 +132,6 @@ ___
 ***
 ---
 ___
-
 <br></br>
 <br></br>
 
@@ -155,7 +150,6 @@ ___
 1. 첫 번째 목록
 2. 두 번째 목록
 3. 세 번째 목록
-
 <br></br>
 <br></br>
 
@@ -199,7 +193,6 @@ ___
 - 순서 없는 목록 1
     - 순서 없는 목록 2
         - 순서 없는 목록 3
-
 <br></br>
 
 
@@ -231,7 +224,6 @@ ___
 ```
 **[결과]**  
 <img src="/media/photo.jpg" width="300" height="200">
-
 <br></br>
 <br></br>
 
@@ -278,7 +270,6 @@ URL을 보여주고, 해당 URL에 링크를 추가하고 싶은 경우
 [구글 홈페이지][Google URL] 링크입니다.
 
 [Google URL]: https://www.google.com
-
 <br></br>
 <br></br>
 
@@ -304,7 +295,6 @@ let sumNumbers = (firstNum, lastNum) => {
 };
 sumNumbers(100, 200);
 ```
-
 <br></br>
 <br></br>
 
@@ -347,7 +337,6 @@ sumNumbers(100, 200);
 |왼쪽1     |가운데1      |오른쪽1      |
 |왼쪽2     |가운데2      |오른쪽2      |
 
-<br></br>
 <br></br>
 
 
