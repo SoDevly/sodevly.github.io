@@ -26,6 +26,10 @@ a:hover {
   color: #702459;
 }
 
+mark {
+  background: #FFFF00; 
+}
+
 code {
   padding: 0px 7px;
   background: #000;
@@ -36,12 +40,27 @@ code {
 
 blockquote {
   padding: 0 1em;
-  border-left: .25em solid #aaa;
+  border-left: .25em solid #666666;
 }
 
 img {
   max-width: 100%;
   max-height: 400px;
+}
+
+table {
+  border: 1px solid #666666;
+  border-collapse: collapse;
+}
+
+thead {
+  border: 1px solid #666666;
+  background-color: #aaaaaa;
+}
+
+th, td, tr {
+  border: 1px solid #666666;
+  padding: 5px 10px 5px 10px;
 }
 
 .ant-layout-sider {
