@@ -1,7 +1,7 @@
 ---
 template: post
 title: AWS 자격증 용어 정리
-slug: /posts/study-aws-certification
+slug: /posts/certification/aws-term
 draft: false
 priority: 0
 date: 2020-06-23T00:46:37.121Z

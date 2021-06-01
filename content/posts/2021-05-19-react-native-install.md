@@ -1,7 +1,7 @@
 ---
 template: post
 title: React Native 설치 가이드
-slug: /posts/install-react-native
+slug: /posts/react-native/install
 draft: false
 priority: 0
 date: 2021-05-19T00:46:37.121Z

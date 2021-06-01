@@ -1,12 +1,12 @@
 ---
 template: post
-title: React Native App 프로젝트 생성
-slug: /posts/run-react-native-app
+title: React Native 프로젝트 생성
+slug: /posts/react-native/run
 draft: false
 priority: 0
 date: 2021-05-20T00:46:37.121Z
 description: >-
-  React Native App 프로젝트 생성 가이드입니다.
+  React Native 프로젝트 생성 가이드입니다.
 category: Programming
 tags:
   - React Native

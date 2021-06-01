@@ -1,7 +1,7 @@
 ---
 template: post
 title: AWS Certified Solutions Architect - Associate 자격증 취득 후기
-slug: /posts/review-aws-certification
+slug: /posts/certification/aws-review
 draft: false
 priority: 0
 date: 2020-06-23T00:46:37.121Z
