@@ -72,22 +72,21 @@ npm --version
 
 
 
-# **❐ Watchman 설치**
-Watchman은 특정 폴더나 파일을 감시하다가 변화가 생기면, 특정 동작을 실행하도록 설정하는 역할을 합니다.  
-react-native에서는 소스코드의 추가, 변경이 발생하면 다시 빌드하기 위해 Watchman을 사용하고 있습니다.
-> Watchman 사이트 : https://facebook.github.io/watchman/
+# **❐ Yarn 설치 (선택)**
+Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다.  
+npm을 사용해도 되지만 Yarn이 더 빠르고 더 안전합니다.
 
-아래 명령어를 실행하여 Watchman을 설치합니다.
+아래 명령어를 실행하여 Yarn를 설치합니다.
 ```
-brew install watchman
+brew install yarn
 ```
-아래 명령어를 실행하여 Watchman이 잘 설치되었는지 확인합니다.
+아래 명령어를 실행하여 Yarn가 잘 설치되었는지 확인합니다.
 ```
-watchman --version
+yarn --version
 ```
-잘 설치되었다면 아래와 같이 Watchman 버전을 확인할 수 있습니다.
+잘 설치되었다면 아래와 같이 Yarn 버전을 확인할 수 있습니다.
 ```
-4.9.0
+1.22.10
 ```
 <br></br>
 
@@ -117,21 +116,22 @@ react-native: n/a - not inside a React Native project directory
 
 
 
-# **❐ Yarn 설치 (선택)**
-Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다.  
-npm을 사용해도 되지만 Yarn이 더 빠르고 더 안전합니다.
+# **❐ Watchman 설치**
+Watchman은 특정 폴더나 파일을 감시하다가 변화가 생기면, 특정 동작을 실행하도록 설정하는 역할을 합니다.  
+react-native에서는 소스코드의 추가, 변경이 발생하면 다시 빌드하기 위해 Watchman을 사용하고 있습니다.
+> Watchman 사이트 : https://facebook.github.io/watchman/
 
-아래 명령어를 실행하여 Yarn를 설치합니다.
+아래 명령어를 실행하여 Watchman을 설치합니다.
 ```
-brew install yarn
+brew install watchman
 ```
-아래 명령어를 실행하여 Yarn가 잘 설치되었는지 확인합니다.
+아래 명령어를 실행하여 Watchman이 잘 설치되었는지 확인합니다.
 ```
-yarn --version
+watchman --version
 ```
-잘 설치되었다면 아래와 같이 Yarn 버전을 확인할 수 있습니다.
+잘 설치되었다면 아래와 같이 Watchman 버전을 확인할 수 있습니다.
 ```
-1.22.10
+4.9.0
 ```
 <br></br>
 
@@ -145,11 +145,17 @@ Xcode는 iOS 개발 툴입니다. React Native로 iOS 앱을 개발하기 위해
 앱 스토어에서 Xcode를 검색하여 설치합니다.  
 ![](/media/install_xcode.png)
 
-Xcode > Preferences > Locations > Command Line Tools이 잘 설정 되었는지 확인합니다.
-![](/media/setting_xcode1.png)
+Xcode > Preferences > Locations > Command Line Tools이 잘 설정 되었는지 확인합니다.  
+![](/media/setting_xcode1.png)  
+<br></br>
 
-Xcode > Preferences > Components에서 원하는 iOS 버전의 시뮬레이터를 설치합니다.  
-![](/media/setting_xcode2.png)  
+
+
+
+
+# **❐ iOS Simulator 설치**
+Xcode > Preferences > Components에서 iOS Simulator를 설치합니다.  
+![](/media/install_ios_simulator.png)  
 <br></br>
 
 
@@ -213,16 +219,43 @@ javac 1.8.0_292
 
 # **❐ Android Studio 설치**
 Android Studio는 Android 개발 툴입니다. React Native로 Android 앱을 개발하기 위해서는 꼭 필요합니다.
-> Android Studio 사이트 : https://developer.android.com/studio
+> Android Studio 사이트 : https://developer.android.com/studio  
+> Android Studio 설치 가이드 : https://developer.android.com/studio/install
 
 Android Studio 사이트에서 다운로드 받아 설치합니다.  
 ![](/media/install_androidstudio1.png)
 
-Configure > SDK Manager에서 SDK Platform을 설치합니다    
-![](/media/install_androidstudio2.png)
-
-
+Configure > SDK Manager에서 SDK Platform을 설치합니다.  
+![](/media/install_androidstudio2.png)  
 <br></br>
+
+
+
+
+
+# **❐ Android Emulator 설치**
+Tool > SDK Manager에서 Android Emulator를 설치합니다.  
+![](/media/install_androidstudio3.png)  
+
+Tool > AVD Manager에서 Create Virtual Device 버튼 선택하여 Android Emulator를 생성합니다.  
+![](/media/setting_androidstudio_emulator1.png)  
+
+원하는 Hardware 선택  
+![](/media/setting_androidstudio_emulator2.png)  
+
+원하는 OS 선택  
+![](/media/setting_androidstudio_emulator3.png)  
+
+기타 설정 선택  
+![](/media/setting_androidstudio_emulator4.png)  
+
+Android 시뮬레이터 생성 확인  
+![](/media/setting_androidstudio_emulator5.png)  
+<br></br>
+
+
+
+
 
 # **❐ Android Studio 환경 변수 설정**
 Android Studio SDK 환경 설정 화면에서 Android SDK 위치를 확인합니다.  
@@ -254,7 +287,7 @@ Installed as [Android SDK 위치]/platform-tools/adb
 
 
 
-# **❐ VSCode 설치(선택)**
+# **❐ VSCode 설치 (선택)**
 React Native 코드를 편집할 때 사용합니다.  
 WebStorm, Atom 등등 다른 에디터/IDE를 사용하셔도 됩니다.  
 >Visual Studio 사이트 : https://code.visualstudio.com/
