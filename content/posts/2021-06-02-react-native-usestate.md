@@ -24,7 +24,7 @@ tags:
 
 
 useState를 이용하여 아래와 같은 로직을 구현해봅시다.
-- number 상태 정의
+- numbe라고 부르는 상태 변수 정의
 - [더하기]버튼 선택 시, number + 1 값으로 상태 변경
 - [빼기]버튼 선택 시, number -1 값으로 상태 변경  
 ![](/media/react-native-usestate.gif)
@@ -71,17 +71,24 @@ export default SecondScreen
 ```
 <br>
 
-useState 선언 시 argument에 초기값을 전달할 수 있습니다.  
-<mark>
-const [number, setNumber] = useState(0); // number의 초기값을 0으로 전달  
-</mark>
+useState를 이용하여 새로운 상태 변수 number를 정의합니다.
+useState의 argument에 초기값을 전달할 수 있습니다.  
+<pre style="background: #ccc">
+const [number, setNumber] = useState(0); // number 상태 변수의 초기값을 0으로 전달  
+</pre>
 <br>
 
-Setter함수는 파라미터로 전달 받은 값을 최신 상태로 변경해줍니다.  
-<mark>
+setNumber함수를 이용하여 파라미터로 전달 받은 값을 최신 상태 값로 변경할 수 있습니다.
+<pre style="background: #ccc">
 setNumber(number + 1); // number + 1 값으로 상태 변경  
 setNumber(number - 1); // number - 1 값으로 상태 변경
-</mark>
+</pre>
+<br>
+
+number 상태 변수를 직접적으로 사용할 수 있습니다.
+<pre style="background: #ccc">
+<Text style={{fontSize: 30}}>현재 number = {number}</Text>
+</pre>
 <br><br><br><br>
 
 
