@@ -12,7 +12,7 @@ tags:
   - Git
 ---
 
-<br></br>
+<br>
 
 # Git 저장소 만들기
 버전관리를 하지 않는 기존 프로젝트를 Git으로 관리하고 싶은 경우, 기존 디렉토리에 Git 저장소를 만드는 CLI 명령어이다.
@@ -20,7 +20,7 @@ tags:
 cd [기존 디렉토리 위치]
 git init
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -32,26 +32,27 @@ git init
 cd [복사할 디렉토리 위치]
 git clone https://github.com/zdlath/zdlath.github.io.git
 ```
-<br></br>
+<br><br><br><br>
 
 
 
 
 
 # 사용자 정보 설정
-사용자 정보(이름, 이메일) 설정하는 CLI 명령어이다.
-Git은 커밋할 때마다 이 정보를 사용한다.
+사용자 정보(이름, 이메일) 설정하는 CLI 명령어이다.  
+Git은 커밋할 때마다 이 정보를 사용한다.  
 ```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
-<br></br>
-설정한 사용자 정보를 확인할 수 있는 CLI 명령어이다.
+<br>
+
+설정한 사용자 정보를 확인할 수 있는 CLI 명령어이다.  
 ```
 git config user.name
 git config user.email
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -62,42 +63,44 @@ git config user.email
 ```
 git add [파일명]
 ```
-<br></br>
+<br><br><br><br>
 
 
 
 
 
 # Tag
-Tag는 의미있는 특정 시점을 Snapshot으로 기록하는 방법이다.
-Tag는 수정이 불가능한 Read Only 상태의 하나의 완전한 Branch 형태를 띈다.
-Tag를 이용하여 특정 시점으로 롤백하거나 배포 버전을 생성하는 등의 용도로 많이 사용된다.
+Tag는 의미있는 특정 시점을 Snapshot으로 기록하는 방법이다.  
+Tag는 수정이 불가능한 Read Only 상태의 하나의 완전한 Branch 형태를 띈다.  
+Tag를 이용하여 특정 시점으로 롤백하거나 배포 버전을 생성하는 등의 용도로 많이 사용된다.  
 
 Local Repository에 관리되는 Tag를 확인할 수 있는 CLI 명령어이다.
 ```
 git tag
 ```
-1.0.0
-1.1.0
-2.0.0
-<br></br>
+1.0.0  
+1.1.0  
+2.0.0  
+<br>
+
 Remote Repository에 관리되는 Tag를 확인할 수 있는 CLI 명령어이다.
 ```
 git ls-remote --tags
 ```
-From https://github.com/zdlath/zdlath.github.io.git
-15a5c25bb0e7330de2acb15e8d6b3f62613a1392        refs/tags/1.0.0
-16a5c23ba0e7890de2adb15e8d6b3f62613c1391        refs/tags/1.1.0
-17a5c22be0e8830de2bcb15e8d6b3f62613c1394        refs/tags/2.0.0
-<br></br>
+From https://github.com/zdlath/zdlath.github.io.git  
+15a5c25bb0e7330de2acb15e8d6b3f62613a1392        refs/tags/1.0.0  
+16a5c23ba0e7890de2adb15e8d6b3f62613c1391        refs/tags/1.1.0  
+17a5c22be0e8830de2bcb15e8d6b3f62613c1394        refs/tags/2.0.0  
+<br>
+
 Remote Repository에 Tag를 PUSH할 수 있는 CLI 명령어이다.
 ```
 git push -u origin 2.0.0
 ```
-Total 0 (delta 0), reused 0 (delta 0)
-To https://github.com/zdlath/zdlath.github.io.git
- * [new tag]           2.0.0 -> 2.0.0
-<br></br>
+Total 0 (delta 0), reused 0 (delta 0)  
+To https://github.com/zdlath/zdlath.github.io.git  
+ \* [new tag]           2.0.0 -> 2.0.0
+<br><br><br><br>
 
 
 
@@ -107,4 +110,4 @@ To https://github.com/zdlath/zdlath.github.io.git
 아래 Git 사이트를 참고하여 작성하였습니다.
 > Git 사이트 : https://git-scm.com/
 
-<br></br>
+<br><br>

@@ -12,14 +12,13 @@ tags:
   - React Native
 ---
 
-<br></br>
+<br>
 
 아래와 같은 동작으로 만들어 봅시다.  
 - HomeScreen에서 screen_name 파라미터를 전달  
 - FirstScreen에서 전달 받은 screen_name 파라미터 값을 디스플레이  
 ![](/media/react-native-passing-values-to-another-screen.png)
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -49,8 +48,7 @@ const HomeScreen = ({navigation}) => {
 export default HomeScreen
 ```
 **navigation.navigate("이동하고 싶은 경로 이름", {파라미터명:값})**을 사용하여 다른 화면으로 전환하면서 해당 화면에 값을 전달할 수 있습니다. 
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -73,8 +71,7 @@ const FirstScreen = ({ navigation, route }) => {
 export default FirstScreen
 ```
 **route.params.파라미터명**을 사용하여 앞 화면에서 전달한 값을 받아 사용할 수 있습니다.
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -85,4 +82,4 @@ export default FirstScreen
 > React Native 사이트 : https://reactnative.dev/docs/navigation  
 > React Navigation 사이트 : https://reactnavigation.org/docs/getting-started/
 
-<br></br>
+<br><br>

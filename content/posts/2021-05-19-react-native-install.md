@@ -12,7 +12,7 @@ tags:
   - React Native
 ---
 
-<br></br>
+<br>
 
 # **❐ Homebrew 설치**
 Homebrew는 맥(Mac)에서 필요한 패키지를 설치하고 관리하는 맥(Mac)용 패키지 관리자입니다.  
@@ -35,7 +35,7 @@ Homebrew 3.1.7
 Homebrew/homebrew-core (git revision b9b47e504a; last commit 2021-05-18)
 Homebrew/homebrew-cask (git revision 312cb2002d; last commit 2021-05-18)
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -66,7 +66,7 @@ npm --version
 ```
 7.11.2
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -88,7 +88,7 @@ yarn --version
 ```
 1.22.10
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -110,7 +110,7 @@ react-native --version
 react-native-cli: 2.0.1
 react-native: n/a - not inside a React Native project directory
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -133,7 +133,7 @@ watchman --version
 ```
 4.9.0
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -147,7 +147,7 @@ Xcode는 iOS 개발 툴입니다. React Native로 iOS 앱을 개발하기 위해
 
 Xcode > Preferences > Locations > Command Line Tools이 잘 설정 되었는지 확인합니다.  
 ![](/media/setting_xcode1.png)  
-<br></br>
+<br><br><br><br>
 
 
 
@@ -156,7 +156,7 @@ Xcode > Preferences > Locations > Command Line Tools이 잘 설정 되었는지 
 # **❐ iOS Simulator 설치**
 Xcode > Preferences > Components에서 iOS Simulator를 설치합니다.  
 ![](/media/install_ios_simulator.png)  
-<br></br>
+<br><br><br><br>
 
 
 
@@ -178,7 +178,7 @@ pod --version
 ```
 1.10.1
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -211,7 +211,7 @@ javac -version
 ```
 javac 1.8.0_292
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -227,7 +227,7 @@ Android Studio 사이트에서 다운로드 받아 설치합니다.
 
 Configure > SDK Manager에서 SDK Platform을 설치합니다.  
 ![](/media/install_androidstudio2.png)  
-<br></br>
+<br><br><br><br>
 
 
 
@@ -251,7 +251,7 @@ Tool > AVD Manager에서 Create Virtual Device 버튼 선택하여 Android Emula
 
 Android 시뮬레이터 생성 확인  
 ![](/media/setting_androidstudio_emulator5.png)  
-<br></br>
+<br><br><br><br>
 
 
 
@@ -281,7 +281,7 @@ Android Debug Bridge version 1.0.41
 Version 31.0.0-7110759
 Installed as [Android SDK 위치]/platform-tools/adb
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -294,7 +294,7 @@ WebStorm, Atom 등등 다른 에디터/IDE를 사용하셔도 됩니다.
 
 Visual Studio 사이트에서 다운로드 받아 설치합니다.  
 ![](/media/install_vscode1.png)
-<br></br>
+<br><br><br><br>
 
 
 
@@ -304,4 +304,4 @@ Visual Studio 사이트에서 다운로드 받아 설치합니다.
 아래 React Native 사이트를 참고하여 작성하였습니다.
 > React Native 사이트 : https://reactnative.dev/docs/environment-setup
 
-<br></br>
+<br><br>

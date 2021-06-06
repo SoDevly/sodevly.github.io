@@ -12,15 +12,14 @@ tags:
   - React Native
 ---
 
-<br></br>
+<br>
 
 아래와 같은 화면 구조를 만들어 봅시다.
 - 화면이 3개(HomeScreen/FirstScreen/SecondScreen)로 구성  
 - HomeScreen에서 [Go FirstScreen] 버튼 클릭하면 FirstScreen 화면으로 전환  
 - HomeScreen에서 [Go SecondScreen] 버튼 클릭하면 SecondScreen 화면으로 전환  
 ![](/media/react-native-navigation.png)
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -35,7 +34,7 @@ cd ios
 pod install
 cd ..
 ```
-<br></br>
+<br><br><br><br>
 
 
 
@@ -81,8 +80,7 @@ export default App;
 이 컴포넌트는 모든 네비게이터 구조를 래핑해야합니다.
 
 **initialRouteName** 속성은 초기 경로를 정의합니다.
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -112,8 +110,7 @@ const HomeScreen = ({navigation}) => {
 export default HomeScreen
 ```
 **navigation.navigate("이동하고 싶은 경로 이름")**을 사용하여 다른 화면으로 전환할 수 있습니다.  
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -134,8 +131,7 @@ const FirstScreen = () => {
 
 export default FirstScreen
 ```
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -156,8 +152,7 @@ const SecondScreen = () => {
 
 export default SecondScreen
 ```
-<br></br>
-<br></br>
+<br><br><br><br>
 
 
 
@@ -168,4 +163,4 @@ export default SecondScreen
 > React Native 사이트 : https://reactnative.dev/docs/navigation  
 > React Navigation 사이트 : https://reactnavigation.org/docs/getting-started/
 
-<br></br>
+<br><br>

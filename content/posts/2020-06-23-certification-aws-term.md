@@ -12,7 +12,7 @@ tags:
   - AWS
 ---
 
-<br></br>
+<br>
 
 # **❐ Amazon EC2 (Elastic Compute Cloud)**
 크기 조정이 가능한 컴퓨팅 파워를 클라우드에서 제공하는 웹 서비스  
@@ -25,19 +25,19 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/concepts.html
   - 필요할 때 바로 생성하여 사용하는 방식
   - 사용한 인스턴스에 대해 지정된 시간당 요금만 지불
   - 적합한 Case  
-    : 선결제 금액이나 장기 약정 없이 저렴하고 유연하게 Amazon EC2를 사용하기 원하는 사용자<br></br>
+    : 선결제 금액이나 장기 약정 없이 저렴하고 유연하게 Amazon EC2를 사용하기 원하는 사용자
 * 예약 인스턴스 요금
   - 비용을 미리 지불하고, 인스턴스를 1년 또는 3년 동안 예약하여 사용하는 방식
   - 온디맨드 인스턴스 요금과 비교하여 상당한 할인 혜택(최대 75%)을 제공
   - 결제 옵션은 선결제없음/부분선결제/전체선결제 3가지로 구분됨
   - 적합한 Case  
     : 수요가 꾸준한 애플리케이션
-    : 총 컴퓨팅 비용을 절감하기 위해 1년 또는 3년 동안 EC2를 사용하기로 장기 약정할 수 있는 고객<br></br>
+    : 총 컴퓨팅 비용을 절감하기 위해 1년 또는 3년 동안 EC2를 사용하기로 장기 약정할 수 있는 고객
 * 예약된 인스턴스 요금
   - 1년 동안 지정된 시작 시간 및 기간에 따라 매일, 매주 또는 매월 반복적으로 용량 예약하여 사용하는 방식
   - 적합한 Case  
   : 업무 시간 중에 실행되는 애플리케이션
-  : 주말에 실행되는 일괄 처리 작업<br></br>
+  : 주말에 실행되는 일괄 처리 작업
 * 스팟 인스턴스 요금
   - AWS 클라우드에서 미사용 EC2 인스턴스를 경매로 구매하는 방식
   - 가격은 수요와 공급을 기반으로 AWS에서 결정함
@@ -49,11 +49,11 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/concepts.html
     : 시작 및 종료 시간이 자유로운 애플리케이션
     : 컴퓨팅 가격이 매우 저렴해야만 수익이 나는 애플리케이션
     : 대량의 서버 용량 추가로 긴급히 컴퓨팅 파워가 필요한 사용자
-    : 데이터 분석, 배치 작업, 백그라운드 프로세싱 및 선택적 작업<br></br>
+    : 데이터 분석, 배치 작업, 백그라운드 프로세싱 및 선택적 작업
 * 전용 호스트
   - 고객 전용의 물리적 EC2 서버
-  - Windows Server, SQL Server, SUSE Linux Enterprise Server(라이선스 약관에 따름)를 비롯한 기존 서버 한정 소프트웨어 라이선스를 사용할 수 있으므로 비용을 절감할 뿐 아니라 규정 준수 요구 사항도 충족할 수 있음<br></br>
-<br></br>
+  - Windows Server, SQL Server, SUSE Linux Enterprise Server(라이선스 약관에 따름)를 비롯한 기존 서버 한정 소프트웨어 라이선스를 사용할 수 있으므로 비용을 절감할 뿐 아니라 규정 준수 요구 사항도 충족할 수 있음
+<br><br><br><br>
 
 
 
@@ -63,7 +63,7 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/concepts.html
 사용자의 AWS 계정 전용 가상 네트워크  
 Amazon EC2의 네트워킹 계층  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html  
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -72,7 +72,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/what-is-amazon-vpc.html
 # **❐ VPC 흐름 로그**
 VPC의 네트워크 인터페이스에서 전송되고 수신되는 IP 트래픽에 대한 정보를 수집할 수 있는 기능  
 흐름 로그 데이터를 Amazon CloudWatch Logs 또는 Amazon S3으로 게시할 수 있습니다. 플로우 로그를 생성한 다음 선택된 대상의 데이터를 가져와 확인할 수 있습니다.  
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -82,7 +82,7 @@ VPC의 네트워크 인터페이스에서 전송되고 수신되는 IP 트래픽
 VPC Endpoint는 가상 장치로서 VPC 엔드포인트를 통해 인터넷 게이트웨이, NAT 디바이스, VPN 연결 또는 AWS Direct Connect 연결을 필요로 하지 않고 VPC와 AWS 서비스를 전용 연결(private connection)할 수 있습니다.  
 VPC의 인스턴스는 서비스의 리소스와 통신하는 데 퍼블릭 IP 주소를 필요로 하지 않습니다. VPC와 기타 서비스 간의 트래픽은 Amazon 네트워크를 벗어나지 않습니다.  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/endpoint-services-overview.html
-<br></br>
+<br><br><br><br>
 ​
 ​
 
@@ -91,7 +91,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/endpoint-services-overvie
 # **❐ AWS PrivateLink**
 VPC 내부에서 외부에 있는 다른 서비스를 연결하기 위한 기술  
 PrivateLink를 이용하면, 퍼블릭 네트워크(인터넷)을 거치지 않고도 AWS의 서비스와 다른 서비스(다른 계정의 네트워크, 다른 VPC에 존재하는)를 호출 할 수 있다.
-​<br></br>
+<br><br><br><br>
 
 ​
 
@@ -100,7 +100,7 @@ PrivateLink를 이용하면, 퍼블릭 네트워크(인터넷)을 거치지 않�
 # **❐ VPC peering connection**
 프라이빗 IPv4 주소 또는 IPv6 주소를 사용하여 두 VPC 간에 트래픽을 라우팅할 수 있도록 하기 위한 두 VPC 사이의 네트워킹 연결입니다. 동일한 네트워크에 속하는 경우와 같이 VPC의 인스턴스가 서로 통신할 수 있습니다. VPC는 다른 리전에 있을 수 있습니다(리전 간 VPC 피어링 연결이라고도 함).  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/peering/what-is-vpc-peering.html
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -112,7 +112,7 @@ AWS Direct Connect를 사용하면 AWS와 사용자의 데이터 센터, 사무�
 AWS Direct Connect를 통해 사용자의 네트워크와 AWS Direct Connect 위치 중 하나 사이에 전용 네트워크 연결을 설정할 수 있습니다. 업계 표준의 802.1q VLAN을 사용하여 이 전용 연결을 여러 가상 인터페이스로 나눌 수 있습니다. 이렇게 하면 퍼블릭 환경과 프라이빗 환경 간의 네트워크 분리를 유지하면서 동일한 연결을 사용하여 퍼블릭 리소스(예: 퍼블릭 IP 주소 공간을 사용하는 Amazon S3에 저장된 객체)뿐 아니라 프라이빗 리소스(예: 프라이빗 IP 공간을 사용하는 Amazon Virtual Private Cloud(VPC)에서 실행되고 있는 Amazon EC2 인스턴스)에도 액세스할 수 있습니다.  
 https://aws.amazon.com/ko/directconnect/  
 https://docs.aws.amazon.com/ko_kr/directconnect/latest/UserGuide/Welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -124,10 +124,9 @@ VPC의 IP 주소 범위
 
 * 퍼블릭 서브넷  
 서브넷의 기본 트래픽이 인터넷 게이트웨이로 라우팅되는 경우 이 서브넷을 퍼블릭 서브넷이라고 합니다. 예를 들어 이 서브넷에서 시작된 인스턴스에 탄력적 IP 주소 또는 퍼블릭 IP가 연결된 경우 이러한 인스턴스에 공개적으로 액세스할 수 있습니다.  
-
 * 프라이빗 서브넷  
 서브넷의 기본 트래픽이 NAT 인스턴스/게이트웨이로 라우팅되거나 기본 라우팅이 전혀 없는 경우 이 서브넷을 프라이빗 서브넷이라고 합니다. 예를 들어 이 서브넷에서 시작된 인스턴스는 탄력적 IP 주소 또는 퍼블릭 IP가 연결된 경우라도 공개적으로 액세스할 수 없습니다.
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -136,7 +135,7 @@ VPC의 IP 주소 범위
 # **❐ Route tables 라우팅 테이블**
 네트워크 트래픽을 전달할 위치를 결정하는 데 사용되는 라우팅이라는 규칙 집합  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_Route_Tables.html
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -147,7 +146,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_Route_Tables.html
 인터넷 게이트웨이에는 인터넷 라우팅 가능 트래픽에 대한 VPC 라우팅 테이블에 대상을 제공하고, 퍼블릭 IPv4 주소가 할당된 인스턴스에 대해 NAT(네트워크 주소 변환)를 수행하는 두 가지 목적이 있습니다.  
 인터넷 게이트웨이는 IPv4 및 IPv6 트래픽을 지원합니다.  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_Internet_Gateway.html
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -157,7 +156,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_Internet_Gateway.html
 외부 전용 인터넷 게이트웨이는 수평 확장되고 가용성이 높은 중복 VPC 구성 요소로서, VPC의 인스턴스에서 인터넷으로 IPv6을 통한 아웃바운드 통신을 가능케 하되 인터넷에서 해당 인스턴스와의 IPv6 연결을 시작하지 못하게 할 수 있습니다.  
 외부 전용 인터넷 게이트웨이는 IPv6 트래픽에만 사용됩니다. IPv4를 통한 아웃바운드 전용 인터넷 통신을 사용하려면 NAT 게이트웨이를 사용하십시오.  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/egress-only-internet-gateway.html
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -187,7 +186,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-nat.html
 |트래픽 지표|NAT 게이트웨이의 CloudWatch 지표를 확인합니다.|인스턴스의 CloudWatch 지표를 확인합니다.
 |제한 시간 초과 동작|연결 제한 시간이 초과하면 NAT 게이트웨이는 연결을 계속하려고 하는 NAT 게이트웨이 뒤의 리소스로 RST 패킷을 반환합니다(FIN 패킷을 보내지 않음).|연결 제한 시간이 초과하면 NAT 인스턴스는 NAT 인스턴스 뒤의 리소스로 FIN 패킷을 전송하여 연결을 닫습니다.
 |IP 조각화|UDP 프로토콜에서 IP 조각화된 패킷의 전달을 지원합니다.|TCP 및 ICMP 프로토콜에 대해서는 조각화를 지원하지 않습니다. 이러한 프로토콜의 조각화된 패킷은 삭제됩니다.|UDP, TCP 및 ICMP 프로토콜에 대해 IP 조각화된 패킷의 재수집을 지원합니다.
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -196,7 +195,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-nat.html
 # **❐ Security groups 보안 그룹**
 보안 그룹은 연결된 Amazon EC2 인스턴스에 대한 방화벽 역할을 하여 인스턴스 수준에서 인바운드 트래픽과 아웃바운드 트래픽을 모두 제어합니다.  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_SecurityGroups.html
-<br></br>​
+<br><br><br><br>​
 
 ​
 
@@ -207,7 +206,6 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/VPC_SecurityGroups.html
 네트워크 ACL은 연결된 서브넷에 대해 방화벽 역할을 하여 서브넷 수준에서 인바운드 트래픽과 아웃바운드 트래픽을 모두 제어합니다.  
 https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-network-acls.html
 
-​
 **※ 보안 그룹과 ACL의 차이**
 
 |보안 그룹|네트워크 ACL|
@@ -221,7 +219,7 @@ https://docs.aws.amazon.com/ko_kr/vpc/latest/userguide/vpc-network-acls.html
 ex) 
 사용자의 보안 그룹 규칙 및 네트워크 ACL 규칙이 원격 컴퓨터의 IP 주소(172.31.1.2/32)로부터의 액세스를 허용합니다. 인터넷 또는 다른 네트워크로부터의 다른 모든 트래픽은 거부됩니다.
 ![](/media/study_aws1.png)
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -234,7 +232,7 @@ ex)
 버퍼, 캐시, 스크래치 데이터 및 기타 임시 콘텐츠와 같이 자주 변경되는 정보의 임시 스토리지나 로드가 분산된 웹 서버 풀과 같은 여러 인스턴스상에서 복제되는 데이터에 가장 적합합니다.  
 인스턴스 스토어는 비용 부담 없이 사용할 수 있는 임시 스토리지입니다.  
 https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/InstanceStorage.html
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -245,7 +243,6 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/InstanceStorage.html
 
 * 가용 영역  
 로드 밸런서는 등록된 대상의 상태를 모니터링하고 정상 대상으로만 트래픽이 라우팅되도록 합니다. 로드 밸런서가 비정상 대상을 감지하면, 해당 대상으로 트래픽 라우팅을 중단합니다. 그런 다음 대상이 다시 정상으로 감지되면 트래픽을 해당 대상으로 다시 라우팅합니다.  
-
 * 교차 영역 로드 밸런싱  
 교차 영역 로드 밸런싱을 활성화하면 각 로드 밸런서 노드가 활성화된 모든 가용 영역에 있는 등록된 대상에 트래픽을 분산합니다.  
 교차 영역 로드 밸런싱을 비활성화하면 각 로드 밸런서 노드가 해당 가용 영역에 있는 등록된 대상에만 트래픽을 분산합니다.  
@@ -261,12 +258,10 @@ https://docs.aws.amazon.com/ko_kr/elasticloadbalancing/latest/userguide/what-is-
   - HTTP, HTTPS을 지원  
   - 경로 기반 라우팅을 지원합니다.  
   - 호스트 기반 라우팅을 지원합니다.  
-​
 * Network Load Balancer
   - 개방형 시스템 간 상호 연결(OSI) 모델의 네 번째 계층에서 작동합니다.  
   - TCP, TLS를 지원  
   - Static IP, Elastic IP 주소 지원  
-
 * Classic Load Balancer
   - TCP, SSL/TLS, HTTP, HTTPS을 지원
 
@@ -277,7 +272,7 @@ https://docs.aws.amazon.com/ko_kr/elasticloadbalancing/latest/userguide/what-is-
   - 액세스 로그를 사용하여 트래픽 패턴을 분석하고 문제를 해결할 수 있습니다.
   - 기본적으로 비활성화되어 있음
   - 활성화하면 Elastic Load Balancing은 로그를 캡처하여 지정한 Amazon S3 버킷에 저장함
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -301,7 +296,7 @@ Application Auto Scaling이 특정 시간에 조정 활동을 수행하도록 �
 * Dynamic Scaling(동적 조정) 중 Step Scaling policy(단계 조정)  
 조정 프로세스를 트리거하는 CloudWatch 경보에 대한 조정 지표 및 임계 값을 선택하고 지정된 수의 평가에 대한 임계 값이 위반 될 때 확장 가능한 대상의 조정 방법을 정의 할 수 있습니다  
 단계 조정 정책은 단계 조절이라고 하는 일련의 조정 조절을 기반으로 확장 가능한 대상의 용량을 늘리거나 줄입니다. 조정은 경보 위반의 크기에 따라 다릅니다. 위반된 모든 경보는 경보 메시지를 수신할 때 Application Auto Scaling에서 평가됩니다.  
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -358,7 +353,7 @@ Amazon S3에서 가장 저렴한 비용의 스토리지 클래스이며 1년에 
 |첫 번째 바이트 지연 시간|밀리초|밀리초|밀리초|밀리초|분 또는 시간 선택|시간 선택|
 |스토리지 유형|객체|객체|객체|객체|객체|객체|
 |수명 주기 전환|예|예|예|예|예|예|
-<br></br>
+<br>
 
 **[보안]**
 * 서버 측 암호화  
@@ -375,7 +370,7 @@ Amazon S3에서 가장 저렴한 비용의 스토리지 클래스이며 1년에 
 **[옵션]**
 * Amazon S3 서버 액세스 로깅
 서버 액세스 로깅은 버킷에 대해 이루어진 요청에 따른 상세 레코드를 제공합니다. 서버 액세스 로그는 많은 애플리케이션에 있어 유용합니다. 예를 들어 액세스 로그 정보는 보안 및 액세스 감사에 유용할 수 있습니다. 또한 고객층을 파악하고 Amazon S3 결제 요금을 확인할 수 있습니다.
-​<br></br>
+<br><br><br><br>
 
 ​
 
@@ -402,7 +397,7 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/AmazonEBS.html
 |인스턴스당 최대 처리량|2,375MB/초|2,375MB/초|2,375MB/초|2,375MB/초
 |요금|월별 GB당 0.125 USD|프로비저닝된 IOPS당 0.065 USD|월별 GB당 0.10 USD|월별 GB당 0.045 USD|월별 GB당 0.025 USD
 |주요 성능 특성|IOPS|IOPS|MB/초|MB/초
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -410,7 +405,7 @@ https://docs.aws.amazon.com/ko_kr/AWSEC2/latest/UserGuide/AmazonEBS.html
 
 # **❐ 프로비저닝(provisioning)**
 사용자의 요구에 맞게 시스템 자원을 할당, 배치, 배포해 두었다가 필요 시 시스템을 즉시 사용할 수 있는 상태로 미리 준비해 두는 것을 말한다.
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -424,7 +419,7 @@ Linux 워크로드에 대한 공유 파일 시스템 스토리지를 제공하�
 Amazon EFS를 사용해 POSIX(Portable Operating System Interface) 권한을 통해 파일 시스템에 대한 액세스를 정밀하게 제어  
 https://aws.amazon.com/ko/efs/  
 https://docs.aws.amazon.com/ko_kr/efs/latest/ug/whatisefs.html
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -451,7 +446,7 @@ Cloudfront를 제외한 다른 경로로 접근하는 것을 막는 방법
 CloudFront 엣지 캐시에서 파일이 만료되기 전에 파일을 제거해야 할 경우, 다음 방법 중 하나를 사용하면 됩니다.  
   - 파일을 무효화합니다.  
   - 파일 버전 관리를 사용합니다.
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -462,7 +457,7 @@ CloudFront 엣지 캐시에서 파일이 만료되기 전에 파일을 제거해
 함수의 동시성은 특정 시각에 요청을 처리하는 인스턴스의 수입니다. 초기 트래픽 버스트의 경우, 리전에서 함수의 누적 동시성은 500 ~ 3000의 최초 레벨에 도달할 수 있으며, 이는 리전에 따라 달라집니다.  
 https://aws.amazon.com/ko/lambda/  
 https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/welcome.html
-​<br></br>
+<br><br><br><br>
 
 
 
@@ -473,7 +468,7 @@ https://docs.aws.amazon.com/ko_kr/lambda/latest/dg/welcome.html
 API Gateway는 최대 수십 만 개의 동시 API 호출을 수락하고 처리하는 데 관련된 모든 작업을 처리합니다. 여기에는 트래픽 관리, 권한 부여 및 액세스 제어, 모니터링, API 버전 관리가 포함됩니다.
 https://aws.amazon.com/ko/api-gateway/
 https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/welcome.html
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -484,7 +479,7 @@ https://docs.aws.amazon.com/ko_kr/apigateway/latest/developerguide/welcome.html
 Storage Gateway는 iSCSI, SMB 및 NFS와 같은 표준 스토리지 프로토콜 세트를 제공하므로 기존 애플리케이션을 다시 작성하지 않고 AWS 스토리지를 사용할 수 있습니다
 https://aws.amazon.com/ko/storagegateway/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
 https://docs.aws.amazon.com/ko_kr/storagegateway/latest/userguide/WhatIsStorageGateway.html
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -492,7 +487,7 @@ https://docs.aws.amazon.com/ko_kr/storagegateway/latest/userguide/WhatIsStorageG
 
 # **❐ 파일 게이트웨이**
 네트워크 파일 공유로 표시되는 파일 기반 인터페이스를 Amazon S3에 제공하며, 표준 파일 스토리지 프로토콜을 통해 Amazon S3 객체를 저장 및 검색할 수 있게 지원합니다.
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -500,7 +495,7 @@ https://docs.aws.amazon.com/ko_kr/storagegateway/latest/userguide/WhatIsStorageG
 
 # **❐ 테이프 게이트웨이**
 클라우드 기반 가상 테이프 라이브러리(VTL)로서, 백업 애플리케이션에 미디어 체인저와 테이프 드라이브로 구성된 VTL 인터페이스를 제공합니다.
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -515,7 +510,7 @@ iSCSI 대상을 제공합니다.
 
 * 저장 모드  
 기본 데이터가 로컬로 저장되고 액세스 지연 시간을 짧게 유지하기 위해 전체 데이터 세트가 제공되고 AWS에 비동기식으로 백업됩니다.
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -527,7 +522,7 @@ CloudTrail은 AWS Management Console, AWS SDK, 명령줄 도구 및 기타 AWS �
 누가 또는 무엇이 어떤 작업을 수행했는지, 어떤 리소스에 대해 조치가 취해졌는지, 언제 이벤트가 발생했는지, AWS 계정에서 활동 분석 및 응답에 도움이 되는 기타 세부 정보를 식별할 수 있습니다.  
 https://aws.amazon.com/ko/cloudtrail/  
 https://docs.aws.amazon.com/ko_kr/awscloudtrail/latest/userguide/cloudtrail-user-guide.html
-​<br></br>
+<br><br><br><br>
 
 
 
@@ -536,7 +531,7 @@ https://docs.aws.amazon.com/ko_kr/awscloudtrail/latest/userguide/cloudtrail-user
 # **❐ AWS Trusted Advisor**
 AWS 모범 사례에 따라 리소스를 프로비저닝하는 데 도움이 되도록 실시간 지침을 제공하는 온라인 도구입니다.  
 https://aws.amazon.com/ko/premiumsupport/technology/trusted-advisor/
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -547,7 +542,7 @@ Amazon Web Services(AWS) 리소스와 AWS에서 실시간으로 실행 중인 �
 CloudWatch를 사용하여 리소스 및 애플리케이션에 대해 측정할 수 있는 변수인 지표를 수집하고 추적할 수 있습니다.  
 CloudWatch를 사용하면 시스템 전체의 리소스 사용률, 애플리케이션 성능 및 운영 상태를 파악할 수 있습니다.  
 https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html
-​<br></br>
+<br><br><br><br>
 ​
 
 
@@ -555,7 +550,7 @@ https://docs.aws.amazon.com/ko_kr/AmazonCloudWatch/latest/monitoring/WhatIsCloud
 
 # **❐ CloudWatch Logs**
 Amazon Elastic Compute Cloud(Amazon EC2) 인스턴스, AWS CloudTrail, Route 53 및 기타 소스에서 로그 파일을 모니터링, 저장 및 액세스할 수 있습니다.
-​​<br></br>
+<br><br><br><br>
 
 
 
@@ -565,7 +560,7 @@ Amazon Elastic Compute Cloud(Amazon EC2) 인스턴스, AWS CloudTrail, Route 53 
 AWS CloudFormation은 개발자와 기업이 손쉽게 관련 AWS 및 타사 리소스의 모음을 쉽게 생성하고 순서에 따라 예측 가능한 방식으로 프로비저닝할 수 있는 방법을 제공하는 서비스입니다.  
 https://aws.amazon.com/ko/cloudformation/  
 https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.html
-​​<br></br>
+<br><br><br><br>
 
 
 
@@ -575,7 +570,7 @@ https://docs.aws.amazon.com/ko_kr/AWSCloudFormation/latest/UserGuide/Welcome.htm
 가용성과 확장성이 우수한 DNS(도메인 이름 시스템) 웹 서비스입니다.  
 https://aws.amazon.com/ko/route53/  
 https://docs.aws.amazon.com/ko_kr/Route53/latest/DeveloperGuide/Welcome.html
-​​<br></br>
+​​<br>
 
 **[주요 기능]**
 * 도메인 이름 등록  
@@ -616,7 +611,7 @@ Route 53이 DNS 쿼리에 무작위로 선택된 최대 8개의 정상 레코드
 
 * 가중치 기반 라우팅 정책  
 사용자가 지정하는 비율에 따라 여러 리소스로 트래픽을 라우팅하려는 경우에 사용합니다.
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -627,7 +622,7 @@ Route 53이 DNS 쿼리에 무작위로 선택된 최대 8개의 정상 레코드
 AWS Elastic Beanstalk는 Java, .NET, PHP, Node.js, Python, Ruby, Go, Docker를 사용하여 Apache, Nginx, Passenger, IIS와 같은 친숙한 서버에서 개발된 웹 애플리케이션 및 서비스를 간편하게 배포하고 조정할 수 있는 서비스입니다.  
 https://aws.amazon.com/ko/elasticbeanstalk/  
 https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -637,7 +632,7 @@ https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/Welcome.html
 클러스터에서 도커 컨테이너를 손쉽게 실행, 중지 및 관리할 수 있게 해주는 컨테이너 관리 서비스  
 Amazon ECS를 사용하면 일관된 배포 및 구축 환경을 생성하고, 배치 및 ETL(Extract-Transform-Load) 워크로드를 관리 및 크기 조정하고, 마이크로 서비스 모델에 정교한 애플리케이션 아키텍처를 구축할 수 있습니다.  
 https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/Welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -647,7 +642,7 @@ https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/Welcome.html
 작업 또는 서비스의 논리적 그룹  
 EC2 시작 유형을 사용하는 작업이나 서비스를 실행하는 경우, 클러스터는 컨테이너 인스턴스의 그룹화이기도 합니다. 용량 제공자를 사용하는 경우 클러스터는 용량 제공자의 논리적 그룹이기도 합니다. Amazon ECS를 처음 사용하면 기본 클러스터가 생성되지만, 한 계정에서 여러 클러스터를 생성하여 리소스를 분리할 수 있습니다.  
 https://docs.aws.amazon.com/ko_kr/AmazonECS/latest/developerguide/clusters.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -663,7 +658,7 @@ https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide
 * Dead Letter Queue  
 다른 대기열이 처리하지 못한 메시지를 보낼 수 있는 Dead Letter Queue을 지원합니다.
 문제가 있는 메시지를 구분하여 처리가 실패한 이유를 확인할 수 있으므로 애플리케이션 또는 메시징 시스템을 디버깅하는 데 유용합니다.
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -673,7 +668,7 @@ https://docs.aws.amazon.com/ko_kr/AWSSimpleQueueService/latest/SQSDeveloperGuide
 테스트 인프라를 프로비저닝하고 관리하지 않아도 다양한 데스크톱 브라우저 및 실제 모바일 디바이스에서 테스트를 진행하여 웹 및 모바일 앱 품질을 향상시키는 애플리케이션 테스트 서비스  
 https://aws.amazon.com/ko/device-farm/  
 https://docs.aws.amazon.com/ko_kr/devicefarm/latest/developerguide/welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -684,16 +679,16 @@ https://docs.aws.amazon.com/ko_kr/devicefarm/latest/developerguide/welcome.html
 Amazon Kinesis Data Streams를 사용하여 대규모 데이터 레코드 스트림을 실시간으로 수집하고 처리할 수 있습니다.
 https://aws.amazon.com/ko/kinesis/data-streams/?nc=sn&loc=0
 https://docs.aws.amazon.com/ko_kr/streams/latest/dev/introduction.html  
-​
+​<br>
 **[관련 용어]**
 * Shard  
 스트림에서 고유하게 식별되는 데이터 레코드 시퀀스입니다.  
 샤드는 Amazon Kinesis 데이터 스트림의 기본 처리량 단위입니다.  
-샤드 1개는 초당 1MB의 데이터 입력 및 2MB의 데이터 출력 용량을 제공하며 샤드 1개는 초당 최대 1,000개의 PUT 레코드를 지원합니다. 데이터 스트림을 생성할 때 필요한 샤드 수를 지정하게 됩니다. 예를 들어, 샤드가 2개 있는 데이터 스트림을 생성할 수 있습니다. 이 데이터 스트림은 초당 2MB의 데이터 입력 및 초당 4MB의 데이터 출력을 처리할 수 있으며 초당 최대 2,000개의 PUT 레코드를 허용합니다. Amazon Kinesis Data Streams에서 샤드 수준 지표를 모니터링하고, 데이터 스트림 리샤딩을 통해 데이터 처리량이 변경됨에 따라 샤드를 동적으로 스트림에 추가하거나 스트림에서 제거할 수 있습니다.<br></br>
+샤드 1개는 초당 1MB의 데이터 입력 및 2MB의 데이터 출력 용량을 제공하며 샤드 1개는 초당 최대 1,000개의 PUT 레코드를 지원합니다. 데이터 스트림을 생성할 때 필요한 샤드 수를 지정하게 됩니다. 예를 들어, 샤드가 2개 있는 데이터 스트림을 생성할 수 있습니다. 이 데이터 스트림은 초당 2MB의 데이터 입력 및 초당 4MB의 데이터 출력을 처리할 수 있으며 초당 최대 2,000개의 PUT 레코드를 허용합니다. Amazon Kinesis Data Streams에서 샤드 수준 지표를 모니터링하고, 데이터 스트림 리샤딩을 통해 데이터 처리량이 변경됨에 따라 샤드를 동적으로 스트림에 추가하거나 스트림에서 제거할 수 있습니다.<br>
 샤드 분할과 샤드 병합이라는 두 가지 유형의 리샤딩 작업이 있습니다.  
   - Shard 분할 : 단일 샤드를 샤드 두 개로 나눕니다
   - Shard 병합 : 샤드 두 개를 단일 샤드로 결합합니다.
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -703,7 +698,7 @@ https://docs.aws.amazon.com/ko_kr/streams/latest/dev/introduction.html
 실시간 스트리밍 데이터를 Amazon Simple Storage Service(Amazon S3), Amazon Redshift, Amazon Elasticsearch Service(Amazon ES) 및 Splunk 등의 대상으로 전송하기 위한 완전 관리형 서비스  
 https://aws.amazon.com/ko/kinesis/data-firehose/?nc=sn&loc=0  
 https://docs.aws.amazon.com/ko_kr/firehose/latest/dev/what-is-this-service.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -713,7 +708,7 @@ https://docs.aws.amazon.com/ko_kr/firehose/latest/dev/what-is-this-service.html
 스트리밍 데이터를 분석하고, 실행 가능한 통찰력을 확보하며, 비즈니스 및 고객 요구 사항에 실시간으로 대응할 수 있는 가장 쉬운 방법입니다.  
 https://aws.amazon.com/ko/kinesis/data-analytics/?nc=sn&loc=0  
 https://docs.aws.amazon.com/ko_kr/kinesisanalytics/latest/dev/what-is.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -723,7 +718,7 @@ https://docs.aws.amazon.com/ko_kr/kinesisanalytics/latest/dev/what-is.html
 데이터 이동 및 변환을 손쉽게 자동화할 수 있습니다.  
 https://aws.amazon.com/ko/datapipeline/  
 https://docs.aws.amazon.com/ko_kr/datapipeline/latest/DeveloperGuide/what-is-datapipeline.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -734,7 +729,7 @@ https://docs.aws.amazon.com/ko_kr/datapipeline/latest/DeveloperGuide/what-is-dat
 코드 변경이 발생할 때마다 사용자가 정의한 릴리스 모델을 기반으로 릴리스 프로세스의 빌드, 테스트 및 배포 단계를 자동화합니다. 따라서 기능과 업데이트를 신속하고 안정적으로 제공할 수 있습니다.  
 https://aws.amazon.com/ko/codepipeline/  
 https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -744,7 +739,7 @@ https://docs.aws.amazon.com/ko_kr/codepipeline/latest/userguide/welcome.html
 AWS 클라우드에서 Elasticsearch 클러스터를 쉽게 배포, 운영 및 조정할 수 있는 관리형 서비스입니다. Elasticsearch는 로그 분석, 실시간 애플리케이션 모니터링, 클릭 스트림 분석 같은 사용 사례를 위한 인기 있는 오픈 소스 검색 및 분석 엔진입니다. Amazon ES를 사용하면 Elasticsearch API에 바로 액세스해 기존 코드 및 애플리케이션을 서비스를 통해 원활하게 사용할 수 있습니다.  
 https://aws.amazon.com/ko/elasticsearch-service/  
 https://docs.aws.amazon.com/ko_kr/elasticsearch-service/latest/developerguide/what-is-amazon-elasticsearch-service.html
-<br></br>
+<br><br><br><br>
 
 
 
@@ -766,7 +761,7 @@ DynamoDB 전역 테이블은 전역적으로 사용자가 분산된 대규모 �
 * Amazon DynamoDB Accelerator(DAX)  
 DynamoDB용 완전관리형 인 메모리 캐시
 DAX는 DynamoDB를 위한 가용성이 뛰어난 완전관리형 인 메모리 cache로서, 초당 요청 수가 몇 백만 개인 경우에도 몇 밀리초에서 몇 마이크로초까지 최대 10배의 성능을 제공합니다.
-<br></br>
+<br><br><br><br>
 
 
 
@@ -798,7 +793,7 @@ DB 클러스터에 대한 읽기 전용 연결 시 로드 밸런싱을 지원합
 
 * Instance endpoint  
 Aurora 클러스터에 있는 특정 DB 인스턴스에 연결됩니다. DB 클러스터의 DB 인스턴스에는 각각 고유한 인스턴스 엔드포인트가 있습니다. 그러므로 DB 클러스터의 현재 기본 DB 인스턴스에 대해 인스턴스 엔드포인트 하나가 있고, DB 클러스터의 각 Aurora 복제본마다 인스턴스 엔드포인트 하나가 있습니다.
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -810,7 +805,7 @@ Aurora 클러스터에 있는 특정 DB 인스턴스에 연결됩니다. DB 클�
 유연하게 콘솔 내에서 쿼리를 실행하거나 SQL 클라이언트 도구, 라이브러리 또는 비즈니스 인텔리전스 도구에 연결할 수 있습니다.  
 https://aws.amazon.com/ko/redshift/  
 https://docs.aws.amazon.com/ko_kr/redshift/latest/mgmt/welcome.html
-<br></br>
+<br><br><br><br>
 
 
 
@@ -822,7 +817,7 @@ https://docs.aws.amazon.com/ko_kr/redshift/latest/mgmt/welcome.html
 Athena에서는 쿼리를 동시에 실행하여 규모를 자동으로 조절합니다. 따라서 많은 데이터 세트와 복잡한 쿼리가 있더라도 결과를 빠르게 도출합니다.  
 https://aws.amazon.com/ko/athena/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
 https://docs.aws.amazon.com/ko_kr/athena/latest/ug/what-is.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -836,7 +831,7 @@ https://docs.aws.amazon.com/ko_kr/AmazonElastiCache/latest/mem-ug/WhatIs.html
 
 * Redis Auth  
 Redis 인증 토큰은 Redis가 클라이언트의 명령 실행을 허용하기 전에 토큰(암호)을 요구할 수 있게 함으로써 데이터 보안을 개선합니다.
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -868,7 +863,7 @@ AWS 서비스가 여러 AWS 계정에서 사용하기 위해 소유하고 관리
 |고객 관리형 CMK|예|예|예|선택. 365일(1년)마다.
 |AWS 관리형 CMK|예|아니요|예|필수. 1,095일(3년)마다.
 |AWS 소유 CMK|아니요|아니요|아니요|다양
-<br></br>
+<br><br><br><br>
 ​
 
 ​
@@ -877,7 +872,7 @@ AWS 서비스가 여러 AWS 계정에서 사용하기 위해 소유하고 관리
 # **❐ AWS Systems Manager Parameter Store**
 구성 데이터 관리 및 암호 관리를 위한 안전한 계층적 스토리지를 제공합니다. 암호, 데이터베이스 문자열, Amazon Machine Image(AMI) ID 및 라이선스 코드와 같은 데이터를 파라미터 값으로 저장할 수 있습니다. 값을 일반 텍스트 또는 암호화된 데이터로 저장할 수 있습니다.  
 https://docs.aws.amazon.com/ko_kr/systems-manager/latest/userguide/systems-manager-parameter-store.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -888,7 +883,7 @@ AWS WAF는 고객이 정의한 조건에 따라 웹 요청을 허용, 차단 또
 AWS WAF는 SQL 명령어 주입과 교차 사이트 스크립팅(XSS)과 같은 일반적인 공격 기술로부터 웹 사이트를 보호할 수 있습니다.  
 https://aws.amazon.com/ko/waf/  
 https://docs.aws.amazon.com/ko_kr/waf/latest/developerguide/waf-chapter.html
-<br></br>
+<br><br><br><br>
 
 
 
@@ -898,7 +893,7 @@ https://docs.aws.amazon.com/ko_kr/waf/latest/developerguide/waf-chapter.html
 AWS에서 실행되는 애플리케이션을 보호하는 디도스(DDoS) 보호 서비스입니다.  
 https://aws.amazon.com/ko/shield/  
 https://docs.aws.amazon.com/ko_kr/waf/latest/developerguide/shield-chapter.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -909,7 +904,7 @@ https://docs.aws.amazon.com/ko_kr/waf/latest/developerguide/shield-chapter.html
 Amazon Cognito의 두 가지 주요 구성 요소는 사용자 풀과 자격 증명 풀입니다. 사용자 풀은 앱 사용자의 가입 및 로그인 옵션을 제공하는 사용자 디렉터리입니다. 자격 증명 풀을 통해 기타 AWS 서비스에 대한 사용자 액세스 권한을 부여할 수 있습니다. 자격 증명 풀과 사용자 풀을 별도로 또는 함께 사용할 수 있습니다.  
 https://aws.amazon.com/ko/cognito/  
 https://docs.aws.amazon.com/ko_kr/cognito/latest/developerguide/what-is-amazon-cognito.html
-<br></br>
+<br><br><br><br>
 
 
 
@@ -920,7 +915,7 @@ https://docs.aws.amazon.com/ko_kr/cognito/latest/developerguide/what-is-amazon-c
 Amazon SNS 주제를 사용하면 게시자 시스템에서 Amazon SQS 대기열, AWS Lambda 함수 및 HTTP/S Webhook를 비롯한 병렬 프로세싱을 위해 대규모의 구독자 엔드포인트로 메시지를 팬아웃할 수 있습니다. 또한, SNS는 모바일 푸시, SMS 및 이메일을 사용하여 최종 사용자에게 알림을 팬아웃하는 데 사용될 수 있습니다.  
 https://aws.amazon.com/ko/sns/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc  
 https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -929,7 +924,7 @@ https://docs.aws.amazon.com/ko_kr/sns/latest/dg/welcome.html
 # **❐ AWS Marketplace**
 고객이 솔루션 빌드 및 비즈니스 운영에 필요한 타사 소프트웨어, 데이터 및 서비스를 찾아보고 구입, 배포 및 관리를 쉽게 할 수 있도록 도와주는 엄선된 디지털 카탈로그  
 https://docs.aws.amazon.com/ko_kr/marketplace/latest/userguide/what-is-marketplace.html
-<br></br>
+<br><br><br><br>
 
 
 
@@ -940,7 +935,7 @@ https://docs.aws.amazon.com/ko_kr/marketplace/latest/userguide/what-is-marketpla
 Amazon MQ는 JMS, NMS, AMQP, STOMP, MQTT 및 WebSocket 등을 비롯한 업계 표준 메시징 API와 프로토콜을 사용하므로 기존 애플리케이션을 쉽게 연결할 수 있습니다.   
 https://aws.amazon.com/ko/amazon-mq/?amazon-mq.sort-by=item.additionalFields.postDateTime&amazon-mq.sort-order=desc  
 https://docs.aws.amazon.com/ko_kr/amazon-mq/latest/developer-guide/welcome.html
-<br></br>
+<br><br><br><br>
 
 
 ​
@@ -949,7 +944,7 @@ https://docs.aws.amazon.com/ko_kr/amazon-mq/latest/developer-guide/welcome.html
 # **❐ AWS DMS (AWS Database Migration Service)**
 관계형 데이터베이스, 데이터 웨어하우스, NoSQL 데이터베이스 및 그 밖의 데이터 스토어 유형을 쉽게 마이그레이션하도록 해주는 클라우드 서비스  
 https://docs.aws.amazon.com/ko_kr/dms/latest/userguide/Welcome.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -960,7 +955,7 @@ AWS Batch는 개발자, 과학자 및 엔지니어가 AWS에서 수많은 배치
 배치 컴퓨팅은 수동 개입 없이 하나 이상의 컴퓨터에서 일련의 프로그램("작업")을 실행하는 것을 말합니다.  
 https://aws.amazon.com/ko/batch/  
 https://docs.aws.amazon.com/ko_kr/batch/latest/userguide/what-is-batch.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -971,7 +966,7 @@ AWS Config는 AWS 리소스 구성을 측정, 감사 및 평가할 수 있는 �
 AWS Config는 AWS 계정에 있는 AWS 리소스의 구성을 자세히 보여 줍니다. 이러한 보기에는 리소스 간에 어떤 관계가 있는지와 리소스가 과거에 어떻게 구성되었는지도 포함되므로, 시간이 지나면서 구성과 관계가 어떻게 변하는지 확인할 수 있습니다.  
 https://aws.amazon.com/ko/config/  
 https://docs.aws.amazon.com/ko_kr/config/latest/developerguide/WhatIsConfig.html
-<br></br>
+<br><br><br><br>
 ​
 
 
@@ -980,7 +975,7 @@ https://docs.aws.amazon.com/ko_kr/config/latest/developerguide/WhatIsConfig.html
 # **❐ AWS Organizations**
 AWS Organizations는 사용자가 생성해 중앙에서 관리하는 조직으로 여러 AWS 계정을 통합할 수 있는 계정 관리 서비스입니다. AWS Organizations는 비즈니스의 예산, 보안과 규정 준수 요건을 충족할 수 있는 계정 관리 및 통합 결제 기능을 포함합니다. 조직의 관리자로서 조직에서 계정을 생성하고 기존 계정을 조직에 초대할 수 있습니다.  
 https://docs.aws.amazon.com/ko_kr/organizations/latest/userguide/orgs_introduction.html
-​<br></br>
+<br><br><br><br>
 
 
 
@@ -989,7 +984,7 @@ https://docs.aws.amazon.com/ko_kr/organizations/latest/userguide/orgs_introducti
 # **❐ IAM (AWS Identity and Access Management)**
 IAM는 AWS 리소스에 대한 액세스를 안전하게 제어할 수 있는 웹 서비스입니다. IAM을 사용하여 리소스를 사용하도록 인증(로그인) 및 권한 부여(권한 있음)된 대상을 제어합니다.  
 https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/introduction.html
-<br></br>
+<br><br><br><br>
 ​
 ​
 
@@ -1012,4 +1007,4 @@ https://docs.aws.amazon.com/ko_kr/IAM/latest/UserGuide/id_credentials_mfa.html
 * SMS 문자 메시지 기반 MFA  
 IAM 사용자 설정이 해당 사용자의 SMS 호환 모바일 디바이스의 전화번호를 포함하는 MFA 유형입니다. 사용자가 로그인하면 AWS가 SMS 문자 메시지로 여섯 자리 숫자 코드를 사용자의 모바일 디바이스로 전송합니다. 사용자는 로그인 시 두 번째 웹 페이지에서 이 코드를 입력해야 합니다. SMS 기반 MFA는 IAM 사용자만 사용할 수 있습니다. AWS 계정 루트 사용자에서는 이러한 유형의 MFA를 사용할 수 없습니다.  
 
-<br></br>
+<br><br>
