@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native 여러개의 화면 구성 및 화면 전환
+title: React Native - 여러개의 화면 구성 및 화면 전환
 slug: /posts/react-native/navigation
 draft: false
 priority: 0
@@ -59,9 +59,9 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator  initialRouteName = "Home">
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="First" component={FirstScreen} />
-        <Stack.Screen name="Second" component={SecondScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="FirstScreen" component={FirstScreen} />
+        <Stack.Screen name="SecondScreen" component={SecondScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -86,22 +86,22 @@ export default App;
 
 
 
-Screen 폴더 안에 HomeScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
+screen 폴더 안에 HomeScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
 ```
 import React from "react";
 import { View, Text, Button } from 'react-native';
 
 const HomeScreen = ({navigation}) => {  
   return (
-    <View style={{flex: 1, backgroundColor: '#FF0000'}}>
+    <View style={{flex: 1, backgroundColor: '#cccccc'}}>
       <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[HomeScreen]</Text>
       <Button
         title="Go FirstScreen"
-        onPress={() => navigation.navigate('First')}
+        onPress={() => navigation.navigate('FirstScreen')}
       />
       <Button
         title="Go SecondScreen"
-        onPress={() => navigation.navigate('Second')}
+        onPress={() => navigation.navigate('SecondScreen')}
       />
     </View>
   );
@@ -116,14 +116,14 @@ export default HomeScreen
 
 
 
-Screen 폴더 안에 FirstScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
+screen 폴더 안에 FirstScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
 ```
 import React from "react";
 import { View, Text } from 'react-native'; 
 
 const FirstScreen = () => {  
   return (
-    <View style={{flex: 1, backgroundColor: '#00FF00'}}>
+    <View style={{flex: 1, backgroundColor: '#ccffcc'}}>
       <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[FirstScreen]</Text>
     </View>
   );
@@ -137,14 +137,14 @@ export default FirstScreen
 
 
 
-Screen 폴더 안에 SecondScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
+screen 폴더 안에 SecondScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
 ```
 import React from "react";
 import { View, Text } from 'react-native';
 
-const SecondScreen = () => {  
+const SecondScreen = () => {
   return (
-    <View style={{flex: 1, backgroundColor: '#0000FF'}}>
+    <View style={{flex: 1, backgroundColor: '#ccccff'}}>
       <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[SecondScreen]</Text>
     </View>
   );

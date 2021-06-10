@@ -1,6 +1,6 @@
 ---
 template: post
-title: Git 명령어 정리
+title: Git - Git 명령어 정리
 slug: /posts/git/command
 draft: false
 priority: 0

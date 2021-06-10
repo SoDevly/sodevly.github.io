@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native 상태 관리를 할 수 있는 useState
+title: React Native - 상태 관리를 할 수 있는 useState
 slug: /posts/react-native/usestate
 draft: false
 priority: 0
@@ -34,13 +34,13 @@ useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 
 
 
-# **❐ 코드 수정**
-SecondScreen.js 파일의 코드를 아래와 같이 수정합니다.
+# **❐ 코드 예제**
+screen 폴더 안에 UseStateScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
 ```
 import React, { useState } from "react";
 import { View, Text, Button } from 'react-native';
 
-const SecondScreen = () => {
+const UseStateScreen = () => {
   const [number, setNumber] = useState(0);
 
   const onIncrease = () => {
@@ -51,8 +51,8 @@ const SecondScreen = () => {
   }
 
   return (
-    <View style={{flex: 1, backgroundColor: '#00FFFF'}}>
-      <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[SecondScreen]</Text>
+    <View style={{flex: 1}}>
+      <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[UseStateScreen]</Text>
       <Text style={{fontSize: 30}}>현재 number = {number}</Text>
       <Button
         style={{fontSize: 30, backgroundColor: '#FFFFFF'}}
@@ -67,7 +67,7 @@ const SecondScreen = () => {
   );
 };
 
-export default SecondScreen
+export default UseStateScreen
 ```
 <br>
 

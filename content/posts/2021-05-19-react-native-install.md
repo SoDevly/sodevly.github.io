@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native 설치 가이드
+title: React Native - 설치 가이드
 slug: /posts/react-native/install
 draft: false
 priority: 0

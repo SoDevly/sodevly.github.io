@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native 화면 전환 시 값 전달하기
+title: React Native - 화면 전환 시 값 전달하기
 slug: /posts/react-native/passing-values-to-another-screen
 draft: false
 priority: 0
@@ -24,22 +24,22 @@ tags:
 
 
 
-Screen 폴더 안에 HomeScreen.js 파일을 아래와 같이 작성합니다.
+screen 폴더 안에 HomeScreen.js 파일을 아래와 같이 작성합니다.
 ```
 import React from "react";
 import { View, Text, Button } from 'react-native';
 
 const HomeScreen = ({navigation}) => {  
   return (
-    <View style={{flex: 1, backgroundColor: '#FF0000'}}>
+    <View style={{flex: 1, backgroundColor: '#cccccc'}}>
       <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[HomeScreen]</Text>
       <Button
         title="Go FirstScreen"
-        onPress={() => navigation.navigate('First', { screen_name: "[FirstScreen]" })}
+        onPress={() => navigation.navigate('FirstScreen', { screen_name: "[FirstScreen]" })}
       />
       <Button
         title="Go SecondScreen"
-        onPress={() => navigation.navigate('Second')}
+        onPress={() => navigation.navigate('SecondScreen')}
       />
     </View>
   );
@@ -59,10 +59,10 @@ Screen 폴더 안에 FirstScreen.js 파일을 아래와 같이 작성합니다.
 import React from "react";
 import { View, Text } from 'react-native'; 
 
-const FirstScreen = ({ navigation, route }) => {
+const FirstScreen = ({ route }) => {
 
   return (
-    <View style={{flex: 1, backgroundColor: '#00FF00'}}>
+    <View style={{flex: 1, backgroundColor: '#ccffcc'}}>
       <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>{route.params.screen_name}</Text>
     </View>
   );

@@ -1,6 +1,6 @@
 ---
 template: post
-title: "React Native ERROR  Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 에러"
+title: "React Native - React Native ERROR  Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 에러"
 slug: /posts/react-native/error
 draft: false
 priority: 0
@@ -13,15 +13,15 @@ tags:
 
 <br>
 
-**Error 로그**
+**❐ Error 로그**  
 ERROR  Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
 <br><br>
 
-**원인**
+**❐ 원인**  
 export default PropsComponent로 되어 있는데 { PropsComponent }를 통해 import 해서 발생한 오류 입니다.
 <br><br>
 
-**해결방법**
+**❐ 해결방법**  
 아래와 같이 수정해주니 Error가 해결되었습니다.
 <pre style="background: #ccc">
 //import { PropsComponent } from "../component/PropsComponent";
@@ -33,7 +33,7 @@ import PropsComponent from "../component/PropsComponent";
 
 
 
-**Error가 발생했던 소스**
+**❐ Error가 발생했던 소스**  
 PropsScreen.js
 ```
 import React from "react";
@@ -43,9 +43,11 @@ import { PropsComponent } from "../component/PropsComponent";
 const PropsScreen = () => {
 
   return (
-    <View style={{flex: 1, backgroundColor: '#00FF00'}}>
+    <View style={{flex: 1}}>
       <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[PropsScreen]</Text>
-      <PropsComponent product={'과자'} />
+      <PropsComponent product={'과자'} price={2000} />
+      <PropsComponent product={'아이스크림'} price={1000} />
+      <PropsComponent product={'빵'} price={2500} />
     </View>
   );
 };
@@ -62,7 +64,7 @@ import { View, Text } from 'react-native';
 function PropsComponent(props) {
   return (
     <View>
-      <Text style={{fontSize: 20}}>Product : {props.product}</Text>
+      <Text style={{fontSize: 20}}>Product : {props.product} Price : {props.price}</Text>
     </View>
   );
 }
