@@ -6,7 +6,6 @@ draft: false
 priority: 0
 date: 2021-05-31T00:46:37.121Z
 description: >-
-  React Native App에서 여러개의 화면 구성 및 화면 전환하는 방법 가이드입니다.
 category: Programming
 tags:
   - React Native
@@ -40,7 +39,7 @@ cd ..
 
 
 
-# **❐ 코드 수정**
+# **❐ 코드 예제**
 App.js 파일의 코드를 아래와 같이 수정합니다.
 ```javascript
 import React from 'react';

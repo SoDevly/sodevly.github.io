@@ -23,10 +23,10 @@ export default PropsComponent로 되어 있는데 { PropsComponent }를 통해 i
 
 **❐ 해결방법**  
 아래와 같이 수정해주니 Error가 해결되었습니다.
-<pre style="background: #ccc">
+```javascript
 //import { PropsComponent } from "../component/PropsComponent";
 import PropsComponent from "../component/PropsComponent";
-</pre>
+```
 <br><br><br><br>
 
 

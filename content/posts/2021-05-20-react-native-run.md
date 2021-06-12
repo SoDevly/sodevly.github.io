@@ -6,7 +6,6 @@ draft: false
 priority: 0
 date: 2021-05-20T00:46:37.121Z
 description: >-
-  React Native 프로젝트 생성 가이드입니다.
 category: Programming
 tags:
   - React Native

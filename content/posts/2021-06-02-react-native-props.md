@@ -1,12 +1,11 @@
 ---
 template: post
-title: React Native - 상위 컴포넌트에서 하위 컴포넌트로 데이터 전달하기
+title: React Native - 상위 컴포넌트에서 하위 컴포넌트로 데이터 전달하기 (Props)
 slug: /posts/react-native/props
 draft: false
 priority: 0
 date: 2021-06-02T00:46:37.121Z
 description: >-
-  React Native App에서 상위 컴포넌트에서 하위 컴포넌트로 데이터 전달하는 방법 가이드입니다.
 category: Programming
 tags:
   - React Native

@@ -6,7 +6,6 @@ draft: false
 priority: 0
 date: 2021-06-01T00:46:37.121Z
 description: >-
-  React Native App에서 화면 전환 시 값 전달하는 방법 가이드입니다.
 category: Programming
 tags:
   - React Native
@@ -24,6 +23,7 @@ tags:
 
 
 
+# **❐ 코드 예제**
 screen 폴더 안에 HomeScreen.js 파일을 아래와 같이 작성합니다.
 ```javascript
 import React from "react";

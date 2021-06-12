@@ -1,12 +1,11 @@
 ---
 template: post
-title: React Native - 상태 관리를 할 수 있는 useEffect
+title: React Native - useEffect
 slug: /posts/react-native/useeffect
 draft: false
 priority: 0
 date: 2021-06-06T00:46:37.121Z
 description: >-
-  React Native 상태 관리를 할 수 있는 useEffect에 대하여 설명합니다.
 category: Programming
 tags:
   - React Native
@@ -23,64 +22,69 @@ tags:
 useEffect은 정리(Clean-Up)가 필요한 경우와 필요하지 않은 경우 크게 2가지로 나눠지며,  
 각각 컴포넌트가 렌더링될 때마다 실행, 컴포넌트가 마운트될 때만 실행, 특정 값이 업데이트 될 때만 실행 등으로 나눠집니다.  
 useEffect 종류별 사용 방법에 대하여 알아봅시다.
+<br><br>
+
+
+
+
+
 - ### **컴포넌트가 렌더링될 때마다 실행**
 컴포트가 렌더링될 때마다 실행하고 싶은 경우, 두번째 파라미터를 전달하지 않습니다.  
 아래 예제의 로그를 보면 [화면 진입 시], [number 상태 업데이트 시], [count 상태 업데이트 시]에 로그가 기록된 것을 볼 수 있습니다.  
-<pre style="background: #ccc">
+~~~javascript
 useEffect(() => {
 　console.log('컴포넌트가 렌더링될 때 실행     -> 두번째 파라미터 : 없음');
 });
-</pre>
-
-<br>
+~~~
+<br><br>
 
 - ### **컴포넌트가 마운트될 때만 실행**
 컴포넌트가 마운트될 때만 실행하고 싶은 경우, 두번째 파라미터를 []으로 전달합니다.  
 아래 예제의 로그를 보면 [화면 진입 시]에만 로그가 기록된 것을 볼 수 있습니다.  
-<pre style="background: #ccc">
+~~~javascript
 useEffect(() => {  
 　console.log('컴포넌트가 마운트될 때만 실행   -> 두번째 파라미터 : []');  
 }, []);
-</pre>
-
-<br>
+~~~
+<br><br>
 
 - ### **특정 값이 업데이트 될 때만 실행**
 특정 상태 변수의 값이 변경되었을 때 실행하고 싶은 경우, 두번째 파라미터에 해당 상태 변수를 전달합니다.  
 아래 예제의 로그를 보면 [화면 진입 시], [number 상태 업데이트 시]에 로그가 기록된 것을 볼 수 있습니다.  
-<pre style="background: #ccc">
+~~~javascript
 useEffect(() => {  
 　console.log('특정 값이 변경되었을 때 실행    -> 두번째 파라미터 : [number]');  
 }, [number]);  
-</pre>
-
-<br>
+~~~
+<br><br>
 
 - ### **정리(Clean-Up)가 필요한 경우 실행**
 정리(Clean-Up)가 필요한 경우, return을 추가합니다.  
 아래 예제의 로그를 보면 [화면 나갈 때], [number 상태 업데이트 시], [count 상태 업데이트 시]에 로그가 기록된 것을 볼 수 있습니다.  
 [화면 나갈 때] 호출은 컴포넌트가 언마운트될 때 Clean-Up하기 위해서 이며,  
 [number 상태 업데이트 시], [count 상태 업데이트 시] 호출은 새로운 값으로 상태 업데이트 하기 전에 값을 Clean-Up하기 위해서 라고 이해하면 될 것 같습니다.  
-<pre style="background: #ccc">
+~~~javascript
 useEffect(() => {
 　console.log('컴포넌트가 마운트될 때만 실행   -> 두번째 파라미터 : [], return 있음');
 　return () => {
 　　console.log('Clean-Up 실행   -> 두번째 파라미터 : [], return 있음');
 　};
-}, []);<br>
+}, []);
+
 useEffect(() => {
 　console.log('컴포넌트가 렌더링될 때 실행     -> 두번째 파라미터 : 없음, return 있음');
 　return () => {
 　　console.log('Clean-Up 실행   -> 두번째 파라미터 : 없음, return 있음');
 　};
-}); <br>
+});
+
 useEffect(() => {
 　console.log('특정 값이 변경되었을 때 실행    -> 두번째 파라미터 : [number], return 있음');
 　return () => {
 　　console.log('Clean-Up 실행   -> 두번째 파라미터 : [number], return 있음');
 　};
 }, [number]);
-</pre>
+~~~
 <br><br><br><br>
 
 

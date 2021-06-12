@@ -6,7 +6,6 @@ draft: false
 priority: 0
 date: 2020-06-23T00:46:37.121Z
 description: >-
-  AWS 자격증 공부를 위해 AWS 용어 정리하였습니다.
 category: Certification
 tags:
   - AWS

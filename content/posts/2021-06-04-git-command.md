@@ -6,7 +6,6 @@ draft: false
 priority: 0
 date: 2021-06-04T00:46:37.121Z
 description: >-
-  자주 사용하는 Git 명령어 정리하였습니다.
 category: Programming
 tags:
   - Git
