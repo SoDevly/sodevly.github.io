@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://zdlath.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/about</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/certification/aws-review</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/install</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/run</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/markdown</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/passing-values-to-another-screen</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/navigation</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/props</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/error</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/usestate</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/git/command</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/useeffect</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/react-native/usecontext</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/pages/as-privacy-policy</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/posts/certification/aws-term</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/tag/AWS</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/tag/Git</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/tag/Markdown</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/tag/React Native</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/category/Certification</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/category/Programming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://zdlath.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+</urlset>
