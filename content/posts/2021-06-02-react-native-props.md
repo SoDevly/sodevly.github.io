@@ -24,7 +24,7 @@ tags:
 
 # **❐ 코드 예제**
 screen 폴더 안에 PropsScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native'; 
 import PropsComponent from "../component/PropsComponent";
@@ -49,7 +49,7 @@ export default PropsScreen
 
 
 Component 폴더 안에 PropsComponent.js 파일을 생성하고, 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native'; 
 

@@ -35,7 +35,7 @@ import PropsComponent from "../component/PropsComponent";
 
 **❐ Error가 발생했던 소스**  
 PropsScreen.js
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native'; 
 import { PropsComponent } from "../component/PropsComponent";
@@ -57,7 +57,7 @@ export default PropsScreen
 <br><br>
 
 PropsComponent.js
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native'; 
 

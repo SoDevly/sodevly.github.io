@@ -36,7 +36,7 @@ useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 
 # **❐ 코드 예제**
 screen 폴더 안에 UseStateScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
-```
+```javascript
 import React, { useState } from "react";
 import { View, Text, Button } from 'react-native';
 

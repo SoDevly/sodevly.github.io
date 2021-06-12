@@ -30,21 +30,6 @@ mark {
   background: #FFFF00; 
 }
 
-pre {
-  padding: 0px 7px;
-  color : #000;
-  border-radius: 4px;
-  display: -webkit-inline-box;
-}
-
-code {
-  padding: 0px 7px;
-  background: #000;
-  color : #fff;
-  border-radius: 4px;
-  display: -webkit-inline-box;
-}
-
 blockquote {
   padding: 0 1em;
   border-left: .25em solid #666666;

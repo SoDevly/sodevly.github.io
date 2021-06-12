@@ -42,7 +42,7 @@ cd ..
 
 # **❐ 코드 수정**
 App.js 파일의 코드를 아래와 같이 수정합니다.
-```
+```javascript
 import React from 'react';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
@@ -69,8 +69,8 @@ function App() {
 
 export default App;
 ```
-**createStackNavigator()**는 Screen과 Navigator의 두 가지 속성을 포함하는 객체를 반환하는 함수입니다.  
-둘 다 네비게이터 구성에 사용되는 React 컴포넌트입니다.  
+**createStackNavigator()** 는 Screen과 Navigator의 두 가지 속성을 포함하는 객체를 반환하는 함수입니다.  
+둘 다 네비게이터 구성에 사용되는 React 컴포넌트입니다.
 
 **Stack.Screen** 컴포넌트는 각각의 화면을 정의하기 위해 경로 이름(name)과 경로에 렌더링 할 구성 요소를 지정하는 컴포넌트(component)를 포함해야합니다.  
 
@@ -87,7 +87,7 @@ export default App;
 
 
 screen 폴더 안에 HomeScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text, Button } from 'react-native';
 
@@ -109,7 +109,7 @@ const HomeScreen = ({navigation}) => {
 
 export default HomeScreen
 ```
-**navigation.navigate("이동하고 싶은 경로 이름")**을 사용하여 다른 화면으로 전환할 수 있습니다.  
+**navigation.navigate("이동하고 싶은 경로 이름")** 을 사용하여 다른 화면으로 전환할 수 있습니다.  
 <br><br><br><br>
 
 
@@ -117,7 +117,7 @@ export default HomeScreen
 
 
 screen 폴더 안에 FirstScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native'; 
 
@@ -138,7 +138,7 @@ export default FirstScreen
 
 
 screen 폴더 안에 SecondScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native';
 

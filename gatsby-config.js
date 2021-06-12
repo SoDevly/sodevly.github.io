@@ -103,6 +103,13 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              showLineNumbers: true
+            },
+          },
+          {
             resolve: 'gatsby-remark-images',
             options: { maxWidth: 960 }
           },

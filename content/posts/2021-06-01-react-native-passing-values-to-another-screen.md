@@ -25,7 +25,7 @@ tags:
 
 
 screen 폴더 안에 HomeScreen.js 파일을 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text, Button } from 'react-native';
 
@@ -47,7 +47,7 @@ const HomeScreen = ({navigation}) => {
 
 export default HomeScreen
 ```
-**navigation.navigate("이동하고 싶은 경로 이름", {파라미터명:값})**을 사용하여 다른 화면으로 전환하면서 해당 화면에 값을 전달할 수 있습니다. 
+**navigation.navigate("이동하고 싶은 경로 이름", {파라미터명:값})** 을 사용하여 다른 화면으로 전환하면서 해당 화면에 값을 전달할 수 있습니다. 
 <br><br><br><br>
 
 
@@ -55,7 +55,7 @@ export default HomeScreen
 
 
 Screen 폴더 안에 FirstScreen.js 파일을 아래와 같이 작성합니다.
-```
+```javascript
 import React from "react";
 import { View, Text } from 'react-native'; 
 
@@ -70,7 +70,7 @@ const FirstScreen = ({ route }) => {
 
 export default FirstScreen
 ```
-**route.params.파라미터명**을 사용하여 앞 화면에서 전달한 값을 받아 사용할 수 있습니다.
+**route.params.파라미터명** 을 사용하여 앞 화면에서 전달한 값을 받아 사용할 수 있습니다.
 <br><br><br><br>
 
 
