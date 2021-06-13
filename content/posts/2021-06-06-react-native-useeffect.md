@@ -14,15 +14,11 @@ tags:
 <br>
 
 **useEffect**는 컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정 할 수 있는 Hook 입니다.  
-<br><br><br><br>
-
-
-
-
+<br>
 useEffect은 정리(Clean-Up)가 필요한 경우와 필요하지 않은 경우 크게 2가지로 나눠지며,  
 각각 컴포넌트가 렌더링될 때마다 실행, 컴포넌트가 마운트될 때만 실행, 특정 값이 업데이트 될 때만 실행 등으로 나눠집니다.  
 useEffect 종류별 사용 방법에 대하여 알아봅시다.
-<br><br>
+<br><br><br><br>
 
 
 
@@ -90,6 +86,9 @@ useEffect(() => {
 
 
 
+
+useEffect 종류별로 console log를 출력하여 언제 실행되는지 확인해 봅시다.
+<br><br>
 
 # **❐ 코드 예제**
 screen 폴더 안에 UseEffectScreen.js 파일을 생성하고, 아래와 같이 작성합니다.

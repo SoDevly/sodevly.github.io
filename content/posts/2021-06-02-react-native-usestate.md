@@ -4,7 +4,7 @@ title: React Native - useState
 slug: /posts/react-native/usestate
 draft: false
 priority: 0
-date: 2021-06-02T00:46:37.121Z
+date: 2021-06-05T00:46:37.121Z
 description: >-
 category: Programming
 tags:
@@ -13,7 +13,8 @@ tags:
 
 <br>
 
-**useState**를 사용하여 컴포넌트에서 상태를 관리 할 수 있습니다.  
+**useState** 는 상태를 관리 할 수 있는 hook입니다.
+<br>
 컴포넌트에서 동적인 값을 **상태(state)** 라고 부릅니다.  
 하나의 useState 함수는 하나의 상태 값만 관리를 할 수 있기 때문에 만약에 컴포넌트에서 관리해야 할 상태가 여러 개라면 useState를 여러번 사용하면 됩니다.
 <br><br><br><br>
@@ -27,7 +28,7 @@ useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 - [더하기]버튼 선택 시, number + 1 값으로 상태 변경
 - [빼기]버튼 선택 시, number -1 값으로 상태 변경  
 ![](/media/react-native-usestate.gif)
-<br><br><br><br>
+<br><br>
 
 
 

@@ -13,13 +13,17 @@ tags:
 
 <br>
 
-**props**는 Properties 의 약자로, 상위 컴포넌트에서 하위 컴포넌트로 전달되는 데이터입니다.  
-값 변경이 불가능한 Read-Only 데이터 입니다.
+**props**는 Properties 의 약자로, 상위 컴포넌트에서 하위 컴포넌트로 전달되는 데이터입니다. 
+<br>
+props는 값 변경이 불가능한 Read-Only 데이터 입니다.
 <br><br><br><br>
 
 
 
 
+
+product, price 상태값을 prop를 이용하여 상위 컴포넌트(PropsScreen)에서 하위 컴포넌트(PropsComponent)로 전달해봅시다.
+<br><br>
 
 # **❐ 코드 예제**
 screen 폴더 안에 PropsScreen.js 파일을 생성하고, 아래와 같이 작성합니다.

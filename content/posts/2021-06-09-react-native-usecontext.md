@@ -14,11 +14,7 @@ tags:
 <br>
 
 **useContext** 는 depth가 깊은 하위컴포넌트에게 함수, 데이터를 전달할 수 있는 Hook 입니다.  
-<br><br><br><br>
-
-
-
-
+<br>
 보통 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달할 때 props를 통해 인자로 넘깁니다.  
 하지만 개발하다보면 하위 컴포넌트의 하위 하위 하위컴포넌트로 데이터를 전달해야 할 수도 있고  
 오히려 반대로 하위 컴포넌트에서 상위 컴포넌트로 데이터를 공유해야 할 수도 있습니다.  
@@ -28,6 +24,9 @@ tags:
 
 
 
+
+name 상태값, setName 함수를 useContext를 이용하여 상위 컴포넌트(UseContextScreen)에서 하위 컴포넌트(UseContextComponent)로 전달해봅시다.
+<br><br>
 
 # **❐ 코드 예제**
 screen 폴더 안에 UseContextScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
@@ -71,7 +70,7 @@ export const UserInfoContext = createContext();
 하위 컴포넌트를 Provider로 감싸면 하위 컴포넌트에서 Context에 저장된 함수, 데이터를 사용할 수 있습니다.  
 Provider는 하위 컴포넌트들에게 Context의 변화를 알리는 역할을 합니다.  
 하위 컴포넌트는 value가 변경될 때 리렌더링 됩니다.
-~~~
+~~~javascript
 <UserInfoContext.Provider value={userInfo}>
    하위 컴포넌트들...
 </UserInfoContext.Provider>
@@ -112,7 +111,7 @@ export default UseContextComponent
 <br><br>
 
 **useContext()** 를 이용하여 Context에 저장한 함수, 데이터를 가져와 사용할 수 있습니다. 
-~~~
+~~~javascript
 const { name, setName } = useContext(UserInfoContext);
 ~~~
 
