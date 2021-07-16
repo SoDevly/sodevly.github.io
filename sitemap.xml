@@ -1,123 +1,113 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	  xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	  	  
-<!-- www.check-domains.com sitemap generator -->
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-   <loc>https://zdlath.github.io/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>1.0000</priority>
+<loc>https://zdlath.github.io/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/rss.xml</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.8000</priority>
+<loc>https://zdlath.github.io/about/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/sitemap.xml</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.8000</priority>
+<loc>https://zdlath.github.io/category/Certification/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/about/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/category/Programming/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/category/Certification/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/tag/AWS/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/category/Programming/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/tag/Git/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/tag/AWS/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/tag/Markdown/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/tag/Git/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/usecallback/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/tag/Markdown/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/usememo/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/react-native/useeffect/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/usecontext/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/git/command/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/useeffect/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/react-native/usestate/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/usestate/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/react-native/passing-values-to-another-screen/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/git/command/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/react-native/navigation/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/error/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/markdown/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/props/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/react-native/run/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/passing-values-to-another-screen/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/react-native/install/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/navigation/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/certification/aws-review/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/markdown/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-   <loc>https://zdlath.github.io/posts/certification/aws-term/</loc>
-   <lastmod>2021-06-08T08:43:40+00:00</lastmod>
-   <changefreq>weekly</changefreq>
-   <priority>0.6400</priority>
+<loc>https://zdlath.github.io/posts/react-native/run/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://zdlath.github.io/posts/react-native/install/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://zdlath.github.io/posts/certification/aws-review/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://zdlath.github.io/posts/certification/aws-term/</loc>
+<lastmod>2021-06-14T05:45:41+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 </urlset>
