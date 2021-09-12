@@ -23,6 +23,7 @@ props는 값 변경이 불가능한 Read-Only 데이터 입니다.
 
 
 product, price 상태값을 prop를 이용하여 상위 컴포넌트(PropsScreen)에서 하위 컴포넌트(PropsComponent)로 전달해봅시다.
+![](/media/react-native-props.png)
 <br><br>
 
 # **❐ 코드 예제**

@@ -1,6 +1,6 @@
 ---
 template: post
-title: AWS - AWS Certified Solutions Architect - Associate 자격증 취득 후기
+title: '[AWS] Certified Solutions Architect - Associate 자격증 취득 후기'
 slug: /posts/certification/aws-review
 draft: false
 priority: 0
