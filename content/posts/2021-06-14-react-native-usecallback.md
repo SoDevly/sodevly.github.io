@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - useCallback
+title: '[React Native] useCallback'
 slug: /posts/react-native/usecallback
 draft: false
 priority: 0

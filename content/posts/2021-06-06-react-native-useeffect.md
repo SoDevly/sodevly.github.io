@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - useEffect
+title: '[React Native] useEffect'
 slug: /posts/react-native/useeffect
 draft: false
 priority: 0

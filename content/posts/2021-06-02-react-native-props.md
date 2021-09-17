@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - 상위 컴포넌트에서 하위 컴포넌트로 데이터 전달하기 (Props)
+title: '[React Native] 상위 컴포넌트에서 하위 컴포넌트로 데이터 전달하기'
 slug: /posts/react-native/props
 draft: false
 priority: 0

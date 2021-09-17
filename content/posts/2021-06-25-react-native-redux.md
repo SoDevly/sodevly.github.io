@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - Redux
+title: '[React Native] Redux'
 slug: /posts/react-native/redux
 draft: false
 priority: 0

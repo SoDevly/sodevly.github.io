@@ -1,6 +1,6 @@
 ---
 template: post
-title: "React Native - React Native ERROR  Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 에러"
+title: "Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports. 에러"
 slug: /posts/react-native/error
 draft: false
 priority: 0

@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - 프로젝트 생성
+title: '[React Native] 프로젝트 생성'
 slug: /posts/react-native/run
 draft: false
 priority: 0

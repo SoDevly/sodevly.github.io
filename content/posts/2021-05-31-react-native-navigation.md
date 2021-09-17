@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - 여러개의 화면 구성 및 화면 전환
+title: '[React Native] 여러개의 화면 구성 및 화면 전환'
 slug: /posts/react-native/navigation
 draft: false
 priority: 0

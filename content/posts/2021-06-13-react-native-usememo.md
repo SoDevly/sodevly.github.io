@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - useMemo
+title: '[React Native] useMemo'
 slug: /posts/react-native/usememo
 draft: false
 priority: 0

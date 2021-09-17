@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - useState
+title: '[React Native] useState'
 slug: /posts/react-native/usestate
 draft: false
 priority: 0

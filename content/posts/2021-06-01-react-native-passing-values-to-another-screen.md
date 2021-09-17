@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - 화면 전환 시 값 전달하기
+title: '[React Native] 화면 전환 시 값 전달하기'
 slug: /posts/react-native/passing-values-to-another-screen
 draft: false
 priority: 0

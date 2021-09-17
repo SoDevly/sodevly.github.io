@@ -1,6 +1,6 @@
 ---
 template: post
-title: AWS - AWS 자격증 용어 정리
+title: '[AWS] AWS 자격증 용어 정리'
 slug: /posts/certification/aws-term
 draft: false
 priority: 0

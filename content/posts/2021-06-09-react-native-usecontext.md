@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - useContext
+title: '[React Native] useContext'
 slug: /posts/react-native/usecontext
 draft: false
 priority: 0

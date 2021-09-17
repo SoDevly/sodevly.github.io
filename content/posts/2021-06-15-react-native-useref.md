@@ -1,6 +1,6 @@
 ---
 template: post
-title: React Native - useRef
+title: '[React Native] useRef'
 slug: /posts/react-native/useref
 draft: false
 priority: 0
