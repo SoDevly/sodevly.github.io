@@ -25,7 +25,7 @@ React Native 앱을 개발하다보면 플랫폼(Android/iOS) API 접근이 필�
 아래와 같이 동작하는 로직을 native module로 구현해봅시다.
 - Android 단말에서 'Native Module 함수 호출'버튼 클릭하면 "Hi! I'm Android" 얼럿 뜸
 - iOS 단말에서 'Native Module 함수 호출'버튼 클릭하면 "Hi! I'm Android" 얼럿 뜸
-- 얼럿을 띄우는 함수를 각 플랫폼(Android/iOS))에 Callback 함수로 넘겨줌
+- 얼럿을 띄우는 함수를 각 플랫폼(Android/iOS)에 Callback 함수로 넘겨줌
 - 각 플랫폼(Android/iOS)에서는 Callback 함수를 이용하여 얼럿 문구를 넘겨줌
 ![](/media/react-native-nativemodule-android.gif)  ![](/media/react-native-nativemodule-ios.gif)  
 <br><br><br><br>
