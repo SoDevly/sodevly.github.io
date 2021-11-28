@@ -1,4 +1,128 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Marat Dospolov]]></title><description><![CDATA[Mobile App Developer]]></description><link>https://zdlath.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 17 Sep 2021 15:02:27 GMT</lastBuildDate><item><title><![CDATA[[React Native] Native Module]]></title><link>https://zdlath.github.io/posts/react-native/nativemodule</link><guid isPermaLink="false">https://zdlath.github.io/posts/react-native/nativemodule</guid><pubDate>Wed, 01 Sep 2021 00:46:37 GMT</pubDate><content:encoded>&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog by Marat Dospolov]]></title><description><![CDATA[Mobile App Developer]]></description><link>https://zdlath.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Nov 2021 10:47:51 GMT</lastBuildDate><item><title><![CDATA[[MariaDB] DBeaver에서 LocalHost서버의 MariaDB에 연결하기]]></title><link>https://zdlath.github.io/posts/db/mariadb</link><guid isPermaLink="false">https://zdlath.github.io/posts/db/mariadb</guid><pubDate>Sat, 27 Nov 2021 00:46:37 GMT</pubDate><content:encoded>&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;mariadb-server-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mariadb-server-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;mariadb server 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;MariaDB Server 설치&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew install mariadb&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;mariadb-server-구동&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mariadb-server-%EA%B5%AC%EB%8F%99&quot; aria-label=&quot;mariadb server 구동 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;MariaDB Server 구동&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mysql.server start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;mariadb-보안-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mariadb-%EB%B3%B4%EC%95%88-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;mariadb 보안 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;MariaDB 보안 설정&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo mariadb-secure-installation&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;root계정에 대한 현재 암호를 입력 : (설치 후 최초 접근이니 비밀번호가 없을 것이다. 그냥 enter를 누르자.)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;NOTE: RUNNING ALL PARTS OF THIS SCRIPT IS RECOMMENDED FOR ALL MariaDB
+      SERVERS IN PRODUCTION USE!  PLEASE READ EACH STEP CAREFULLY!
+
+In order to log into MariaDB to secure it, we&amp;#39;ll need the current
+password for the root user. If you&amp;#39;ve just installed MariaDB, and
+haven&amp;#39;t set the root password yet, you should just press enter here.
+
+Enter current password for root (enter for none): &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;unix socket 인증 방식으로 전환 : Y&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Setting the root password or using the unix_socket ensures that nobody
+can log into the MariaDB root user without the proper authorisation.
+
+You already have your root account protected, so you can safely answer &amp;#39;n&amp;#39;.
+
+Switch to unix_socket authentication [Y/n]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;루트 암호를 변경하시겠습니까? Y
+새로운 패스워드 입력
+새로운 패스워드 다시 입력&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;You already have your root account protected, so you can safely answer &amp;#39;n&amp;#39;.
+
+Change the root password? [Y/n]
+New password: 
+Re-enter new password: &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;익명 사용자를 제거하시겠습니까? Y&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;By default, a MariaDB installation has an anonymous user, allowing anyone
+to log into MariaDB without having to have a user account created for
+them.  This is intended only for testing, and to make the installation
+go a bit smoother.  You should remove them before moving into a
+production environment.
+
+Remove anonymous users? [Y/n]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;원격으로 root계정 로그인을 허용하지 않으시겠습니까? Y&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Normally, root should only be allowed to connect from &amp;#39;localhost&amp;#39;.  This
+ensures that someone cannot guess at the root password from the network.
+
+Disallow root login remotely? [Y/n]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;테스트 데이터베이스를 제거하고 액세스하시겠습니까? Y&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;By default, MariaDB comes with a database named &amp;#39;test&amp;#39; that anyone can
+access.  This is also intended only for testing, and should be removed
+before moving into a production environment.
+
+Remove test database and access to it? [Y/n]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;권한 테이블을 지금 다시 로드하시겠습니까? Y&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;Reloading the privilege tables will ensure that all changes made so far will take effect immediately.
+
+Reload privilege tables now? [Y/n]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;root계정으로-mariadb-접속&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#root%EA%B3%84%EC%A0%95%EC%9C%BC%EB%A1%9C-mariadb-%EC%A0%91%EC%86%8D&quot; aria-label=&quot;root계정으로 mariadb 접속 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;root계정으로 MariaDB 접속&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;password는 위에서 설정한 password를 입력한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mysql -u root -p
+
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 33
+Server version: 10.6.4-MariaDB Homebrew
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type &amp;#39;help;&amp;#39; or &amp;#39;\h&amp;#39; for help. Type &amp;#39;\c&amp;#39; to clear the current input statement.
+
+MariaDB [(none)]&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;db-생성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#db-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;db 생성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;DB 생성&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;mysql 접속&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;MariaDB [(none)]&amp;gt; use mysql
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MariaDB [mysql]&amp;gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;데이터베이스 생성&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;MariaDB [mysql]&amp;gt; create database localDB;
+Query OK, 1 row affected (0.001 sec)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;데이터베이스 조회&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;MariaDB [mysql]&amp;gt; show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| localDB            |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.000 sec)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;dbeaver-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dbeaver-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;dbeaver 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;DBeaver 설치&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://dbeaver.io/download/&quot;&gt;https://dbeaver.io/download/&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h2 id=&quot;dbeaver에서-mariadb-연결하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dbeaver%EC%97%90%EC%84%9C-mariadb-%EC%97%B0%EA%B2%B0%ED%95%98%EA%B8%B0&quot; aria-label=&quot;dbeaver에서 mariadb 연결하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;DBeaver에서 MariaDB 연결하기&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;데이터베이스 &gt; 새 데이터베이스 연결 &gt; MariaDB 선택&lt;br&gt;
+&lt;img src=&quot;/media/db-mariadb1.png&quot; alt=&quot;&quot;&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;DB 접속 정보 입력&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Server Host: localhost&lt;/li&gt;
+&lt;li&gt;Database: localDB (DB 이름 입력)&lt;/li&gt;
+&lt;li&gt;Username: root&lt;/li&gt;
+&lt;li&gt;Password: (root계정의 비밀번호 입력)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;/media/db-mariadb2.png&quot; alt=&quot;&quot;&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;연결된 DB 확인&lt;br&gt;
+&lt;img src=&quot;/media/db-mariadb3.png&quot; alt=&quot;&quot;&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[React Native] Native Module]]></title><link>https://zdlath.github.io/posts/react-native/nativemodule</link><guid isPermaLink="false">https://zdlath.github.io/posts/react-native/nativemodule</guid><pubDate>Wed, 01 Sep 2021 00:46:37 GMT</pubDate><content:encoded>&lt;br&gt;
 &lt;p&gt;&lt;strong&gt;Native Module&lt;/strong&gt;은 각 플랫폼(Android/iOS) 환경에서 구현한 함수를 React-Native 환경에서 사용 가능하도록 구현한 모듈입니다.&lt;br&gt;
 Java 또는 Kotlin으로 Android 모듈을 구현하고, Object-C 또는 Swift로 iOS 모듈을 구현하여 React-Native 환경에서 직접 구현한 모듈을 사용할 수 있습니다.&lt;br&gt;
 React Native 앱을 개발하다보면 플랫폼(Android/iOS) API 접근이 필요한데 React-Native에서 아직 그에 해당하는 모듈이 없을 때나 네이티브 성능이 더 좋을 경우 Native Module을 구현하여 사용합니다.
@@ -7,7 +131,7 @@ React Native 앱을 개발하다보면 플랫폼(Android/iOS) API 접근이 필�
 &lt;ul&gt;
 &lt;li&gt;Android 단말에서 ‘Native Module 함수 호출’버튼 클릭하면 “Hi! I’m Android” 얼럿 뜸&lt;/li&gt;
 &lt;li&gt;iOS 단말에서 ‘Native Module 함수 호출’버튼 클릭하면 “Hi! I’m Android” 얼럿 뜸&lt;/li&gt;
-&lt;li&gt;얼럿을 띄우는 함수를 각 플랫폼(Android/iOS))에 Callback 함수로 넘겨줌&lt;/li&gt;
+&lt;li&gt;얼럿을 띄우는 함수를 각 플랫폼(Android/iOS)에 Callback 함수로 넘겨줌&lt;/li&gt;
 &lt;li&gt;각 플랫폼(Android/iOS)에서는 Callback 함수를 이용하여 얼럿 문구를 넘겨줌&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&quot;/media/react-native-nativemodule-android.gif&quot; alt=&quot;&quot;&gt;  &lt;img src=&quot;/media/react-native-nativemodule-ios.gif&quot; alt=&quot;&quot;&gt;&lt;br&gt;
@@ -1400,6 +1524,7 @@ __Bold__
 _Italic_
 ~~Cancel~~
 &amp;lt;u&amp;gt;밑줄&amp;lt;/u&amp;gt;
+&amp;lt;span style=&amp;quot;color:blue&amp;quot;&amp;gt;파란 글씨&amp;lt;/span&amp;gt;
 &amp;lt;mark&amp;gt;형광펜&amp;lt;/mark&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;[결과]&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;Bold&lt;/strong&gt;&lt;br&gt;
@@ -1408,6 +1533,7 @@ _Italic_
 &lt;em&gt;Italic&lt;/em&gt;&lt;br&gt;
 &lt;del&gt;Cancel&lt;/del&gt;&lt;br&gt;
 &lt;u&gt;밑줄&lt;/u&gt;&lt;br&gt;
+&lt;span style=&quot;color:blue&quot;&gt;파란 글씨&lt;/span&gt;&lt;br&gt;
 &lt;mark&gt;형광펜&lt;/mark&gt;
 &lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h1 id=&quot;❐-인용문&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%E2%9D%90-%EC%9D%B8%EC%9A%A9%EB%AC%B8&quot; aria-label=&quot;❐ 인용문 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;strong&gt;❐ 인용문&lt;/strong&gt;&lt;/h1&gt;
