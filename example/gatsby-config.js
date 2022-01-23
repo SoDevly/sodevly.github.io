@@ -10,11 +10,11 @@ module.exports = {
       options: {
         contentPath: 'content',
         basePath: '/',
-        gitRepoContentPath: '',
+        gitRepoContentPath: 'https://github.com/zdlath/zdlath.github.io/tree/develop_v2/example/content/',
         showDescriptionInSidebar: true,
         showThemeInfo: false,
         showDate: true,
-        logo: '',
+        logo: 'https://zdlath.github.io/photo.jpg',
       },
     },
   ],
