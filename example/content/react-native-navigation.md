@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'React Native 화면 전환 (Stack Navigator)'
+title: 'React Native 화면 전환 (react-navigation)'
 created: 2021-05-31
 modified: 2021-05-31
 link: ''
@@ -14,10 +14,12 @@ tags:
 
 
 앱은 여러개의 화면으로 구성되어 있기때문에 화면 전환 동작이 필요합니다.  
-react-navigation은 앱 화면 전환 동작을 도와주는 라이브러리이며, 3가지 방식을 제공합니다.
+react-navigation은 앱 화면 전환 동작을 도와주는 라이브러리이며, 3가지 방식으로 구현이 가능합니다.  
 - Stack Navigator
 - Tab Navigator
 - Drawer Navigator
+
+이 포스트에서는 Stack Navigator를 사용해 보도록 하겠습니다.
 <br></br><br></br><br></br><br></br>
 
 
@@ -47,6 +49,10 @@ react-navigation을 사용하여 아래와 같은 화면 및 동작을 구현해
 - 화면 전환 방식은 Stack Navigator 사용
 ![](/assets/react-native-navigation.png)
 <br></br><br></br><br></br><br></br>
+
+
+
+
 
 ### App.js 파일 작성
 ```javascript
