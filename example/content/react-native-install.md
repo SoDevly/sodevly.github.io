@@ -7,8 +7,11 @@ link: ''
 tags:
   - React Native
 ---
-
 <br></br>
+
+
+
+
 
 # **❐ Homebrew 설치**
 Homebrew는 맥(Mac)에서 필요한 패키지를 설치하고 관리하는 맥(Mac)용 패키지 관리자입니다.  
