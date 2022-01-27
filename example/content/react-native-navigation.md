@@ -41,8 +41,8 @@ cd ..
 
 
 
-# **❐ 예제**
-### 설명
+# **❐ 예시**
+### 예시 설명
 react-navigation을 사용하여 아래와 같은 화면 및 동작을 구현해봅시다.
 - 화면은 2개(HomeScreen, NavigationScreen)로 구성  
 - HomeScreen에서 [Go NavigationScreen] 버튼 클릭하면 NavigationScreen 화면으로 전환  
