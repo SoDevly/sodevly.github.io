@@ -89,10 +89,10 @@ const styles = StyleSheet.create({
 
 export default UseContextScreen
 ```
-**<Box>createContext()</Box>** 를 이용하여 Context를 생성합니다.
+`createContext()` 를 이용하여 Context를 생성합니다.
 export하는 이유는 다른 파일에서 접근할 수 있게 하기 위해서 입니다.  
 
-**<Box>Provider</Box>** 를 이용하여 Context에 데이터를 저장합니다.  
+`Provider` 를 이용하여 Context에 데이터를 저장합니다.  
 하위 컴포넌트를 Provider로 감싸면 하위 컴포넌트에서 Context에 저장된 데이터를 사용할 수 있습니다.  
 Provider는 하위 컴포넌트에 Context의 변화를 알리는 역할을 합니다.  
 하위 컴포넌트는 value가 변경될 때 리렌더링 됩니다.
@@ -198,5 +198,5 @@ const styles = StyleSheet.create({
 
 export default UseContextChildrenComponent
 ```
-**<Box>useContext()</Box>** 를 이용하여 Context에 저장한 데이터를 가져와 사용할 수 있습니다. 
+`useContext()` 를 이용하여 Context에 저장한 데이터를 가져와 사용할 수 있습니다. 
 <br></br><br></br>

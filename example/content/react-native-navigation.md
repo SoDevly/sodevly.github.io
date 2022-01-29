@@ -80,16 +80,16 @@ function App() {
 
 export default App;
 ```
-**<Box>createStackNavigator()</Box>** 는 Screen과 Navigator의 두 가지 속성을 포함하는 객체를 반환하는 함수입니다.
+`createStackNavigator()` 는 Screen과 Navigator의 두 가지 속성을 포함하는 객체를 반환하는 함수입니다.
 둘 다 네비게이터 구성에 사용되는 React 컴포넌트입니다.  
 
-**<Box>NavigationContainer</Box>** 컴포넌트는 navigation tree를 관리하고 navigation state를 포함합니다.
+`NavigationContainer` 컴포넌트는 navigation tree를 관리하고 navigation state를 포함합니다.
 이 컴포넌트는 모든 네비게이터 구조를 래핑해야합니다.  
 
-**<Box>Stack.Navigator</Box>** 컴포넌트는 경로에 대한 구성을 정의하기 위해 자식으로 Stack.Screen 컴포넌트를 포함해야합니다.
+`Stack.Navigator`컴포넌트는 경로에 대한 구성을 정의하기 위해 자식으로 Stack.Screen 컴포넌트를 포함해야합니다.
 initialRouteName 속성으로 초기 경로를 정의할 수 있습니다.  
 
-**<Box>Stack.Screen</Box>** 컴포넌트는 각각의 화면을 정의하기 위해 경로 이름(name)과 경로에 렌더링 할 구성 요소를 지정하는 컴포넌트(component)를 포함해야합니다.  
+`Stack.Screen` 컴포넌트는 각각의 화면을 정의하기 위해 경로 이름(name)과 경로에 렌더링 할 구성 요소를 지정하는 컴포넌트(component)를 포함해야합니다.  
 <br></br><br></br><br></br><br></br>
 
 
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
 
 export default HomeScreen
 ```
-<Box>navigation.navigate("이동하고 싶은 경로 이름")</Box> 을 사용하여 다른 화면으로 전환할 수 있습니다.  
+`navigation.navigate("이동하고 싶은 경로 이름")`을 사용하여 다른 화면으로 전환할 수 있습니다.  
 <br></br><br></br><br></br><br></br>
 
 

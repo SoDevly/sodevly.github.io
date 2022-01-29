@@ -45,7 +45,7 @@ const HomeScreen = ({navigation}) => {
 
 export default HomeScreen
 ```
-'<Box>navigation.navigate("이동하고 싶은 경로 이름", {파라미터명:값})</Box>' 을 사용하여 다른 화면으로 전환하면서 Parameter를 전달할 수 있습니다.
+`navigation.navigate("이동하고 싶은 경로 이름", {파라미터명:값})` 을 사용하여 다른 화면으로 전환하면서 Parameter를 전달할 수 있습니다.
 <br></br><br></br><br></br><br></br>
 
 
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
 export default PassingParameterScreen
 ```
-<Box>route.params.파라미터명</Box> 을 사용하여 앞 화면에서 전달한 값을 받아 사용할 수 있습니다.
+`route.params.파라미터명`을 사용하여 앞 화면에서 전달한 값을 받아 사용할 수 있습니다.
 <br></br><br></br><br></br><br></br>
 
 

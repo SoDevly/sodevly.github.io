@@ -67,16 +67,11 @@ export const styles = {
     mb: 1,
   },
   inlineCode: {
-    // backgroundColor: 'background',
-    // p: '0.1em 0.2em',
-    // borderRadius: 'default',
-    fontSize: '80%',
-    fontFamily: 'mono',
+    backgroundColor: 'inlineCodeBackground',
+    p: '0.1em 0.2em',
+    borderRadius: 'default',
     color: 'textStrong',
     fontWeight: 'semibold',
-    '&::before, &::after': {
-      content: "'`'",
-    },
   },
   pre: {
     py: 2,

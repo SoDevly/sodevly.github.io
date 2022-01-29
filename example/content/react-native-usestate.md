@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
 
 export default UseStateScreen
 ```
-<Box>'const [상태 변수명, 상태 변수 업데이트 함수명] = useState(상태 변수 초기값)'</Box>을 사용하여 상태 변수를 정의합니다.
+`const [상태 변수명, 상태 변수 업데이트 함수명] = useState(상태 변수 초기값)`을 사용하여 상태 변수를 정의합니다.
 
 상태 변수값을 사용할 때는 상태 변수명을 그대로 사용하면 됩니다.  
 상태 변수값을 업데이트할 때는 상태 변수 업데이트 함수를 이용하면 됩니다.
