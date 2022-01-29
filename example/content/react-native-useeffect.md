@@ -112,11 +112,16 @@ useEffect(() => {
 # **❐ 예시**
 ### 예시 설명
 useEffect 종류별로 console log를 출력하여 언제 실행되는지 확인해 봅시다.  
+<br></br><br></br><br></br><br></br>
+
+
+
+
 
 ### UseEffectScreen.js 파일 작성
 ```javascript
 import React, { useState, useEffect } from "react";
-import { View, Text, Button } from 'react-native';
+import { StyleSheet, View, Text, Button } from 'react-native';
 
 const UseEffectScreen = () => {
   const [number, setNumber] = useState(0);
@@ -170,31 +175,47 @@ const UseEffectScreen = () => {
   }
 
   return (
-    <View style={{flex: 1}}>
-      <Text style={{fontSize: 40, fontWeight: 'bold', marginBottom: 40}}>[useEffectScreen]</Text>
-      <Text style={{fontSize: 30}}>현재 number = {number}</Text>
+    <View style={styles.screen}>
+      <Text style={styles.text}>현재 number = {number}</Text>
       <Button
-        style={{fontSize: 30, backgroundColor: '#FFFFFF'}}
+        style={styles.btn}
         title="더하기"
         onPress={onIncreaseNumber}
       />
       <Button
+        style={styles.btn}
         title="빼기"
         onPress={onDecreaseNumber}
       />
-      <Text style={{fontSize: 30}}>현재 count = {count}</Text>
+      <Text style={styles.text}>현재 count = {count}</Text>
       <Button
-        style={{fontSize: 30, backgroundColor: '#FFFFFF'}}
+        style={styles.btn}
         title="더하기"
         onPress={onIncreaseCount}
       />
       <Button
+        style={styles.btn}
         title="빼기"
         onPress={onDecreaseCount}
       />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    backgroundColor: '#ffffff'
+  },
+  text: {
+    fontSize: 20,
+    textAlign: "center"
+  },
+  btn: {
+    fontSize: 30,
+    backgroundColor: '#FFFFFF'
+  }
+})
 
 export default UseEffectScreen
 ```

@@ -59,6 +59,7 @@
     "gatsby-plugin-theme-ui": "0.7.3",
     "gatsby-plugin-typescript": "^3.3.0",
     "gatsby-remark-double-brackets-link": "^0.1.8",
+    "gatsby-remark-gifs": "^1.1.0",
     "gatsby-remark-images": "^5.0.0",
     "gatsby-source-filesystem": "^3.3.0",
     "gatsby-transformer-markdown-references": "^0.1.5",

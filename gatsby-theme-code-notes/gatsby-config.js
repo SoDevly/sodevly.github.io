@@ -71,6 +71,7 @@ module.exports = (options) => {
                 wrapperStyle: `margin: 1.5rem 0;`,
               },
             },
+            'gatsby-remark-gifs',
             {
               resolve: 'gatsby-remark-double-brackets-link',
               options: {

@@ -7881,6 +7881,14 @@ gatsby-remark-double-brackets-link@^0.1.8:
     slugify "^1.4.0"
     unist-util-visit "^2.0.2"
 
+gatsby-remark-gifs@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-gifs/-/gatsby-remark-gifs-1.1.0.tgz#1ca63059e83ba254ca413fb1e9fe6f382ba03e60"
+  integrity sha512-6p0ko6mzcyrpQ/7CSb1B66kctTeCNdT1OohxF4InQND9ujPj7tFc5lo96bp35qHDq+CeutqY8m15lwASydxZOw==
+  dependencies:
+    is-relative-url "^3.0.0"
+    unist-util-visit "^2.0.3"
+
 gatsby-remark-images@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-5.0.0.tgz#310f3bdfb37028dc83078da13dfee511440746d8"
