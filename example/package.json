@@ -9,6 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
     "clean": "gatsby clean",
     "dev": "gatsby develop",
@@ -19,5 +20,8 @@
     "gatsby-theme-code-notes": "*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }

@@ -5,6 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "predeploy": "yarn clean",
+    "deploy": "yarn workspace example deploy",
     "prebuild": "yarn clean",
     "build": "yarn workspace example build",
     "predev": "yarn clean",
