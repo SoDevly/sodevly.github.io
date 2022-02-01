@@ -3,6 +3,7 @@ module.exports = {
     title: '',
     description: 'Sohee의 IT 블로그',
     keywords: [],
+    siteUrl: `https://zdlath.github.io/`,
   },
   plugins: [
     {
@@ -17,5 +18,6 @@ module.exports = {
         logo: 'https://zdlath.github.io/photo.jpg',
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }

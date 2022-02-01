@@ -12,6 +12,7 @@
     "predev": "yarn clean",
     "dev": "yarn workspace example dev",
     "clean": "yarn workspace example clean",
+    "reinstall": "rm -rf node_modules && cd example && rm -rf node_modules && cd .. && cd gatsby-theme-code-notes && rm -rf node_modules && cd .. && yarn install",
     "start": "yarn workspace example start",
     "lint": "eslint './gatsby-theme-code-notes/src/**/*'"
   },
