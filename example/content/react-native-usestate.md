@@ -13,9 +13,9 @@ tags:
 
 
 
-**<Highlight>useState</Highlight>** 는 상태를 관리 할 수 있는 hook입니다.  
+**<Highlight>useState</Highlight>** 는 <Underline>상태를 관리 할 수 있는 hook입니다.</Underline>  
 
-컴포넌트에서 동적인 값을 <Underline>상태(state)</Underline>라고 부릅니다.  
+컴포넌트에서 동적인 값을 <Circle>상태(state)</Circle>라고 부릅니다.  
 하나의 useState 함수는 하나의 상태 값만 관리를 할 수 있습니다. 컴포넌트에서 관리해야 할 상태가 여러 개라면 useState를 여러번 사용하면 됩니다.
 <br></br><br></br><br></br><br></br>
 

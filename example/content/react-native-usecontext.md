@@ -13,7 +13,7 @@ tags:
 
 
 
-**<Highlight>useContext</Highlight>** 는 depth가 깊은 하위컴포넌트와 데이터를 공유할 수 있는 Hook 입니다.  
+**<Highlight>useContext</Highlight>** 는 <Underline>depth가 깊은 하위컴포넌트와 데이터를 공유할 수 있는 Hook 입니다.</Underline>  
 
 보통 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달할 때 props를 통해 인자로 넘깁니다.  
 하지만 개발하다보면 하위 컴포넌트의 하위 하위 하위컴포넌트로 데이터를 전달해야 할 수도 있고  
