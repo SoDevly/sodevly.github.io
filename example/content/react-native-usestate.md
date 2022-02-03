@@ -14,10 +14,11 @@ tags:
 
 
 # **❐ useState란?**
-**<Highlight>useState</Highlight>** 는 <Underline>상태를 관리 할 수 있는 hook입니다.</Underline>  
+`useState`는 <u>상태를 관리 할 수 있는 hook입니다.</u>  
 
-컴포넌트에서 동적인 값을 <Circle>상태(state)</Circle>라고 부릅니다.  
-하나의 useState 함수는 하나의 상태 값만 관리를 할 수 있습니다. 컴포넌트에서 관리해야 할 상태가 여러 개라면 useState를 여러번 사용하면 됩니다.
+컴포넌트에서 동적인 값을 상태(state)라고 부릅니다.  
+상태(state) 값은 컴포넌트의 생애주기 동안 값이 유지되기 때문에 컴포넌트가 리렌더링되어도 값이 유지됩니다.  
+상태(state) 값은 변경되면 컴포넌트를 리렌더링합니다. 
 <br></br><br></br><br></br><br></br>
 
 

@@ -14,7 +14,7 @@ tags:
 
 
 # **❐ Native Module란?**
-**<Highlight>Native Module</Highlight>**은 <Underline>각 플랫폼(Android/iOS) 환경에서 구현한 함수를 React-Native 환경에서 사용 가능하도록 구현한 모듈입니다.</Underline>  
+`Native Module`은 <u>각 플랫폼(Android/iOS) 환경에서 구현한 함수를 React-Native 환경에서 사용 가능하도록 구현한 모듈입니다.</u>  
 
 Java 또는 Kotlin으로 Android 모듈을 구현하고, Object-C 또는 Swift로 iOS 모듈을 구현하여 React-Native 환경에서 직접 구현한 모듈을 사용할 수 있습니다.  
 React Native 앱을 개발하다보면 플랫폼(Android/iOS) API 접근이 필요한데 React-Native에서 아직 그에 해당하는 모듈이 없을 때나 네이티브 성능이 더 좋을 경우 Native Module을 구현하여 사용합니다.

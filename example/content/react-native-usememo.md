@@ -14,7 +14,7 @@ tags:
 
 
 # **❐ useMemo란?**
-**<Highlight>useMemo</Highlight>**는 <Underline>메모이즈된 값을 return하는 hook입니다.</Underline>  
+`useMemo`는 <u>메모이즈된 값을 return하는 hook입니다.</u>  
 useMemo는 특정 state값이 변했을 경우에만 새로운 값을 리턴하고, 그렇지 않으면 캐싱되어 있는 값을 리턴합니다.  
 
 기본적으로 state값 중 하나라도 변하면 모든 컴포넌트를 새로 렌더링합니다.  
@@ -108,7 +108,7 @@ export default UseMemoScreen
 TextInput에 숫자를 입력할 때, getAverage() 함수가 호출되는 것을 볼 수 있습니다.  
 즉, 평균을 디스플레이하는 컴포넌트가 다시 렌더링된다는 의미입니다.  
 입력한 숫자를 등록하기 전까지는 평균을 다시 계산할 필요가 없습니다.  
-즉, 숫자를 입력할 때 <Underline>불필요한 컴포넌트를 다시 렌더링하고 있다는 의미입니다.</Underline>
+즉, 숫자를 입력할 때 <u>불필요한 컴포넌트를 다시 렌더링하고 있다는 의미입니다.</u>
 ![](/assets/react-native-usememo-before.gif)
 <br></br>
 
@@ -122,7 +122,7 @@ TextInput에 숫자를 입력할 때, getAverage() 함수가 호출되는 것을
 const avg = useMemo(() => getAverage(list), [list]);
 ```
 TextInput에 숫자를 입력할 때, getAverage() 함수가 호출되지 않는 것을 볼 수 있습니다.  
-즉, 숫자를 입력할 때 <Underline>불필요한 컴포넌트를 다시 렌더링하고 있지 않다는 것을 의미합니다.</Underline>
+즉, 숫자를 입력할 때 <u>불필요한 컴포넌트를 다시 렌더링하고 있지 않다는 것을 의미합니다.</u>
 ![](/assets/react-native-usememo-after.gif)
 
 <br></br><br></br>

@@ -14,7 +14,7 @@ tags:
 
 
 # **❐ useEffect란?**
-**<Highlight>useEffect</Highlight>**는 <Underline>컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정 할 수 있는 Hook 입니다.</Underline>  
+`useEffect`는 <u>컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정 할 수 있는 Hook 입니다.</u>  
 
 useEffect은 실행 시점을 기준으로 크게 3가지로 나눠집니다.
 - 컴포넌트가 렌더링될 때마다 실행

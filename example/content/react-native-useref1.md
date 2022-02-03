@@ -14,11 +14,15 @@ tags:
 
 
 # **❐ useRef란?**
-**<Highlight>useRef</Highlight>** 는 <Underline>특정 컴포넌트를 선택할 수 있게 도와주는 hook입니다.</Underline>  
+`useRef`는 <u>특정 컴포넌트를 선택할 수 있게 도와주는 hook입니다.</u>  
 
 특정 컴포넌트를 직접 선택해야 하는 상황이 발생 할 수 있습니다.  
 ex) 스크롤바 위치를 가져오거나 설정해야하는 상황, 입력필드에 포커스를 설정해야 하는 상황 등등...  
-그럴 때 사용하는 것이 ref이며, ref를 쉽게 사용 할 수 있게 도와주는 hook이 바로 useRef입니다.
+그럴 때 사용하는 것이 ref이며, ref를 쉽게 사용 할 수 있게 도와주는 hook이 바로 useRef입니다.  
+<br></br>
+
+`useRef`는 <u>컴포넌트 리렌더링없이 상태 값을 관리할 수 있는 hook입니다.</u>  
+[useRef (2) 게시글 이동](https://zdlath.github.io/react-native-useref2)  
 <br></br><br></br><br></br><br></br>
 
 
@@ -39,7 +43,7 @@ ex) 스크롤바 위치를 가져오거나 설정해야하는 상황, 입력필�
 
 
 ### 예시 코드
-###### useRefScreen.js 파일 작성
+###### useRefScreen1.js 파일 작성
 ```javascript
 import React, { useState, useRef, useCallback } from "react";
 import { StyleSheet, View, TextInput, Button } from 'react-native';

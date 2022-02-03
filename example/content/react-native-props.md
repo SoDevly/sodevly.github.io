@@ -14,7 +14,7 @@ tags:
 
 
 # **❐ props란?**
-**<Highlight>props</Highlight>**는 <Underline>Properties의 약자로 상위 컴포넌트에서 하위 컴포넌트로 전달되는 데이터입니다.</Underline>  
+`props`는 <u>Properties의 약자로 상위 컴포넌트에서 하위 컴포넌트로 전달되는 데이터입니다.</u>  
 
 props는 값 변경이 불가능한 Read-Only 데이터 입니다.
 <br></br><br></br><br></br><br></br>
