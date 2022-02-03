@@ -13,6 +13,7 @@ tags:
 
 
 
+# **❐ props란?**
 **<Highlight>props</Highlight>**는 <Underline>Properties의 약자로 상위 컴포넌트에서 하위 컴포넌트로 전달되는 데이터입니다.</Underline>  
 
 props는 값 변경이 불가능한 Read-Only 데이터 입니다.
@@ -38,7 +39,8 @@ PropsScreen
 
 
 
-### PropsScreen.js 파일 작성
+### 예시 코드
+###### PropsScreen.js 파일 작성
 ```javascript
 import React from "react";
 import { StyleSheet, View } from 'react-native'; 
@@ -71,7 +73,7 @@ export default PropsScreen
 
 
 
-### PropsComponent.js 파일 작성
+###### PropsComponent.js 파일 작성
 ```javascript
 import React from "react";
 import { StyleSheet, View, Text } from 'react-native'; 

@@ -13,6 +13,7 @@ tags:
 
 
 
+# **❐ useState란?**
 **<Highlight>useState</Highlight>** 는 <Underline>상태를 관리 할 수 있는 hook입니다.</Underline>  
 
 컴포넌트에서 동적인 값을 <Circle>상태(state)</Circle>라고 부릅니다.  
@@ -36,27 +37,28 @@ useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 
 
 
-### UseStateScreen.js 파일 작성
+### 예시 코드
+###### UseStateScreen.js 파일 작성
 ```javascript
 import React, { useState } from "react";
 import { StyleSheet, View, Text, Button } from 'react-native';
 
 const UseStateScreen = () => {
-  //초기값이 0인 number라는 상태 변수 정의
+  //초기값이 0인 number라는 상태 변수를 정의합니다.
   const [number, setNumber] = useState(0);
 
   const onIncrease = () => {
-    //number 상태 변수 +1한 값으로 업데이트
+    //number 상태 변수 +1한 값으로 업데이트합니다.
     setNumber(number + 1);
   }
   const onDecrease = () => {
-    //number 상태 변수 -1한 값으로 업데이트
+    //number 상태 변수 -1한 값으로 업데이트합니다.
     setNumber(number - 1);
   }
 
   return (
     <View style={styles.screen}>
-      //number 상태 변수 값 디스플레이
+      {/*number 상태 변수 값을 디스플레이합니다.*/}
       <Text style={styles.text}>현재 number = {number}</Text>
       <Button
         title="더하기"
@@ -83,10 +85,9 @@ const styles = StyleSheet.create({
 
 export default UseStateScreen
 ```
-`const [상태 변수명, 상태 변수 업데이트 함수명] = useState(상태 변수 초기값)`을 사용하여 상태 변수를 정의합니다.
-
-상태 변수값을 사용할 때는 상태 변수명을 그대로 사용하면 됩니다.  
-상태 변수값을 업데이트할 때는 상태 변수 업데이트 함수를 이용하면 됩니다.
+`const [상태 변수명, 상태 변수 업데이트 함수명] = useState(상태 변수 초기값)`을 사용하여 상태 변수를 정의합니다.  
+상태 변수값을 사용할 때는 `상태 변수명`을 그대로 사용하면 됩니다.  
+상태 변수값을 업데이트할 때는 `상태 변수 업데이트 함수`를 이용하면 됩니다.
 <br></br><br></br><br></br><br></br>
 
 

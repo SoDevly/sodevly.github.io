@@ -54,7 +54,8 @@ react-navigation을 사용하여 아래와 같은 화면 및 동작을 구현해
 
 
 
-### App.js 파일 작성
+### 예시 코드
+###### App.js 파일 작성
 ```javascript
 import React from 'react';
 import 'react-native-gesture-handler';
@@ -96,7 +97,7 @@ initialRouteName 속성으로 초기 경로를 정의할 수 있습니다.
 
 
 
-### HomeScreen.js 파일 작성
+###### HomeScreen.js 파일 작성
 ```javascript
 import React from "react";
 import { StyleSheet, View, Button } from 'react-native';
@@ -128,7 +129,7 @@ export default HomeScreen
 
 
 
-### NavigationScreen.js 파일 작성
+###### NavigationScreen.js 파일 작성
 ```javascript
 import React from "react";
 import { StyleSheet, View, Text } from 'react-native'; 

@@ -23,7 +23,8 @@ tags:
 
 
 
-### HomeScreen.js 파일 작성
+### 예시 코드
+###### HomeScreen.js 파일 작성
 ```javascript
 import React from "react";
 import { View, Button } from 'react-native';
@@ -52,7 +53,7 @@ export default HomeScreen
 
 
 
-### PassingParameterScreen.js 파일 작성
+###### PassingParameterScreen.js 파일 작성
 ```javascript
 import React from "react";
 import { StyleSheet, View, Text } from 'react-native';

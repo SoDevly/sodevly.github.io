@@ -13,6 +13,7 @@ tags:
 
 
 
+# **❐ useMemo란?**
 **<Highlight>useMemo</Highlight>**는 <Underline>메모이즈된 값을 return하는 hook입니다.</Underline>  
 useMemo는 특정 state값이 변했을 경우에만 새로운 값을 리턴하고, 그렇지 않으면 캐싱되어 있는 값을 리턴합니다.  
 
@@ -35,7 +36,8 @@ useMemo를 적용한 버전과 적용하지 않은 버전을 둘 다 구현하�
 
 
 
-### UseMemoScreen.js 파일 작성
+### 예시 코드
+###### UseMemoScreen.js 파일 작성
 ```javascript
 import React, { useState, useMemo } from "react";
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';

@@ -13,6 +13,7 @@ tags:
 
 
 
+# **❐ useEffect란?**
 **<Highlight>useEffect</Highlight>**는 <Underline>컴포넌트가 렌더링 될 때마다 특정 작업을 수행하도록 설정 할 수 있는 Hook 입니다.</Underline>  
 
 useEffect은 실행 시점을 기준으로 크게 3가지로 나눠집니다.
@@ -118,7 +119,8 @@ useEffect 종류별로 console log를 출력하여 언제 실행되는지 확인
 
 
 
-### UseEffectScreen.js 파일 작성
+### 예시 코드
+###### UseEffectScreen.js 파일 작성
 ```javascript
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text, Button } from 'react-native';
