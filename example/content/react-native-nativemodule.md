@@ -25,7 +25,7 @@ React Native 앱을 개발하다보면 플랫폼(Android/iOS) API 접근이 필�
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 아래와 같이 동작하는 로직을 native module로 구현해봅시다.
 - Android 단말에서 'Native Module 함수 호출'버튼 클릭하면 "Hi! I'm Android" 얼럿 뜸
 - iOS 단말에서 'Native Module 함수 호출'버튼 클릭하면 "Hi! I'm iOS" 얼럿 뜸
@@ -130,7 +130,7 @@ public class HellowModule extends ReactContextBaseJavaModule {
 
 
 
-### iOS Native Moduel 구현하기
+### **iOS Native Moduel 구현하기**
 hellow폴더를 생성합니다.  
 Xcode > 마우스 오른쪽버튼 클릭 > New Group  
 ![](/assets/react-native-nativemodule-ios-create1.png)
@@ -186,7 +186,7 @@ RCT_EXPORT_METHOD(getGreeting: (RCTResponseSenderBlock)callback)
 
 
 
-### React Native에서 구현한 Native Moduel 사용하기
+### **React Native에서 구현한 Native Moduel 사용하기**
 위에서 구현한 Native Module을 사용해봅시다.  
 NativeModuleScreen.js 파일을 생성하고, 아래와 같이 작성합니다.
 ```javascript

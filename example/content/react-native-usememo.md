@@ -27,7 +27,7 @@ useMemo는 특정 state값이 변했을 경우에만 새로운 값을 리턴하�
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 숫자를 등록하고, 등록한 숫자들의 평균을 구해주는 로직을 구현해봅시다.  
 useMemo를 적용한 버전과 적용하지 않은 버전을 둘 다 구현하여 비교해봅시다.
 <br></br><br></br><br></br><br></br>
@@ -36,8 +36,8 @@ useMemo를 적용한 버전과 적용하지 않은 버전을 둘 다 구현하�
 
 
 
-### 예시 코드
-###### UseMemoScreen.js 파일 작성
+### **예시 코드**
+###### **UseMemoScreen.js 파일 작성**
 ```javascript
 import React, { useState, useMemo } from "react";
 import { StyleSheet, View, Text, TextInput, Button } from 'react-native';

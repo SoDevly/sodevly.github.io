@@ -111,7 +111,7 @@ useEffect(() => {
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 useEffect 종류별로 console log를 출력하여 언제 실행되는지 확인해 봅시다.  
 <br></br><br></br><br></br><br></br>
 
@@ -119,8 +119,8 @@ useEffect 종류별로 console log를 출력하여 언제 실행되는지 확인
 
 
 
-### 예시 코드
-###### UseEffectScreen.js 파일 작성
+### **예시 코드**
+###### **UseEffectScreen.js 파일 작성**
 ```javascript
 import React, { useState, useEffect } from "react";
 import { StyleSheet, View, Text, Button } from 'react-native';

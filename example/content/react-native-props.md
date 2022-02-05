@@ -24,7 +24,7 @@ props는 값 변경이 불가능한 Read-Only 데이터 입니다.
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 아래와 같은 구조의 하위 컴포넌트를 가지고 있는 화면을 구현하고, props를 사용하여 하위 컴포넌트와 데이터를 공유해봅시다.  
 
 PropsScreen  
@@ -39,8 +39,8 @@ PropsScreen
 
 
 
-### 예시 코드
-###### PropsScreen.js 파일 작성
+### **예시 코드**
+###### **PropsScreen.js 파일 작성**
 ```javascript
 import React from "react";
 import { StyleSheet, View } from 'react-native'; 
@@ -73,7 +73,7 @@ export default PropsScreen
 
 
 
-###### PropsComponent.js 파일 작성
+###### **PropsComponent.js 파일 작성**
 ```javascript
 import React from "react";
 import { StyleSheet, View, Text } from 'react-native'; 

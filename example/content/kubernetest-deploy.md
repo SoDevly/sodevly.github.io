@@ -22,14 +22,14 @@ tags:
 
 
 
-### 파드 확인
+### **파드 확인**
 ```
 root@instance-1:~# kubectl get pod
 No resources found in default namespace.
 ```
 <br></br><br></br>
 
-### 디플로이먼트를 사용하여 파드 생성
+### **디플로이먼트를 사용하여 파드 생성**
 nginx:1.20.1 이미지를 실행하는 파드를 생성하고, 3개의 파드가 유지되도록 관리하는 디플로이먼트를 생성합니다. 이 디플로이먼트 이름은 nginx-deploy로 지었습니다.  
 ```
 root@instance-1:~# kubectl create deploy nginx-deploy --image=nginx:1.20.1 --replicas=3 --dry-run=client -o yaml > deploy.yaml
@@ -42,7 +42,7 @@ deployment.apps/nginx-deploy created
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 파드 3개가 생성된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod
@@ -53,7 +53,7 @@ nginx-deploy-55bd5b4d9d-5cbdj   1/1     Running   0          11s
 ```
 <br></br><br></br>
 
-### 파드가 실행하고 있는 nginx 버전 확인
+### **파드가 실행하고 있는 nginx 버전 확인**
 nginx:1.20.1가 실행 중인 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod -o yaml nginx-deploy-55bd5b4d9d-2tk8x
@@ -85,21 +85,21 @@ spec:
 ```
 <br></br><br></br>
 
-### yaml파일에 명시되어 있는 nginx 버전 변경
+### **yaml파일에 명시되어 있는 nginx 버전 변경**
 deploy.yaml 파일을 열어 nginx:1.20.1 -> nginx:1.21.1으로 수정합니다.
 ```
 root@instance-1:~# vi deploy.yaml 
 ```
 <br></br><br></br>
 
-### 수정한 yaml파일 적용
+### **수정한 yaml파일 적용**
 ```
 root@instance-1:~# kubectl apply -f deploy.yaml
 deployment.apps/nginx-deploy configured
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 새로운 파드 3개가 생성된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pods
@@ -110,7 +110,7 @@ nginx-deploy-69f689b6b9-qcrmz   1/1     Running   0          16s
 ```
 <br></br><br></br>
 
-### 파드가 실행하고 있는 nginx 버전 확인
+### **파드가 실행하고 있는 nginx 버전 확인**
 nginx:1.21.1가 실행 중인 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod -o yaml nginx-deploy-69f689b6b9-9bfs2

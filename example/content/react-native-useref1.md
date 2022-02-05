@@ -30,7 +30,7 @@ ex) 스크롤바 위치를 가져오거나 설정해야하는 상황, 입력필�
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 아래와 같은 동작 구현을 통해 useRef를 사용하여 특정 컴포넌트에 포커스를 이동시켜 봅시다.
 - 이름 입력필드, 나이 입력필드 2개 만듦
 - Name 입력필드로 이동 버튼 클릭 시, 이름 입력필드로 포커스 이동
@@ -42,8 +42,8 @@ ex) 스크롤바 위치를 가져오거나 설정해야하는 상황, 입력필�
 
 
 
-### 예시 코드
-###### useRefScreen1.js 파일 작성
+### **예시 코드**
+###### **useRefScreen1.js 파일 작성**
 ```javascript
 import React, { useState, useRef, useCallback } from "react";
 import { StyleSheet, View, TextInput, Button } from 'react-native';

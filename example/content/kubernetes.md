@@ -22,7 +22,7 @@ tags:
 
 
 
-### 마스터노드 VM 인스턴스 터미널 창 열기
+### **마스터노드 VM 인스턴스 터미널 창 열기**
 마스터노드 VM 인스턴스 > 연결 SSH 버튼 클릭하면 터미널 창이 열립니다.
 <br></br><br></br><br></br><br></br>
 
@@ -30,13 +30,13 @@ tags:
 
 
 
-### sudo 권한 얻기
+### **sudo 권한 얻기**
 ```
 sudo -i
 ```
 <br></br>
 
-### 도커 허브에서 jenkins 도커 이미지 검색
+### **도커 허브에서 jenkins 도커 이미지 검색**
 ```
 root@instance-1:~# docker search jenkins
 NAME                                    DESCRIPTION                                     STARS     OFFICIAL   AUTOMA
@@ -52,7 +52,7 @@ jenkinsci/slave                         Base Jenkins slave docker image         
 ```
 <br></br>
 
-### jenkins 도커 이미지 실행 및 서비스, 파드 생성
+### **jenkins 도커 이미지 실행 및 서비스, 파드 생성**
 파드를 관리할 디플로이먼트를 만듭니다. 이 디플로이먼트 이름은 jk로 지었습니다.  
 이 파드는 jenkins 도커 이미지를 실행하는 컨테이너를 실행합니다.
 ```
@@ -61,7 +61,7 @@ deployment.apps/jk created
 ```
 <br></br>
 
-### 디폴로이먼트 리스트 확인
+### **디폴로이먼트 리스트 확인**
 jk 디폴리이언트가 조회되는 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get deployment
@@ -70,7 +70,7 @@ jk     1/1     1            1           17m
 ```
 <br></br>
 
-### 파드 리스트 확인
+### **파드 리스트 확인**
 파드가 생성된 것을 확인할 수 있다.
 ```
 root@instance-1:~# kubectl get pods
@@ -79,7 +79,7 @@ jk-5879bd485b-dmqcs   1/1     Running   0          5s
 ```
 <br></br>
 
-### 서비스 리스트 확인
+### **서비스 리스트 확인**
 서비스가 생성된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get svc
@@ -88,7 +88,7 @@ kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP   6m37s
 ```
 <br></br>
 
-### 로드밸런스 추가
+### **로드밸런스 추가**
 jk 디플로이먼트에 로드밸런스를 추가합니다. 이 로드밸런스 이름은 jk-svc로 지었습니다.  
 서비스 리스트를 조회해보면 로드밸런스가 조회되는 것을 확인할 수 있습니다.
 ```
@@ -101,6 +101,6 @@ kubernetes   ClusterIP      10.96.0.1       <none>        443/TCP        8m44s
 ```
 <br></br>
 
-### 컨테이너에 도커 이미지가 잘 실행됬는지 확인
+### **컨테이너에 도커 이미지가 잘 실행됬는지 확인**
 로드밸런스의 EXTERNAL-IP로 접속하면 jenkins 사이트가 열립니다.  
 <br></br><br></br>

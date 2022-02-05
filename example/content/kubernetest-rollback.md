@@ -22,7 +22,7 @@ mongo:4.2를 실행하는 파드를 mongo:4.4로 업데이트 한 후, mongo:4.2
 
 
 
-### 디플로이먼트를 사용하여 파드 생성
+### **디플로이먼트를 사용하여 파드 생성**
 mongo:4.2 이미지를 실행하는 파드를 생성하고, 3개의 파드가 유지되도록 관리하는 디플로이먼트를 생성합니다. 이 디플로이먼트 이름은 mongo-deploy로 지었습니다.
 해당 명령어는 히스토리에 기록합니다.
 ```
@@ -33,7 +33,7 @@ deployment.apps/mongo-deploy created
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 ```
 root@instance-1:~# kubectl get pod
 NAME                            READY   STATUS    RESTARTS   AGE
@@ -43,7 +43,7 @@ mongo-deploy-7b856d549b-t7qhs   1/1     Running   0          6s
 ```
 <br></br><br></br>
 
-### 파드가 실행하고 있는 mongo 버전 확인
+### **파드가 실행하고 있는 mongo 버전 확인**
 mongo:4.2가 실행 중인 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod -o yaml mongo-deploy-7b856d549b-mc8v2
@@ -74,7 +74,7 @@ spec:
 ```
 <br></br><br></br>
 
-### 히스토리 확인
+### **히스토리 확인**
 히스토리 내역에 기록이 추가된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl rollout history deploy mongo-deploy
@@ -84,14 +84,14 @@ REVISION  CHANGE-CAUSE
 ```
 <br></br><br></br>
 
-### yaml파일에 명시되어 있는 mongo 버전 변경
+### **yaml파일에 명시되어 있는 mongo 버전 변경**
 mongo-deploy.yaml 파일을 열어 mongo:4.2 -> mongo:4.4으로 수정합니다.
 ```
 root@instance-1:~# vi mongo-deploy.yaml
 ```
 <br></br><br></br>
 
-### 수정한 yaml파일 적용
+### **수정한 yaml파일 적용**
 수정한 yaml파일을 적용합니다.
 해당 명령어는 히스토리에 기록합니다.
 ```
@@ -100,7 +100,7 @@ deployment.apps/mongo-deploy configured
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 새로운 파드 3개가 생성된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pods
@@ -111,7 +111,7 @@ mongo-deploy-948457786-mz5ff   1/1     Running   0          15s
 ```
 <br></br><br></br>
 
-### 파드가 실행하고 있는 mongo 버전 확인
+### **파드가 실행하고 있는 mongo 버전 확인**
 mongo:4.4가 실행 중인 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod -o yaml mongo-deploy-948457786-27fqk
@@ -142,7 +142,7 @@ spec:
 ```
 <br></br><br></br>
 
-### 히스토리 확인
+### **히스토리 확인**
 히스토리 내역에 기록이 추가된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl rollout history deploy mongo-deploy
@@ -153,7 +153,7 @@ REVISION  CHANGE-CAUSE
 ```
 <br></br><br></br>
 
-### 롤백하기
+### **롤백하기**
 히스토리를 롤백합니다.
 ```
 root@instance-1:~# kubectl rollout undo deploy mongo-deploy
@@ -167,7 +167,7 @@ REVISION  CHANGE-CAUSE
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 새로운 파드 3개가 생성된 것을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pods
@@ -178,7 +178,7 @@ mongo-deploy-7b856d549b-jrv9j   1/1     Running   0          58s
 ```
 <br></br><br></br>
 
-### 파드가 실행하고 있는 mongo 버전 확인
+### **파드가 실행하고 있는 mongo 버전 확인**
 mongo:4.4에서 mongo:4.2로 롤백된 것을 볼 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod -o yaml mongo-deploy-7b856d549b-6gzxs

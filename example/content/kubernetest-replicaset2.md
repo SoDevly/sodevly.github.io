@@ -23,21 +23,21 @@ tags:
 
 
 
-### 파드 확인
+### **파드 확인**
 ```
 root@instance-1:~# kubectl get pod
 No resources found in default namespace.
 ```
 <br></br><br></br>
 
-### yaml 파일 생성
+### **yaml 파일 생성**
 nginx.yaml 파일을 생성합니다.
 ```
 root@instance-1:/etc/kubernetes/manifests# vi nginx.yaml
 ```
 <br></br><br></br>
 
-### yaml 파일 작성
+### **yaml 파일 작성**
 nginx.yaml 파일에 아래와 같이 작성합니다.
 ```
 apiVersion: apps/v1
@@ -63,14 +63,14 @@ spec:
 ```
 <br></br><br></br>
 
-### yaml 파일 적용
+### **yaml 파일 적용**
 nginx.yaml 파일 내용을 적용합니다.
 ```
 root@instance-1:/etc/kubernetes/manifests# kubectl create -f nginx.yaml
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 파드가 3개 생성된 것을 볼 수 있습니다.
 ```
 root@instance-1:/etc/kubernetes/manifests# kubectl get pod
@@ -81,7 +81,7 @@ nginx-zmwfv   1/1     Running   0          11s
 ```
 <br></br><br></br>
 
-### 파드 yaml파일 내용 확인
+### **파드 yaml파일 내용 확인**
 nginx1-6jg7m, nginx1-z7gjh, nginx1-zmwfv 파드의 yaml파일 내용을 확인합니다.
 도커 이미지가 nginx:1.20.1인 것을 확인할 수 있습니다.
 ```
@@ -122,7 +122,7 @@ root@instance-1:/etc/kubernetes/manifests# kubectl get pod -o yaml nginx1-zmwfv
 ```
 <br></br><br></br>
 
-### yaml 파일 수정
+### **yaml 파일 수정**
 nginx.yaml 파일을 열어 nginx:1.20.1 -> nginx:1.21.1으로 nginx 도커 이미지 버전을 변경합니다.
 ```
 root@instance-1:/etc/kubernetes/manifests# vi nginx.yaml
@@ -151,7 +151,7 @@ spec:
 ```
 <br></br><br></br>
 
-### 수정한 yaml파일 적용
+### **수정한 yaml파일 적용**
 수정한 nginx.yaml파일을 적용합니다.
 ```
 root@instance-1:~# kubectl apply -f nginx.yaml
@@ -159,7 +159,7 @@ replicaset.apps/nginx configured
 ```
 <br></br><br></br>
 
-### 파드 yaml파일 내용 확인
+### **파드 yaml파일 내용 확인**
 nginx1-6jg7m, nginx1-z7gjh, nginx1-zmwfv 파드의 yaml파일 내용을 확인합니다.
 도커 이미지가 nginx:1.20.1 -> nginx:1.21.1로 변경되지 않은 것을 확인할 수 있습니다.
 ```

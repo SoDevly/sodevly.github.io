@@ -42,7 +42,7 @@ import PropsComponent from "../component/PropsComponent";
 
 
 # **❐ Error가 발생했던 소스**
-### PropsScreen.js
+### **PropsScreen.js**
 ```javascript
 import React from "react";
 import { StyleSheet, View } from 'react-native'; 

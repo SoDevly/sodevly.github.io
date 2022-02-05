@@ -22,21 +22,21 @@ yaml 파일을 이용하여 파드를 생성하고, 파드에 레이블을 설�
 
 
 
-### 파드 확인
+### **파드 확인**
 ```
 root@instance-1:~# kubectl get pod
 No resources found in default namespace.
 ```
 <br></br><br></br>
 
-### pod1.yaml 파일 생성
+### **pod1.yaml 파일 생성**
 pod1.yaml 파일을 생성합니다.
 ```
 root@instance-1:~# vi pod.1yaml
 ```
 <br></br><br></br>
 
-### yaml 파일 작성
+### **yaml 파일 작성**
 pod1.yaml 파일에 아래와 같이 작성합니다.
 ```
 apiVersion: v1              # 디스크립터가 사용하는 API 버전
@@ -55,7 +55,7 @@ spec:
 ```
 <br></br><br></br>
 
-### yaml 파일 적용
+### **yaml 파일 적용**
 pod1.yaml 파일 내용을 적용합니다.
 ```
 root@instance-1:~# kubectl create -f pod1.yaml
@@ -63,14 +63,14 @@ pod/nginx created
 ```
 <br></br><br></br>
 
-### pod2.yaml 파일 생성
+### **pod2.yaml 파일 생성**
 pod2.yaml 파일을 생성합니다.
 ```
 root@instance-1:~# vi pod2.yaml
 ```
 <br></br><br></br>
 
-### yaml 파일 작성
+### **yaml 파일 작성**
 pod2.yaml 파일에 아래와 같이 작성합니다.
 ```
 apiVersion: v1              # 디스크립터가 사용하는 API 버전
@@ -89,7 +89,7 @@ spec:
 ```
 <br></br><br></br>
 
-### yaml 파일 적용
+### **yaml 파일 적용**
 pod2.yaml 파일 내용을 적용합니다.
 ```
 root@instance-1:~# kubectl create -f pod2.yaml
@@ -97,7 +97,7 @@ pod/jenkins created
 ```
 <br></br><br></br>
 
-### 파드 확인
+### **파드 확인**
 ```
 root@instance-1:~# kubectl get pod
 NAME      READY   STATUS         RESTARTS   AGE
@@ -106,7 +106,7 @@ nginx     1/1     Running        0          6m58s
 ```
 <br></br><br></br>
 
-### 레이블 확인
+### **레이블 확인**
 ```
 root@instance-1:~# kubectl get pod --show-labels
 NAME      READY   STATUS             RESTARTS   AGE    LABELS
@@ -115,7 +115,7 @@ nginx     1/1     Running            0          8m4s   creation_method=manual,en
 ```
 <br></br><br></br>
 
-### 레이블 추가
+### **레이블 추가**
 nginx 파드에 team 레이블을 추가합니다.
 ```
 root@instance-1:~# kubectl label pod nginx team=dev1 --overwrite
@@ -128,7 +128,7 @@ nginx     1/1     Running            0          8m4s   creation_method=manual,en
 ```
 <br></br><br></br>
 
-### 레이블 삭제
+### **레이블 삭제**
 nginx 파드의 creation_method 레이블을 삭제합니다.
 ```
 root@instance-1:/etc/kubernetes/manifests# kubectl label pod nginx creation_method-
@@ -141,7 +141,7 @@ nginx     1/1     Running            0          8m4s   env=production,team=dev1
 ```
 <br></br><br></br>
 
-### 특정 레이블만 확인
+### **특정 레이블만 확인**
 env 레이블 값을 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod -L env
@@ -151,7 +151,7 @@ nginx     1/1     Running        0          10m     production
 ```
 <br></br><br></br>
 
-### 특정 레이블을 가진 파드만 필터하여 확인
+### **특정 레이블을 가진 파드만 필터하여 확인**
 team 레이블을 가진 파드만 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod --show-labels -l team
@@ -160,7 +160,7 @@ nginx   1/1     Running   0          10m   env=production,team=dev1
 ```
 <br></br><br></br>
 
-### 특정 레이블을 가지고 있지 않은 파드만 필터하여 확인
+### **특정 레이블을 가지고 있지 않은 파드만 필터하여 확인**
 team 레이블을 가지고 있지 않은 파드만 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pod --show-labels -l '!team'
@@ -169,7 +169,7 @@ jenkins   0/1     ImagePullBackOff   0          4m11s   creation_method=manual,e
 ```
 <br></br><br></br>
 
-### 특정 레이블의 값을 조건으로 일치하는 파드만 필터하여 확인
+### **특정 레이블의 값을 조건으로 일치하는 파드만 필터하여 확인**
 env 레이블의 값이 production인 파드만 확인할 수 있습니다.
 ```
 root@instance-1:~# kubectl get pods --show-labels -l env=production

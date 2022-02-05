@@ -26,7 +26,7 @@ tags:
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 - number라고 부르는 상태 변수 정의
 - [더하기]버튼 선택 시, number + 1 값으로 상태 변경
@@ -38,8 +38,8 @@ useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 
 
 
-### 예시 코드
-###### UseStateScreen.js 파일 작성
+### **예시 코드**
+###### **UseStateScreen.js 파일 작성**
 ```javascript
 import React, { useState } from "react";
 import { StyleSheet, View, Text, Button } from 'react-native';

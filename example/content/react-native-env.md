@@ -23,12 +23,10 @@ react-native-config package를 이용하면 빌드환경을 세팅할 수 있습
 
 
 
-# **❐ package 설치**
+# **❐ Package 설치**
 react-native-config package를 설치합니다.
 ```
 yarn add react-native-config
-cd ios
-pod install
 ```
 <br></br><br></br><br></br><br></br>
 
@@ -37,7 +35,7 @@ pod install
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 아래와 같은 빌드환경이 필요하다고 가정하고 빌드환경을 세팅해봅시다.  
 
 개발환경은 3가지로 구분됩니다.  
@@ -64,7 +62,7 @@ pod install
 
 
 
-### .env 파일 작성
+### **.env 파일 작성**
 default용 .env 파일을 생성합니다.
 ```
 ENV=PRODUCT
@@ -124,7 +122,7 @@ APP_API_URL=https://prd-rnstudy.com/api/app
 
 
 
-### Android 설정
+### **Android 설정**
 android > app > build.gradle 파일을 아래와 같이 수정합니다.  
 productFlavors은 개발환경을 정의해주는 것이고, envConfigFiles은 빌드환경에 따라 참조할 env파일을 정의해주는 것입니다.  
 envConfigFiles의 이름은 productFlavors에서 정의한 개발환경이름 뒤에 debug/release만 붙여주면 됩니다.  
@@ -165,7 +163,7 @@ android {
 
 
 
-### iOS 설정
+### **iOS 설정**
 Configuration Setting 파일을 생성합니다.  
 ![](/assets/react-native-env-ios1.png)
 ![](/assets/react-native-env-ios2.png)  
@@ -209,8 +207,8 @@ cp "${PROJECT_DIR}/../env/.env.product" "${PROJECT_DIR}/../.env"
 
 
 
-### 환경변수 사용하기
-###### .js 파일 안에서 사용해보기
+### **환경변수 사용하기**
+###### **.js 파일 안에서 사용해보기**
 screen 폴더 안에 EnvScreen.js 파일을 생성하고, 아래와 같이 작성합니다.  
 .js 파일 안에서는 `Config 변수`를 통해 환경변수 값을 가져올 수 있습니다.
 ```javascript
@@ -249,7 +247,7 @@ export default EnvScreen
 ```
 <br></br>
 
-###### Android의 build.gradle 파일 안에서 사용해보기
+###### **Android의 build.gradle 파일 안에서 사용해보기**
 Android의 build.gradle 파일 안에서는 `project.env.get(변수명)`을 이용하여 환경변수 값을 가져올 수 있습니다.
 ```
 android {
@@ -268,7 +266,7 @@ android {
 ```
 <br></br>
 
-###### iOS의 info.plist 파일 안에서 사용해보기
+###### **iOS의 info.plist 파일 안에서 사용해보기**
 iOS의 info.plist 파일 안에서는 `${변수명}` 형태로 환경변수 값을 가져올 수 있습니다.
 ```
 	<key>CFBundleDisplayName</key>
@@ -287,8 +285,8 @@ iOS의 info.plist 파일 안에서는 `${변수명}` 형태로 환경변수 값�
 
 
 
-### 미리 설정한 빌드환경으로 앱 실행하기
-###### package.json 파일에 스크립트 명령어 작성
+### **미리 설정한 빌드환경으로 앱 실행하기**
+###### **package.json 파일에 스크립트 명령어 작성**
 package.json 파일에 설정한 빌드환경으로 앱을 실행하는 스크립트 명령어를 추가합니다.
 ```
   "scripts": {
@@ -307,7 +305,7 @@ package.json 파일에 설정한 빌드환경으로 앱을 실행하는 스크�
 ```
 <br></br>
 
-###### iOS앱 실행해보기
+###### **iOS앱 실행해보기**
 .env.stage 파일에 작성된 환경변수를 사용하는 iOS앱을 Debug모드로 실행해봅시다.
 ```
 yarn ios:stg:d
@@ -316,7 +314,7 @@ yarn ios:stg:d
 ![](/assets/react-native-env-ios11.png)  
 <br></br>
 
-###### Android앱 실행해보기
+###### **Android앱 실행해보기**
 .env.develop 파일에 작성된 환경변수를 사용하는 Android앱을 Debug모드로 실행해봅시다.  
 ```
 yarn android:dev:d

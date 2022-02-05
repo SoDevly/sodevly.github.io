@@ -27,7 +27,7 @@ tags:
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 아래와 같은 구조의 하위 컴포넌트를 가지고 있는 화면을 구현하고, useContext를 사용하여 하위 컴포넌트와 데이터를 공유해봅시다.
 
 UseContextScreen  
@@ -44,8 +44,8 @@ UseContextScreen
 
 
 
-### 예시 코드
-###### UseContextScreen.js 파일 작성
+### **예시 코드**
+###### **UseContextScreen.js 파일 작성**
 ```javascript
 import React, { useState, createContext } from "react";
 import { StyleSheet, View, Text } from 'react-native';
@@ -107,7 +107,7 @@ Provider는 하위 컴포넌트에 Context의 변화를 알리는 역할을 합�
 
 
 
-###### UseContextParentComponent.js 파일 작성
+###### **UseContextParentComponent.js 파일 작성**
 ```javascript
 import React from "react";
 import { StyleSheet, View, Text } from 'react-native';
@@ -141,7 +141,7 @@ export default UseContextParentComponent
 
 
 
-###### UseContextChildrenComponent.js 파일 작성
+###### **UseContextChildrenComponent.js 파일 작성**
 ```javascript
 import React, { useState, useContext } from "react";
 import { StyleSheet, View, Text, Button, TextInput } from 'react-native'; 

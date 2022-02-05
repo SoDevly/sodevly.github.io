@@ -13,7 +13,7 @@ tags:
 
 
 # **❐ 예시**
-### 예시 설명
+### **예시 설명**
 아래와 같은 동작을 구현해봅시다.
 - HomeScreen에서 PassingParameterScreen으로 화면 전환 시 Parameter 전달
 ![](/assets/react-native-passing-parameter.png)
@@ -23,8 +23,8 @@ tags:
 
 
 
-### 예시 코드
-###### HomeScreen.js 파일 작성
+### **예시 코드**
+###### **HomeScreen.js 파일 작성**
 ```javascript
 import React from "react";
 import { View, Button } from 'react-native';
@@ -53,7 +53,7 @@ export default HomeScreen
 
 
 
-###### PassingParameterScreen.js 파일 작성
+###### **PassingParameterScreen.js 파일 작성**
 ```javascript
 import React from "react";
 import { StyleSheet, View, Text } from 'react-native';
