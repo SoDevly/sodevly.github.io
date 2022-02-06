@@ -14,13 +14,13 @@ tags:
 
 
 # **❐ Reduc란?**
-**Reduct**는 리액트 생태계에서 가장 사용률이 높은 상태관리 라이브러리입니다.  
+`Redux`는 리액트 생태계에서 가장 사용률이 높은 <u>상태관리 라이브러리입니다.</u>  
 
 보통 상위 컴포넌트에서 하위 컴포넌트로 데이터를 전달할 때 props를 통해 인자로 넘깁니다.  
 하지만 개발하다보면 하위 컴포넌트의 하위 하위 하위컴포넌트로 데이터를 전달해야 할 수도 있고  
 오히려 반대로 하위 컴포넌트에서 상위 컴포넌트로 데이터를 공유해야 할 수도 있습니다.  
-이런 경우 props를 통해 데이터를 전달하기 어렵기 때문에 redux 통해 데이터를 전달합니다.  
-redux는 앱의 상태(state) 전부가 하나의 스토어(store) 안에 있는 객체 트리에 저장됩니다.  
+이런 경우 props를 통해 데이터를 전달하기 어렵기 때문에 Redux 통해 데이터를 전달합니다.  
+Redux는 앱의 상태(State) 전부가 하나의 스토어(Store) 안에 있는 객체 트리에 저장됩니다.  
 ![](/assets/react-native-redux.jpeg)  
 <br></br><br></br><br></br><br></br>
 
@@ -29,29 +29,29 @@ redux는 앱의 상태(state) 전부가 하나의 스토어(store) 안에 있는
 
 
 # **❐ Redux 아키텍처**
-![](/assets/redux-architecture.png)
+![](/assets/react-native-redux-architecture.png)
 
 ###### **액션 (Action)**
-상태 변경을 설명할 수 있는 정의 값입니다.
+State 변경을 설명할 수 있는 정의 값입니다.
 
 ###### **액션 생성함수 (Action Creator)**
-액션 생성함수는 액션을 만드는 함수입니다.
+Action Creator는 Action을 만드는 함수입니다.
 
 ###### **상태 (State)**
-리덕스 스토어에서 관리하는 상태(데이터) 입니다.
+Store에서 관리하는 State(데이터) 입니다.
 
 ###### **리듀서 (Reducer)**
-리듀서는 변화를 일으키는 함수입니다.  
-현재의 상태(state)와 전달 받은 액션(action)을 참고하여 불변성을 가진 새로운 state를 반환해주는 순수함수입니다.
+Reducer는 변화를 일으키는 함수입니다.  
+현재의 State와 전달 받은 Action을 참고하여 불변성을 가진 새로운 State를 반환해주는 순수함수입니다.
 
 ###### **스토어 (Store)**
-리덕스에서는 한 애플리케이션당 하나의 스토어를 만들게 됩니다.  
-스토어 안에는 현재의 상태와 리듀서가 들어가있고 추가적으로 몇가지 내장 함수들이 있습니다.
+Redux에서는 한 애플리케이션당 하나의 Store를 만들게 됩니다.  
+Store 안에는 현재의 State와 Reducer가 들어가있고 추가적으로 몇가지 내장 함수들이 있습니다.
 
 ###### **디스패치 (dispatch)**
-dispatch는 스토어의 내장함수 중 하나입니다.  
-dispatch는 액션을 발생 시키는 함수입니다.  
-dispatch 함수에 액션을 파라미터로 전달하여 호출하면 스토어는 리듀서 함수를 실행시켜서 해당 액션을 처리하는 로직이 있다면 액션을 참고하여 새로운 상태를 만들어줍니다.  
+dispatch는 Store의 내장 함수 중 하나입니다.  
+dispatch는 Action을 발생시키는 함수입니다.  
+dispatch 함수에 Action을 parameter로 전달하여 호출하면 Store는 Reducer 함수를 실행시켜서 해당 Action을 처리하는 로직을 걸쳐 새로운 State를 만들어줍니다.  
 <br></br><br></br><br></br><br></br>
 
 
@@ -71,13 +71,11 @@ yarn add redux react-redux
 
 # **❐ 예시**
 ### **예시 설명**
-아래와 같이 동작하는 로직을 redux를 활용하여 구현해봅시다.
+아래와 같이 동작하는 로직을 Redux를 사용하여 구현해보고, Redux의 아키텍쳐를 이해해봅시다.
 - \+ 버튼을 클릭하면 number state값이 +1 증가  
   \- 버튼을 클릭하면 number state값이 -1 감소
 - name input값이 바뀌면 name state값이 바뀜  
   age input값이 바뀌면 age state값이 바뀜
-
-![](/assets/react-native-redux.gif)
 <br></br><br></br><br></br><br></br>
 
 
@@ -89,12 +87,12 @@ App.js
 src  
 ㅤㅤ├ redux  
 ㅤㅤㅤㅤ├ modules  
-ㅤㅤㅤㅤㅤㅤ├ index.js     //여러개의 리듀서를 하나의 루트리듀서로 합침  
-ㅤㅤㅤㅤㅤㅤ├ counter.js   //액션 정의, 액션생성함수 정의, 스토어에서 관리할 상태 정의, 리듀서 정의  
-ㅤㅤㅤㅤㅤㅤ├ userInfo.js  //액션 정의, 액션생성함수 정의, 스토어에서 관리할 상태 정의, 리듀서 정의  
+ㅤㅤㅤㅤㅤㅤ├ rootReducer.js   //여러개의 Reducer를 하나의 rootReducer로 합침  
+ㅤㅤㅤㅤㅤㅤ├ counter.js       //Action 정의, Action Creator 정의, State 정의, Reducer 정의  
+ㅤㅤㅤㅤㅤㅤ├ userInfo.js      //Action 정의, Action Creator 정의, State 정의, Reducer 정의  
 ㅤㅤ├ screen  
 ㅤㅤㅤㅤ├ rudux  
-ㅤㅤㅤㅤㅤㅤ├ ReduxScreen.js //스토어에서 관리하는 상태를 디스플레이하고, 상태를 변경시키는 액션을 디스패치하는 화면  
+ㅤㅤㅤㅤㅤㅤ├ ReduxScreen.js   //Store에서 관리하는 State를 디스플레이하고, dispatch(action)을 호출하여 State를 변경시키는 화면  
 <br></br><br></br><br></br><br></br>
 
 
@@ -104,37 +102,56 @@ src
 ### **예시 코드**
 ###### **count.js 파일 작성**
 ```javascript
-//액션 타입 선언
+//Action 타입 정의
 const INCREASE = 'counter/INCREASE';
 const DECREASE = 'counter/DECREASE';
 
-//액션 생성함수 선언
-export const increase = () => ({ type: INCREASE });
-export const decrease = () => ({ type: DECREASE });
+//Action 생성 함수 정의
+export const createIncreaseAction = () => {
+  console.log("1. increase Action 생성 함수 호출");
+  const action = { type: INCREASE };
+  console.log("  [return] action : ", action.type);
+  return action;
+};
+export const createDecreaseAction = () => {
+  console.log("1. decrease Action 생성 함수 호출");
+  const action = { type: DECREASE };
+  console.log("  [return] action : ", action.type);
+  return action;
+};
 
-//초기값 선언
+//State 초기값 정의
 const initialState = {
     number: 0
 };
 
-//리듀서 선언
-export default function counter(state = initialState, action) {
+//Reducer 정의
+export default function counterReducer(state = initialState, action) {
+  console.log("3. counter Reducer 호출");
+  console.log("  [parameter] previoudState : ", state);
+  console.log("  [parameter] action : ", action.type);
+
+  let newState;
   switch (action.type) {
     case INCREASE:
-      console.log("counter 리듀서의 INCREASE 액션 호출");
-      return {
+      newState = {
         ...state,
         number: state.number + 1
       };
+      break;
     case DECREASE:
-      console.log("counter 리듀서의 DECREASE 액션 호출");
-      return {
+      newState = {
         ...state,
         number: state.number - 1
       };
+      break;
     default:
-      return state;
+      newState = state;
+      break;
   }
+
+  console.log("  [return] newState : ", newState);
+  return newState;
 }
 ```
 <br></br><br></br><br></br><br></br>
@@ -145,44 +162,63 @@ export default function counter(state = initialState, action) {
 
 ###### **userInfo.js 파일 작성**
 ```javascript
-//액션 타입 선언
+//Action 타입 정의
 const CHANGE_NAME = 'userInfo/CHANGE_NAME';
 const CHANGE_AGE = 'userInfo/CHANGE_AGE';
 
-//액션 생성함수 선언
-export const changeName = (newName) => ({ 
+//Action 생성 함수 정의
+export const createChangeNameAction = (newName) => {
+  console.log("1. changeName Action 생성 함수 호출");
+  const action = { 
     type: CHANGE_NAME,
     newName
-});
-export const changeAge = (newAge) => ({ 
+  };
+  console.log("  [return] action : ", action.type);
+  return action;
+}
+export const crateChangeAgeAction = (newAge) => {
+  console.log("1. changeAge Action 생성 함수 호출");
+  const action = { 
     type: CHANGE_AGE,
     newAge
-});
+  };
+  console.log("  [return] action : ", action.type);
+  return action;
+}
 
-//초기값 선언
+//State 초기값 정의
 const initialState = {
     name: '임소희',
     age: 30
 };
 
-//리듀서 선언
-export default function changeUserInfo(state = initialState, action) {
+//Reducer 정의
+export default function userInfoReducer(state = initialState, action) {
+  console.log("3. userInfo Reducer 호출");
+  console.log("  [parameter] previoudState : ", state);
+  console.log("  [parameter] action : ", action.type);
+
+  let newState;
   switch (action.type) {
     case CHANGE_NAME:
-      console.log("userInfo 리듀서의 CHANGE_NAME 액션 호출");
-      return {
+      newState = {
         ...state,
         name: action.newName
       };
+      break;
     case CHANGE_AGE:
-      console.log("userInfo 리듀서의 CHANGE_AGE 액션 호출");
-      return {
+      newState = {
         ...state,
         age: action.newAge
       };
+      break;
     default:
-      return state;
+      newState = state;
+      break;
   }
+  
+  console.log("  [return] newState : ", newState);
+  return newState;
 }
 ```
 <br></br><br></br><br></br><br></br>
@@ -191,14 +227,14 @@ export default function changeUserInfo(state = initialState, action) {
 
 
 
-###### **index.js 파일 작성**
+###### **rootReducer.js 파일 작성**
 ```javascript
 import { combineReducers } from "redux";
 import counter from "./counter";
 import userInfo from "./userInfo";
 
-//combineReducers() 함수를 이용하여 여러개의 리듀서를 합칩니다.
-//합쳐진 리듀서를 루트리듀서라고 부릅니다.
+//combineReducers() 함수를 이용하여 여러개의 Reducer를 합칩니다.
+//합쳐진 Reducer를 rootReducer라고 부릅니다.
 const rootReducer = combineReducers({
   counter,
   userInfo
@@ -231,7 +267,7 @@ const Stack = createStackNavigator();
 
 function App() {
   //creactStore() 함수를 이용하여 Store를 생성합니다.
-  //루트리듀서를 파라미터로 전달합니다.
+  //rootReducer를 파라미터로 전달합니다.
   const store = createStore(rootReducer);
   
   //Provider 컴포넌트는 컴포넌트들이 Redux의 Store에 접근 가능하도록 해주는 컴포넌트입니다.  
@@ -262,33 +298,42 @@ export default App;
 import React from "react";
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux'
-import { increase, decrease } from '../../redux/modules/counter';
-import { changeName, changeAge } from '../../redux/modules/userInfo';
+import { createIncreaseAction, createDecreaseAction } from '../../redux/modules/counter';
+import { createChangeNameAction, crateChangeAgeAction } from '../../redux/modules/userInfo';
 
 const ReduxScreen = () => {
-  //useSelector는 리덕스 스토어의 상태를 조회하는 Hook입니다.
+  //useSelector는 Store의 State를 조회하는 Hook입니다.
   const { number, name, age } = useSelector(state => ({
     number: state.counter.number,
     name: state.userInfo.name,
     age: state.userInfo.age    
   }));
 
-  //useDispatch는 리덕스 스토어의 함수를 사용 할 수 있게 해주는 Hook 입니다.
-  //dispatch()는 상태를 변화시키기 위해 액션을 발생시킵니다.
+  //useDispatch는 Store의 함수를 사용 할 수 있게 해주는 Hook 입니다.
+  //dispatch(action) 함수는 State를 변화시키기 위해 Action을 발생시킵니다.
   const dispatch = useDispatch();
   const onIncrease = () => {
-    dispatch(increase());
+    const increaseAction = createIncreaseAction();
+    console.log("2. dispatch(increaseAction) 함수 호출");
+    dispatch(increaseAction);
   }
   const onDecrease = () => {
-    dispatch(decrease());
+    const decreaseAction = createDecreaseAction();
+    console.log("2. dispatch(decreaseAction) 함수 호출");
+    dispatch(decreaseAction);
   }
   const onChangeName = newName => {
-    dispatch(changeName(newName));
+    const changeNameAction = createChangeNameAction(newName);
+    console.log("2. dispatch(changeNameAction) 함수 호출");
+    dispatch(changeNameAction);
   };
   const onChangeAge = newAge => {
-    dispatch(changeAge(newAge));
+    const changeAgeAction = crateChangeAgeAction(newAge);
+    console.log("2. dispatch(changeAgeAction) 함수 호출");
+    dispatch(changeAgeAction);
   };
 
+  console.log("4. UI 업데이트");
   return (
     <View style={styles.screen}>
       <Text style={styles.text}>숫자 : {number}</Text>
@@ -321,6 +366,26 @@ const styles = StyleSheet.create({
 
 export default ReduxScreen
 ```
+<br></br><br></br><br></br><br></br>
+
+
+
+
+
+###### **로그 확인**
+호출되는 로그 순서를 보면 위의 Redux 아키텍쳐 그림처럼 동작하는 것을 확인할 수 있습니다.  
+
+\+ 버튼을 클릭할 때
+![](/assets/react-native-redux-increase.png)
+
+\- 버튼을 클릭할 때
+![](/assets/react-native-redux-decrease.png)
+
+name input값 바꿀 때 
+![](/assets/react-native-redux-changename.png)
+
+age input값이 바꿀 때
+![](/assets/react-native-redux-changeage.png)
 <br></br><br></br><br></br><br></br>
 
 
