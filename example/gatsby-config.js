@@ -7,11 +7,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: "G-E00FQ1WF75",
+        head: true,
+      },
+    },
+    {
       resolve: 'gatsby-theme-code-notes',
       options: {
         contentPath: 'content',
         basePath: '/',
-        gitRepoContentPath: 'https://github.com/zdlath/zdlath.github.io/tree/develop_v2/example/content/',
+        gitRepoContentPath: '',
         showDescriptionInSidebar: true,
         showThemeInfo: false,
         showDate: true,
