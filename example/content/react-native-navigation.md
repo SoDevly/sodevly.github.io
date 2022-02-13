@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'React Native 화면 전환 (react-navigation)'
+title: '[React Native] 화면 전환 (react-navigation)'
 created: 2021-05-31
 modified: 2021-05-31
 link: ''

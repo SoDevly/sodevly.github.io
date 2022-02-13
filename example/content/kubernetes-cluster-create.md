@@ -5,8 +5,7 @@ created: 2020-08-24
 modified: 2020-08-24
 link: ''
 tags:
-  - Docker
-  - Kubernetes
+  - Docker/Kubernetes
 ---
 <br></br>
 

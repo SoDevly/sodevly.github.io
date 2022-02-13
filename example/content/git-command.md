@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'Git 명령어 정리'
+title: '[Git] 명령어 정리'
 created: 2021-05-02
 modified: 2021-05-02
 link: ''

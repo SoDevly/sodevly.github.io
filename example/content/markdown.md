@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'Markdown 문법 정리'
+title: '[Markdown] 문법 정리'
 created: 2021-05-01
 modified: 2021-05-01
 link: ''

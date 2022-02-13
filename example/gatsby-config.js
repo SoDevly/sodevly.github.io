@@ -28,7 +28,7 @@ module.exports = {
         showDescriptionInSidebar: true,
         showThemeInfo: false,
         showDate: true,
-        logo: 'https://zdlath.github.io/photo.jpg',
+        logo: '',
       },
     },
     `gatsby-plugin-sitemap`,

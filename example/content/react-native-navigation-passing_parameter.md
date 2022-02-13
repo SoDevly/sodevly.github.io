@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'React Native 화면 전환 시 Parameter 넘겨주기'
+title: '[React Native] 화면 전환 시 Parameter 넘겨주기'
 created: 2021-06-01
 modified: 2021-06-01
 link: ''

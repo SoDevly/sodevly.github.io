@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'React Native 설치 가이드'
+title: '[React Native] 설치 가이드'
 created: 2021-05-19
 modified: 2021-05-19
 link: ''

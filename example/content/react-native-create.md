@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'React Native 프로젝트 생성'
+title: '[React Native] 프로젝트 생성'
 created: 2021-05-20
 modified: 2021-05-20
 link: ''
