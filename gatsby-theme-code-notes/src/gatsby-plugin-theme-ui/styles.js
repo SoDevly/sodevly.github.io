@@ -173,8 +173,9 @@ export const styles = {
   },
   th: {
     textAlign: 'left',
-    borderBottomStyle: 'solid',
-    borderBottomColor: 'background',
+    borderStyle: 'solid',
+    borderColor: 'background',
+    backgroundColor: 'background',
     p: 2,
     fontWeight: 'bold',
     fontSize: 3,
@@ -182,8 +183,8 @@ export const styles = {
   },
   td: {
     textAlign: 'left',
-    borderBottomStyle: 'solid',
-    borderBottomColor: 'background',
+    borderStyle: 'solid',
+    borderColor: 'background',
     p: 2,
   },
   img: {
