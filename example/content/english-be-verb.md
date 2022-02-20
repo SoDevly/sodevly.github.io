@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[영어] be동사'
+title: '[영어] be동사 (현재시제/과거시제)'
 created: 2022-02-13
 modified: 2022-02-13
 link: ''
@@ -23,11 +23,11 @@ be동사는 주어의 상태를 나타내는 동사입니다.
 
 
 # **❐ 문법**
-`be동사 현재형`은 am/is/are이 있으며, 주어에 따라 사용해야되는 be동사가 결정됩니다.  
-`be동사 과거형`은 was/were이 있으며, 주어에 따라 사용해야되는 be동사가 결정됩니다.  
+`be동사 현재시제`은 am/is/are이 있으며, 주어에 따라 사용해야되는 be동사가 결정됩니다.  
+`be동사 과거시제`은 was/were이 있으며, 주어에 따라 사용해야되는 be동사가 결정됩니다.  
 `be동사 부정문`은 be동사 뒤에 not을 붙입니다.  
 
-|주어|be동사(현재형 평서문)|be동사(과거형 평서문)|be동사(현재형 부정문)|be동사(과거형 부정문)|
+|주어|be동사(현재시제 평서문)|be동사(과거시제 평서문)|be동사(현재시제 부정문)|be동사(과거시제 부정문)|
 |----|---|---|---|---|
 |I|am|was|am not|was not|
 |He, She, It|is|was|is not|was not|
@@ -43,10 +43,10 @@ be동사는 주어의 상태를 나타내는 동사입니다.
 <table>
 <tr>
   <th style="text-align: center">주어</th>
-  <th style="text-align: center">be동사(현재형 평서문)</th>
-  <th style="text-align: center">be동사(과거형 평서문)</th>
-  <th style="text-align: center">be동사(현재형 부정문)</th>
-  <th style="text-align: center">be동사(과거형 부정문)</th>
+  <th style="text-align: center">be동사(현재시제 평서문)</th>
+  <th style="text-align: center">be동사(과거시제 평서문)</th>
+  <th style="text-align: center">be동사(현재시제 부정문)</th>
+  <th style="text-align: center">be동사(과거시제 부정문)</th>
 </tr>
 <tr>
   <td>I</td>
@@ -102,10 +102,10 @@ be동사는 주어의 상태를 나타내는 동사입니다.
 <table>
 <tr>
   <th style="text-align: center">주어</th>
-  <th style="text-align: center">be동사(현재형 평서문)</th>
-  <th style="text-align: center">be동사(과거형 평서문)</th>
-  <th style="text-align: center">be동사(현재형 부정문)</th>
-  <th style="text-align: center">be동사(과거형 부정문)</th>
+  <th style="text-align: center">be동사(현재시제 평서문)</th>
+  <th style="text-align: center">be동사(과거시제 평서문)</th>
+  <th style="text-align: center">be동사(현재시제 부정문)</th>
+  <th style="text-align: center">be동사(과거시제 부정문)</th>
 </tr>
 <tr>
   <td>I</td>
@@ -161,10 +161,10 @@ be동사는 주어의 상태를 나타내는 동사입니다.
 <table>
 <tr>
   <th style="text-align: center">주어</th>
-  <th style="text-align: center">be동사(현재형 평서문)</th>
-  <th style="text-align: center">be동사(과거형 평서문)</th>
-  <th style="text-align: center">be동사(현재형 부정문)</th>
-  <th style="text-align: center">be동사(과거형 부정문)</th>
+  <th style="text-align: center">be동사(현재시제 평서문)</th>
+  <th style="text-align: center">be동사(과거시제 평서문)</th>
+  <th style="text-align: center">be동사(현재시제 부정문)</th>
+  <th style="text-align: center">be동사(과거시제 부정문)</th>
 </tr>
 <tr>
   <td>I</td>
