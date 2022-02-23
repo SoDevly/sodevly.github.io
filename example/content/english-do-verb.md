@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[영어] 일반동사(현재시제/과거시제)'
+title: '[영어] 일반동사'
 created: 2022-02-14
 modified: 2022-02-14
 link: ''
@@ -14,7 +14,7 @@ tags:
 
 
 # **❐ 일반동사란?**
-일반동사는 주어의 행동이나 동작을 설명해 주는 동사입니다.
+`일반동사`는 주어의 행동이나 동작을 설명해 주는 동사입니다.
 <br></br><br></br><br></br><br></br>
 
 
@@ -36,10 +36,27 @@ tags:
 `일반동사 과거시제 부정문`은 주어에 상관없이 일반동사 앞에 did not(didn't)을 붙입니다.  
 이 때, did not(didn't) 뒤에 일반동사는 동사원형의 형태를 사용합니다.  
 
-|주어|일반동사(현재시제 평서문)|일반동사(과거시제 평서문)|일반동사(현재시제 부정문)|일반동사(과거시제 부정문)|
-|----|---|---|---|---|
-|I, You, We, They|일반동사|일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음 + ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙|don't 일반동사원형|didn't 일반동사원형|
-|He, She, It|일반동사 뒤에 -s/-es/-ies|일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음 + ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙|doesn't 일반동사원형|didn't 일반동사원형|
+<table>
+<tr>
+  <th style="text-align: center">주어</th>
+  <th style="text-align: center">현재시제 평서문</th>
+  <th style="text-align: center">과거시제 평서문</th>
+  <th style="text-align: center">현재시제 부정문</th>
+  <th style="text-align: center">과거시제 부정문</th>
+</tr>
+<tr>
+  <td>I, You, We, They</td>
+  <td>일반동사</td>
+  <td rowspan='2'>일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음 + ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙</td>
+  <td>don't 일반동사원형</td>
+  <td rowspan='2'>didn't 일반동사원형</td>  
+</tr>
+<tr>
+  <td>He, She, It<br></br>(3인칭 단수)</td>
+  <td>일반동사 뒤에 -s/-es/-ies</td>
+  <td>doesn't 일반동사원형</td>
+</tr>
+</table>
 <br></br><br></br><br></br><br></br>
 
 
@@ -51,8 +68,8 @@ tags:
 <table>
 <tr>
   <th style="text-align: center">규칙</th>
-  <th style="text-align: center">주어 I, We, You, They</th>
-  <th style="text-align: center">주어 He, She, It(3인칭 단수)</th>
+  <th style="text-align: center">I, We, You, They</th>
+  <th style="text-align: center">He, She, It<br></br>(3인칭 단수)</th>
 </tr>
 <tr>
   <td>-s</td>
@@ -132,10 +149,10 @@ tags:
 <table>
 <tr>
   <th style="text-align: center">주어</th>
-  <th style="text-align: center">일반동사(현재시제 평서문)</th>
-  <th style="text-align: center">일반동사(과거시제 평서문)</th>
-  <th style="text-align: center">일반동사(현재시제 부정문)</th>
-  <th style="text-align: center">일반동사(과거시제 부정문)</th>
+  <th style="text-align: center">현재시제 평서문</th>
+  <th style="text-align: center">과거시제 평서문</th>
+  <th style="text-align: center">현재시제 부정문</th>
+  <th style="text-align: center">과거시제 부정문</th>
 </tr>
 <tr>
   <td>I, You, We, They</td>
