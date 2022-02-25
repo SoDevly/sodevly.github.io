@@ -60,7 +60,7 @@ tags:
       그는 회사에 <span style="color:red">일찍</span> 온다.
   </td>
   <td>He comes to the company <span style="color:red">earlier than</span> me.<br></br>
-      그는 회사에 나보다 <span style="color:red">더 일찍</span> 온다.
+      그는 회사에 나<span style="color:red">보다 더 일찍</span> 온다.
   </td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ tags:
       파인애플은 <span style="color:red">비싸다</span>.
   </td>
   <td>Pineapples are <span style="color:red">more expensive than</span> bananas.<br></br>
-      파인애플은 바나나보다 <span style="color:red">더 비싸다</span>.
+      파인애플은 바나나<span style="color:red">보다 더 비싸다</span>.
   </td>
 </tr>
 <tr>
@@ -78,7 +78,7 @@ tags:
       그룹으로 일하는 것은 언제나 <span style="color:red">좋습니다</span>.
   </td>
   <td>Working in groups is always <span style="color:red">better than</span> working alone.<br></br>
-      혼자 일하는 것보다 그룹으로 일하는 것이 항상 <span style="color:red">더 좋습니다</span>.
+      그룹으로 일하는 것은 언제나 혼자 일하는 것<span style="color:red">보다 더 좋습니다</span>.
   </td>
 </tr>
 </table>

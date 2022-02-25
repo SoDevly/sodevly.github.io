@@ -50,28 +50,28 @@ tags:
 <tr>
   <td>형용사/부사 끝에 -st/-est/-iest/-자음est</td>
   <td>He comes to the company <span style="color:red">early</span>.<br></br>
-      그는 회사에 일찍 온다.
+      그는 회사에 <span style="color:red">일찍</span> 온다.
   </td>
   <td>He comes to the company <span style="color:red">the earliest.</span><br></br>
-      그는 회사에 가장 일찍 온다.
+      그는 회사에 <span style="color:red">가장 일찍</span> 온다.
   </td>
 </tr>
 <tr>
   <td>most + 형용사/부사</td>
   <td>Pineapples are <span style="color:red">expensive</span>.<br></br>
-      파인애플은 비싸다.
+      파인애플은 <span style="color:red">비싸다</span>.
   </td>
   <td>Pineapples are <span style="color:red">the most expensive</span>.<br></br>
-      파인애플이 가장 비싸다.
+      파인애플이 <span style="color:red">가장 비싸다</span>.
   </td>
 </tr>
 <tr>
   <td>불규칙</td>
   <td>Working in groups is always <span style="color:red">good</span>.<br></br>
-      그룹으로 일하는 것은 언제나 좋습니다.
+      그룹으로 일하는 것은 언제나 <span style="color:red">좋습니다</span>.
   </td>
   <td>Working in groups is always <span style="color:red">the best</span>.<br></br>
-      그룹으로 일하는 것이 항상 가장 좋습니다.
+      그룹으로 일하는 것은 언제나 <span style="color:red">가장 좋습니다</span>.
   </td>
 </tr>
 </table>
