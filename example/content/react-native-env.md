@@ -285,7 +285,7 @@ iOS의 info.plist 파일 안에서는 `${변수명}` 형태로 환경변수 값�
 
 
 
-### **미리 설정한 빌드환경으로 앱 실행하기**
+### **미리 설정한 빌드환경으로 iOS앱 실행하기**
 ###### **package.json 파일에 스크립트 명령어 작성**
 package.json 파일에 설정한 빌드환경으로 앱을 실행하는 스크립트 명령어를 추가합니다.
 ```
@@ -296,12 +296,6 @@ package.json 파일에 설정한 빌드환경으로 앱을 실행하는 스크�
     "ios:stg:r": "react-native run-ios --scheme Stage --configuration Release --simulator='iPhone 12'",
     "ios:prd:d": "react-native run-ios --scheme Product --configuration Debug --simulator='iPhone 12'",
     "ios:prd:r": "react-native run-ios --scheme Product --configuration Release --device 'TEST iPhone'",   
-    "android:dev:d": "react-native run-android --variant=developdebug",
-    "android:dev:r": "react-native run-android --variant=developrelease",
-    "android:stg:d": "react-native run-android --variant=stagedebug",
-    "android:stg:r": "react-native run-android --variant=stagerelease",
-    "android:prd:d": "react-native run-android --variant=productdebug",
-    "android:prd:r": "react-native run-android --variant=productrelease",
 ```
 <br></br>
 
@@ -312,6 +306,24 @@ yarn ios:stg:d
 ```
 ![](/assets/react-native-env-ios10.png)
 ![](/assets/react-native-env-ios11.png)  
+<br></br><br></br><br></br><br></br>
+
+
+
+
+
+### **미리 설정한 빌드환경으로 Android앱 실행하기**
+###### **package.json 파일에 스크립트 명령어 작성**
+package.json 파일에 설정한 빌드환경으로 앱을 실행하는 스크립트 명령어를 추가합니다.
+```
+  "scripts": {
+    "android:dev:d": "react-native run-android --variant=developdebug",
+    "android:dev:r": "react-native run-android --variant=developrelease",
+    "android:stg:d": "react-native run-android --variant=stagedebug",
+    "android:stg:r": "react-native run-android --variant=stagerelease",
+    "android:prd:d": "react-native run-android --variant=productdebug",
+    "android:prd:r": "react-native run-android --variant=productrelease",
+```
 <br></br>
 
 ###### **Android앱 실행해보기**
@@ -323,6 +335,92 @@ yarn android:dev:d
 ![](/assets/react-native-env-android2.png)
 <br></br><br></br><br></br><br></br>
 
+
+
+
+
+### **미리 설정한 빌드환경으로 iOS앱 생성하기**
+.env.product 파일에 작성된 환경변수를 사용하는 iOS앱을 Release모드로 앱을 생성해 봅시다.
+
+###### **Xcode > 미리 설정한 Scheme 선택 > Any iOS Device 선택**
+![](/assets/react-native-env-ios12.png)  
+
+###### **Xcode > Product > Archive 메뉴 선택**
+![](/assets/react-native-env-ios13.png)  
+<br></br><br></br><br></br><br></br>
+
+
+
+
+
+### **미리 설정한 빌드환경으로 Android앱 생성하기**
+###### **Release용 KeyStore 생성**
+[KeyStore 생성 방법](https://zdlath.github.io/react-native-keystore)은 여기서 자세히 설명하겠습니다.
+<br></br>
+
+###### **Release용 KeyStore 정보 저장**
+gradle.properties 파일에 Release용 KeyStore 정보 저장합니다.
+```
+RNSTUDY_APP_KEYSTORE_FILE=release.keystore
+RNSTUDY_APP_KEY_ALIAS=release_app
+RNSTUDY_APP_KEYSTORE_PASSWORD=soheePassword!
+RNSTUDY_APP_KEY_PASSWORD=soheePassword!
+```
+<br></br>
+
+###### **Release모드로 앱 생성 시, 인증할 KeyStore 설정**
+android > app > build.gradle 파일에 Release모드 앱 생성 시 인증에 사용할 KeyStore를 설정합니다.
+```
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+        release {
+            if (project.hasProperty('RNSTUDY_APP_KEYSTORE_FILE')) {
+                storeFile file(RNSTUDY_APP_KEYSTORE_FILE)
+                storePassword RNSTUDY_APP_KEYSTORE_PASSWORD
+                keyAlias RNSTUDY_APP_KEY_ALIAS
+                keyPassword RNSTUDY_APP_KEY_PASSWORD
+            }
+        }        
+    }
+```
+<br></br>
+
+###### **package.json 파일에 스크립트 명령어 작성**
+```
+  "scripts": {
+    "make-apk:dev:r": "yarn clean-android && cd android && ./gradlew app:assembleDevelopRelease && cd ..",
+    "make-apk:dev:d": "yarn clean-android && cd android && ./gradlew app:assembleDevelopDebug && cd ..",
+    "make-apk:stg:r": "yarn clean-android && cd android && ./gradlew app:assembleStageRelease && cd ..",
+    "make-apk:stg:d": "yarn clean-android && cd android && ./gradlew app:assembleStageDebug && cd ..",  
+    "make-apk:prd:r": "yarn clean-android && cd android && ./gradlew app:assembleProductRelease && cd ..",
+    "make-apk:prd:d": "yarn clean-android && cd android && ./gradlew app:assembleProductDebug && cd ..",
+    "make-aab:dev:d": "yarn clean-android && cd android && ./gradlew bundleDevelopDebug && cd ..",
+    "make-aab:dev:r": "yarn clean-android && cd android && ./gradlew bundleDevelopRelease && cd ..",
+    "make-aab:stg:d": "yarn clean-android && cd android && ./gradlew bundleStageDebug && cd ..",
+    "make-aab:stg:r": "yarn clean-android && cd android && ./gradlew bundleStageRelease && cd ..",
+    "make-aab:prd:d": "yarn clean-android && cd android && ./gradlew bundleProductDebug && cd ..",
+    "make-aab:prd:r": "yarn clean-android && cd android && ./gradlew bundleProductRelease && cd .."
+```
+
+###### **Android앱 APK 생성하기**
+.env.product 파일에 작성된 환경변수를 사용하는 Android앱을 Release모드로 APK를 생성해 봅시다.  
+/app/build/outputs/apk/product/release/app-product-release.apk 파일이 생성된 것을 확인할 수 있습니다.
+```
+yarn make-apk:prd:r
+```
+
+###### **Android앱 AAB 생성하기**
+.env.product 파일에 작성된 환경변수를 사용하는 Android앱을 Release모드로 AAB을 생성해 봅시다.  
+/app/build/outputs/bundle/productRelease/app-product-release.aab 파일이 생성된 것을 확인할 수 있습니다.
+```
+yarn make-aab:prd:r
+```
+<br></br><br></br><br></br><br></br>
 
 
 
