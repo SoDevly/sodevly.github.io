@@ -26,7 +26,7 @@ tags:
 
 `일반동사 과거시제`은 대부분 일반동사 뒤에 -d/-ed를 붙이지만 이 외에도 다양한 형태로 변화합니다.  
 - -d/-ed 추가
-- 자음 + ed 추가
+- 자음 추가하고 -ed 추가
 - y 지우고 -ied 추가
 - 불규칙<br></br>ex) come - came, do - did, buy - bought
 
@@ -47,7 +47,7 @@ tags:
 <tr>
   <td>I, You, We, They</td>
   <td>일반동사</td>
-  <td rowspan='2'>일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음 + ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙</td>
+  <td rowspan='2'>일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음 추가하고 -ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙</td>
   <td>don't 일반동사원형</td>
   <td rowspan='2'>didn't 일반동사원형</td>  
 </tr>
@@ -63,7 +63,7 @@ tags:
 
 
 
-# **❐ 예제**
+# **❐ 예문**
 ### 일반동사 현재시제 규칙
 <table>
 <tr>

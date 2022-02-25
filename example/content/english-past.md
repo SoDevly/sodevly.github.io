@@ -34,24 +34,19 @@ tags:
 
 ### 과거시제 (일반동사)
 `일반동사 과거시제 평서문`은 대부분 일반동사 뒤에 -d/-ed를 붙이지만 이 외에도 다양한 형태로 변화합니다.  
-- -d/-ed 추가
-- 자음 + ed 추가
-- y 지우고 -ied 추가
-- 불규칙<br></br>ex) come - came, do - did, buy - bought
-
 `일반동사 과거시제 부정문`은 주어에 상관없이 일반동사 앞에 did not(didn't)을 붙입니다.  
 이 때, did not(didn't) 뒤에 일반동사는 동사원형의 형태를 사용합니다.
 
 |주어|과거시제 평서문|과거시제 부정문|
 |----|---|---|
-|I, You, He, She, We, They, It|일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음 + ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙|didn't 일반동사원형|
+|I, You, He, She, We, They, It|일반동사 뒤에 -d/-ed<br></br>일반동사 뒤에 자음추가하고 -ed<br></br>일반동사 뒤에 y 지우고 -ied<br></br>불규칙|didn't 일반동사원형|
 <br></br><br></br><br></br><br></br>
 
 
 
 
 
-# **❐ 예제**
+# **❐ 예문**
 ### 과거시제 (be동사)
 <table>
 <tr>
@@ -136,4 +131,16 @@ tags:
   </td>  
 </tr>
 </table>
-<br></br>
+<br></br><br></br><br></br><br></br>
+
+
+
+
+
+# **❐ 과거시제 불규칙 동사**
+|현재|과거|
+|----|---|
+|go|went|
+|come|came|
+|buy|bought|
+|spent|spend|
