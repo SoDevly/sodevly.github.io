@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '[React Native] 빌드환경 분리하기 (react-native-config)'
-created: 2021-12-30
-modified: 2021-12-30
+created: 2022-02-01
+modified: 2022-02-01
 link: ''
 tags:
   - React Native
@@ -359,7 +359,7 @@ yarn android:dev:d
 <br></br>
 
 ###### **Release용 KeyStore 정보 저장**
-gradle.properties 파일에 Release용 KeyStore 정보 저장합니다.
+gradle.properties 파일에 Release용 KeyStore 정보를 저장합니다.
 ```
 RNSTUDY_APP_KEYSTORE_FILE=release.keystore
 RNSTUDY_APP_KEY_ALIAS=release_app
@@ -393,18 +393,18 @@ android > app > build.gradle 파일에 Release모드 앱 생성 시 인증에 �
 ###### **package.json 파일에 스크립트 명령어 작성**
 ```
   "scripts": {
-    "make-apk:dev:r": "yarn clean-android && cd android && ./gradlew app:assembleDevelopRelease && cd ..",
-    "make-apk:dev:d": "yarn clean-android && cd android && ./gradlew app:assembleDevelopDebug && cd ..",
-    "make-apk:stg:r": "yarn clean-android && cd android && ./gradlew app:assembleStageRelease && cd ..",
-    "make-apk:stg:d": "yarn clean-android && cd android && ./gradlew app:assembleStageDebug && cd ..",  
-    "make-apk:prd:r": "yarn clean-android && cd android && ./gradlew app:assembleProductRelease && cd ..",
-    "make-apk:prd:d": "yarn clean-android && cd android && ./gradlew app:assembleProductDebug && cd ..",
-    "make-aab:dev:d": "yarn clean-android && cd android && ./gradlew bundleDevelopDebug && cd ..",
-    "make-aab:dev:r": "yarn clean-android && cd android && ./gradlew bundleDevelopRelease && cd ..",
-    "make-aab:stg:d": "yarn clean-android && cd android && ./gradlew bundleStageDebug && cd ..",
-    "make-aab:stg:r": "yarn clean-android && cd android && ./gradlew bundleStageRelease && cd ..",
-    "make-aab:prd:d": "yarn clean-android && cd android && ./gradlew bundleProductDebug && cd ..",
-    "make-aab:prd:r": "yarn clean-android && cd android && ./gradlew bundleProductRelease && cd .."
+    "make-apk:dev:d": "cd android && ./gradlew app:assembleDevelopDebug && cd ..",
+    "make-apk:dev:r": "cd android && ./gradlew app:assembleDevelopRelease && cd ..",
+    "make-apk:stg:d": "cd android && ./gradlew app:assembleStageDebug && cd ..",  
+    "make-apk:stg:r": "cd android && ./gradlew app:assembleStageRelease && cd ..",
+    "make-apk:prd:d": "cd android && ./gradlew app:assembleProductDebug && cd ..",  
+    "make-apk:prd:r": "cd android && ./gradlew app:assembleProductRelease && cd ..",  
+    "make-aab:dev:d": "cd android && ./gradlew bundleDevelopDebug && cd ..",
+    "make-aab:dev:r": "cd android && ./gradlew bundleDevelopRelease && cd ..",
+    "make-aab:stg:d": "cd android && ./gradlew bundleStageDebug && cd ..",
+    "make-aab:stg:r": "cd android && ./gradlew bundleStageRelease && cd ..",
+    "make-aab:prd:d": "cd android && ./gradlew bundleProductDebug && cd ..",
+    "make-aab:prd:r": "cd android && ./gradlew bundleProductRelease && cd .."
 ```
 
 ###### **Android앱 APK 생성하기**

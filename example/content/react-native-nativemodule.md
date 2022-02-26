@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '[React Native] Native Module'
-created: 2021-09-01
-modified: 2021-09-01
+created: 2021-08-01
+modified: 2021-08-01
 link: ''
 tags:
   - React Native

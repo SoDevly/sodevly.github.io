@@ -1,8 +1,8 @@
 ---
 emoji: 💻
-title: '[React Native] App Bundle 파일로 앱 설치'
-created: 2021-12-01
-modified: 2021-12-01
+title: 'App Bundle 파일로 앱 설치'
+created: 2021-11-03
+modified: 2021-11-03
 link: ''
 tags:
   - React Native
