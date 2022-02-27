@@ -32,5 +32,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://zdlath.github.io/',
+        sitemap: 'https://zdlath.github.io/sitemap/sitemap-0.xml',
+        policy: [{
+          userAgent: '*',
+          allow: '/'
+        }]
+      }
+    },
   ],
 }
