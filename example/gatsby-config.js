@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: '',
     description: 'Sohee의 IT 블로그',
-    keywords: [],
+    keywords: ['React Native', 'React', '프로그래밍', 'App Developer', '앱개발자', 'IT'],
     siteUrl: `https://zdlath.github.io/`,
   },
   plugins: [
