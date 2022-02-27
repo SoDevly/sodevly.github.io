@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: 'App Bundle 파일로 앱 설치'
+title: 'App Bundle 파일(.aab)로 앱 설치하기'
 created: 2021-11-03
 modified: 2021-11-03
 link: ''

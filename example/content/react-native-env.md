@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '[React Native] 빌드환경 분리하기 (react-native-config)'
-created: 2022-02-01
-modified: 2022-02-01
+created: 2022-02-027
+modified: 2022-02-27
 link: ''
 tags:
   - React Native
