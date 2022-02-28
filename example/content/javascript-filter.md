@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[Javascript] filter'
+title: '[Javascript] Array.filter() 설명 및 예제'
 created: 2022-01-01
 modified: 2022-01-01
 link: ''
@@ -21,7 +21,7 @@ tags:
 
 # **❐ 구문**
 ```javascript
-arr.filter(callback(element, index, array), thisArg)
+arr.filter(callback(currentValue, index, array), thisArg)
 ```
 <br></br>
 
@@ -32,7 +32,7 @@ arr.filter(callback(element, index, array), thisArg)
     <td>필터 조건을 체크할 함수. true를 반환하면 요소를 유지하고, false를 반환하면 버립니다.</td>
   </tr>
     <tr>
-    <td>ㅤㅤelement</td>
+    <td>ㅤㅤcurrentValue</td>
     <td>처리할 현재 요소</td>
   </tr>
   <tr>
@@ -62,7 +62,7 @@ arr.filter(callback(element, index, array), thisArg)
 parameters값을 직접 확인해봅시다.
 ```javascript
 let numbers = [1, 4, 9]
-let parameters = numbers.filter((num, index, arr) => {console.log(num, index, arr)})
+let parameters = numbers.filter((currentValue, index, array) => {console.log(currentValue, index, array)})
 // expected output: 
 // 1 0 [ 1, 4, 9 ]
 // 4 1 [ 1, 4, 9 ]
@@ -75,7 +75,8 @@ let parameters = numbers.filter((num, index, arr) => {console.log(num, index, ar
 const numbers = [1, 5, 10, 11, 15, 20];
 const result = numbers.filter(num => num > 10);
 console.log(result);
-// expected output: Array [11, 15, 20]
+// expected output:
+// Array [11, 15, 20]
 ```
 <br></br>
 
@@ -84,6 +85,7 @@ console.log(result);
 const words = ['apple', 'banana', 'watermelon', 'kiwi'];
 const result = words.filter(word => word.length > 5);
 console.log(result);
-// expected output: Array ["banana", "watermelon"]
+// expected output: 
+// Array ["banana", "watermelon"]
 ```
 <br></br><br></br>
