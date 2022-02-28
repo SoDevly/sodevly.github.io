@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] Native Module'
+title: '[React Native] Native Module 설명 및 예제'
 created: 2021-08-01
 modified: 2021-08-01
 link: ''

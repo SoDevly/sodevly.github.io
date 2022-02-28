@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] useEffect'
+title: '[React Native] Hook - useEffect 설명 및 예제'
 created: 2021-06-06
 modified: 2021-06-06
 link: ''

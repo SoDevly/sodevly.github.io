@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] useRef (2)'
+title: '[React Native] Hook - useRef 설명 및 예제 (2)'
 created: 2021-06-16
 modified: 2021-06-16
 link: ''

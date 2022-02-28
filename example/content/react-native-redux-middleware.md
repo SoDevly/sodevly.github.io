@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] Redux Middleware'
+title: '[React Native] Redux Middleware 설명 및 예제'
 created: 2021-06-26
 modified: 2021-06-26
 link: ''

@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] Redux'
+title: '[React Native] Redux 설명 및 예제'
 created: 2021-06-25
 modified: 2021-06-25
 link: ''

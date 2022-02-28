@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] useMemo'
+title: '[React Native] Hook - useMemo 설명 및 예제'
 created: 2021-06-13
 modified: 2021-06-13
 link: ''
