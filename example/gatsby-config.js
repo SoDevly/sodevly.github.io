@@ -31,12 +31,12 @@ module.exports = {
         logo: '',
       },
     },
-    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://zdlath.github.io/',
-        sitemap: 'https://zdlath.github.io/sitemap/sitemap-0.xml',
+        sitemap: 'https://zdlath.github.io/sitemap.xml',
         policy: [{
           userAgent: '*',
           allow: '/'
