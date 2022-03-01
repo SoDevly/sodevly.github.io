@@ -21,7 +21,7 @@ tags:
 
 # **❐ 구문**
 ```javascript
-arr.filter(callback(currentValue, index, array), thisArg)
+arr.filter(callback(currentValue, currentIndex, originArray), thisArg)
 ```
 <br></br>
 
@@ -29,19 +29,19 @@ arr.filter(callback(currentValue, index, array), thisArg)
 <table>
   <tr>
     <td>callback</td>
-    <td>필터 조건을 체크할 함수. true를 반환하면 요소를 유지하고, false를 반환하면 버립니다.</td>
+    <td>필터 조건을 체크할 함수<br></br>true를 반환하면 요소를 유지하고, false를 반환하면 버립니다.</td>
   </tr>
-    <tr>
+  <tr>
     <td>ㅤㅤcurrentValue</td>
     <td>처리할 현재 요소</td>
   </tr>
   <tr>
-    <td>ㅤㅤindex (Optional)</td>
+    <td>ㅤㅤcurrentIndex (Optional)</td>
     <td>처리할 현재 요소의 인덱스</td>
   </tr>
   <tr>
-    <td>ㅤㅤarray (Optional)</td>
-    <td>filter를 호출한 배열</td>
+    <td>ㅤㅤoriginArray (Optional)</td>
+    <td>filter()를 호출한 배열</td>
   </tr>  
   <tr>
     <td>thisArg (Optional)</td>
@@ -59,33 +59,56 @@ arr.filter(callback(currentValue, index, array), thisArg)
 
 
 # **❐ 예제**
-parameters값을 직접 확인해봅시다.
+숫자가 들어있는 배열에서 0보다 큰 숫자만 필터하여 새로운 배열을 만들어봅시다.  
+그리고 callback함수의 Optional parameter가 없는 경우, parameters값도 직접 확인해봅시다.
 ```javascript
-let numbers = [1, 4, 9]
-let parameters = numbers.filter((currentValue, index, array) => {console.log(currentValue, index, array)})
+let testArray = [-1, 4, 9]
+let resultArray = testArray.filter((currentValue) => {
+  console.log(currentValue);
+  return currentValue > 0;
+});
+console.log(resultArray);
 // expected output: 
-// 1 0 [ 1, 4, 9 ]
-// 4 1 [ 1, 4, 9 ]
-// 9 2 [ 1, 4, 9 ]
+// -1
+// 4
+// 9
+// [4, 9]
+```
+<br></br>
+
+숫자가 들어있는 배열에서 0보다 큰 숫자만 필터하여 새로운 배열을 만들어봅시다.  
+그리고 callback함수의 Optional parameter가 있는 경우, parameters값도 직접 확인해봅시다.
+```javascript
+let testArray = [-1, 4, 9]
+let resultArray = testArray.filter((currentValue, currentIndex, originArray) => {
+  console.log(currentValue, currentIndex, originArray);
+  return currentValue > 0;
+});
+console.log(resultArray);
+// expected output: 
+// -1 0 [ -1, 4, 9 ]
+// 4 1 [ -1, 4, 9 ]
+// 9 2 [ -1, 4, 9 ]
+// [4, 9]
 ```
 <br></br>
 
 숫자가 들어있는 배열에서 10보다 큰 숫자만 필터하여 새로운 배열을 만들어봅시다.
 ```javascript
-const numbers = [1, 5, 10, 11, 15, 20];
-const result = numbers.filter(num => num > 10);
-console.log(result);
+const numberArray = [1, 5, 10, 11, 15, 20];
+const resultArray = numberArray.filter(num => num > 10);
+console.log(resultArray);
 // expected output:
-// Array [11, 15, 20]
+// [11, 15, 20]
 ```
 <br></br>
 
 문자가 들어있는 배열에서 문자길이가 5보다 큰 문자만 필터하여 새로운 배열을 만들어봅시다.
 ```javascript
-const words = ['apple', 'banana', 'watermelon', 'kiwi'];
-const result = words.filter(word => word.length > 5);
-console.log(result);
+const wordArray = ['apple', 'banana', 'watermelon', 'kiwi'];
+const resultArray = wordArray.filter(word => word.length > 5);
+console.log(resultArray);
 // expected output: 
-// Array ["banana", "watermelon"]
+// ["banana", "watermelon"]
 ```
 <br></br><br></br>
