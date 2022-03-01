@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: '',
-    description: 'Sohee의 IT 블로그',
+    description: 'Sohee의 개발 블로그',
     keywords: ['React Native', 'React', '프로그래밍', 'App Developer', '앱개발자', 'IT'],
     siteUrl: `https://zdlath.github.io/`,
   },
@@ -43,5 +43,56 @@ module.exports = {
         }]
       }
     },
+    {
+      resolve: `gatsby-plugin-feed-mdx`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                keywords
+                siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMdx } }) => {
+              return allMdx.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  title: edge.node.frontmatter.title,
+                  created: edge.node.frontmatter.created,
+                  url: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }]
+                });
+              });
+            },
+            query: `
+              {
+                allMdx(
+                  sort: { order: DESC, fields: [frontmatter___created] },
+                ) {
+                  edges {
+                    node {
+                      fields { slug }
+                      frontmatter {
+                        title
+                        created
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: "Sohee Develop Blog RSS Feed",
+          },
+        ],
+      },
+    }
   ],
 }
