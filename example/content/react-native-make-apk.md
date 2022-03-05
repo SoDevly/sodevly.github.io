@@ -65,6 +65,26 @@ android > app > build.gradle 파일에 Release모드 앱 생성 시 인증에 �
 
 
 
+### **앱 버전명 변경**
+/android/app/build.gradle 파일에서 versionName, versionCode를 입력합니다.
+- versionName : 앱 버전명 입력
+- versionCode : 빌드 버전명 입력
+```
+    defaultConfig {
+        applicationId "com.rnstudy.app"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0.0"
+        missingDimensionStrategy 'react-native-camera', 'mlkit'
+   }
+```
+<br></br>
+
+
+
+
+
 ### **Debug모드 Android앱 APK 생성하기**
 Android앱을 Debug모드로 APK를 생성해주는 명령어입니다.  
 /android/app/build/outputs/apk/debug/app-debug.apk 파일이 생성된 것을 확인할 수 있습니다.
