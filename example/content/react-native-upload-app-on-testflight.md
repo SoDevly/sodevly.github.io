@@ -13,7 +13,7 @@ tags:
  
 
 
-# **❐ iOS앱 TestFlight에 업로드하기**
+# **❐ 앱 빌드 정보 및 환경 설정**
 ### **앱 버전명 변경**
 Targets 선택 > General 탭 선택 > Identity > Version, Build 값을 입력합니다.
 - Version : 앱 버전명 입력  
@@ -26,8 +26,13 @@ Edit Scheme 메뉴를 클릭합니다.
 ![](/assets/react-native-upload-app-on-testflight1.png)
 Archive 진행 시 Debug모드로 할 것인지 Release모드로 할 것인지 선택합니다.
 ![](/assets/react-native-upload-app-on-testflight2.png)
-<br></br>
+<br></br><br></br><br></br><br></br>
 
+
+
+
+
+# **❐ iOS앱 TestFlight에 업로드하기**
 ### **Archive 진행**
 Any iOS Device를 선택합니다.
 ![](/assets/react-native-upload-app-on-testflight3.png)
@@ -69,9 +74,13 @@ Upload 선택 > Next 버튼을 클릭합니다.
 ![](/assets/react-native-upload-app-on-testfligh10.png)
 업로드 완료가 되었습니다.
 ![](/assets/react-native-upload-app-on-testfligh11.png)
-<br></br>
+<br></br><br></br><br></br><br></br>
 
-### **TestFlight에 앱 업로드 확인**
+
+
+
+
+# **❐ TestFlight에 앱 업로드 확인**
 App Store Connect 사이트 > Testflight > 빌드 > iOS 메뉴를 선택 합니다.  
 TestFlight에 업로드한 앱 버전들을 확인할 수 있습니다.  
 업로드 직후에는 처리중 상태이며, 10~20분 후에 제출 준비 완료 상태로 변경됩니다.  

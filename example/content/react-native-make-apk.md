@@ -13,7 +13,7 @@ tags:
 
 
 
-# **❐ Android앱 생성하기**
+# **❐ 앱 생성 시 자동으로 지정한 KeyStore로 인증하도록 설정**
 ### **Release용 KeyStore 생성**
 react native 프로젝트를 생성하면 기본적으로 Debug용 KeyStore 파일(debug.keystore)은 생성됩니다.  
 Release용 KeyStore 파일은 개발자가 생성해줘야합니다.  
@@ -38,9 +38,9 @@ RNSTUDY_APP_KEY_PASSWORD=soheePassword!
 
 
 
-### **Debug/Release모드로 앱 생성 시, 인증할 KeyStore 설정**
+### **앱 생성 시 인증할 KeyStore 설정**
 react native 프로젝트 생성 시 Debug용 KeyStore는 이미 설정되어 있습니다.  
-android > app > build.gradle 파일에 Release모드 앱 생성 시 인증에 사용할 KeyStore를 설정합니다.  
+android > app > build.gradle 파일에 Release모드 앱 생성 시 인증에 사용할 KeyStore를 추가로 설정합니다.  
 ```
     signingConfigs {
         debug {
@@ -59,12 +59,13 @@ android > app > build.gradle 파일에 Release모드 앱 생성 시 인증에 �
         }        
     }
 ```
-<br></br>
+<br></br><br></br><br></br><br></br>
 
 
 
 
 
+# **❐ Android앱 생성하기**
 ### **앱 버전명 변경**
 /android/app/build.gradle 파일에서 versionName, versionCode를 입력합니다.
 - versionName : 앱 버전명 입력
@@ -127,4 +128,4 @@ Android앱을 Release모드로 AAB을 생성해주는 명령어입니다.
 ```
 cd android && ./gradlew bundleRelease && cd ..
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
