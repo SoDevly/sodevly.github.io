@@ -60,8 +60,11 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         <html lang="en" />
         <meta charSet="utf-8" />
         <title>{title}</title>
+        <meta property="og:title" content={title} />
         <meta name="description" content={title} />
+        <meta name="og:description" content={title} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="google-site-verification" content="0tJmOJBeKEWGHlvM6HFkMSd7envmM3fSyWyPnsxdMnk" />
         <meta name="naver-site-verification" content="a8ed9f75df3b7753105aba9b0651907f69b65cf3" />
         {openSearch && openSearch.siteUrl && (
           <link
