@@ -5,8 +5,7 @@ created: 2020-08-23
 modified: 2020-08-24
 link: ''
 tags:
-  - AWS
-  - Certification
+- Infra
 ---
 <br></br>
 

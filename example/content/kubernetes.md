@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Kubernetes 사용해보기'
-created: 2020-08-25
-modified: 2020-08-25
+title: '[Kubernetes] Kubernetes 사용해보기'
+created: 2021-08-25
+modified: 2021-08-25
 link: ''
 tags:
-  - Docker/Kubernetes
+  - Infra
 ---
 <br></br>
 

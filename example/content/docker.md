@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Docker 사용해보기'
-created: 2020-08-22
-modified: 2020-08-22
+title: '[Docker] Docker 사용해보기'
+created: 2021-08-22
+modified: 2021-08-22
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

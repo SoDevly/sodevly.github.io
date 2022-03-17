@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Kubernetes 클러스터 만들어보기'
-created: 2020-08-24
-modified: 2020-08-24
+title: '[Kubernetes] Kubernetes 클러스터 만들어보기'
+created: 2021-08-24
+modified: 2021-08-24
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

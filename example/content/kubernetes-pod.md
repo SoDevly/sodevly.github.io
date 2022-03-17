@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Pod 생성해보기'
-created: 2020-08-26
-modified: 2020-08-26
+title: '[Kubernetes] Pod 생성해보기'
+created: 2021-08-26
+modified: 2021-08-26
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

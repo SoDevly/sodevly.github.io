@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] 마스터 노드, 워커 노드 설정해보기'
-created: 2020-08-23
-modified: 2020-08-23
+title: '[Kubernetes] 마스터 노드, 워커 노드 설정해보기'
+created: 2021-08-23
+modified: 2021-08-23
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

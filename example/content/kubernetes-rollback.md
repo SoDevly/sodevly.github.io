@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Rollback'
-created: 2020-08-31
-modified: 2020-08-31
+title: '[Kubernetes] Rollback'
+created: 2021-08-31
+modified: 2021-08-31
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

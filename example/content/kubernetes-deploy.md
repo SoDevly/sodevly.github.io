@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Deploy 사용해보기'
-created: 2020-08-30
-modified: 2020-08-30
+title: '[Kubernetes] Deploy 사용해보기'
+created: 2021-08-30
+modified: 2021-08-30
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

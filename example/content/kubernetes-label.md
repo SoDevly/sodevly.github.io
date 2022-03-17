@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Pod에 Lable 설정해보기'
-created: 2020-08-27
-modified: 2020-08-27
+title: '[Kubernetes] Pod에 Lable 설정해보기'
+created: 2021-08-27
+modified: 2021-08-27
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

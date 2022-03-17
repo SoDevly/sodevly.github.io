@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] VM 인스턴스 만들어보기'
-created: 2020-08-21
-modified: 2020-08-21
+title: '[Docker] VM 인스턴스 만들어보기'
+created: 2021-08-21
+modified: 2021-08-21
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

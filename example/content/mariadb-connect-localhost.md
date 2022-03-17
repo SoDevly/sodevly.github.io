@@ -5,7 +5,7 @@ created: 2021-11-27
 modified: 2021-11-27
 link: ''
 tags:
-  - MariaDB
+  - DB
 ---
 <br></br>
 

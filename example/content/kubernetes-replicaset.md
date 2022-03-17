@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Replicaset 설정해보기'
-created: 2020-08-28
-modified: 2020-08-28
+title: '[Kubernetes] Replicaset 설정해보기'
+created: 2021-08-28
+modified: 2021-08-28
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

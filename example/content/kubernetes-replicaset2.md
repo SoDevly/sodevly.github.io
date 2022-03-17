@@ -1,11 +1,11 @@
 ---
 emoji: 💻
-title: '[실습] Replicaset의 문제점'
-created: 2020-08-29
-modified: 2020-08-29
+title: '[Kubernetes] Replicaset의 문제점'
+created: 2021-08-29
+modified: 2021-08-29
 link: ''
 tags:
-  - Docker/Kubernetes
+- Infra
 ---
 <br></br>
 

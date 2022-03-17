@@ -101,10 +101,10 @@ export default UseCallbackScreen
 `useCallback 미사용하는 경우`
 모든 컴포넌트가 재렌더링되는 것을 확인할 수 있습니다.  
 useCallback을 미사용했기 때문에 컴포넌트가 렌더링될 때 함수가 재생성되었고, Light 컴포넌트의 props의 toggle이 변경되었기 때문에 Light 컴포넌트 3개 모두 재렌더링된 것입니다.
-![](/assets/react-native-usecallback-before.png)
+![](/assets/react-native-usecallback-before.gif)
 
 `useCallback 사용하는 경우`
 State를 변경하는 컴포넌트만 재렌더링되는 것을 확인할 수 있습니다.  
 useCallback을 사용했기 때문에 컴포넌트가 렌더링될 때 함수를 재생성하지 않았고, Light 컴포넌트의 props의 toggle이 변경되지 않았기 때문에 props의 isOn이 변경된 컴포넌트 1개만 재렌더링된 것입니다.
-![](/assets/react-native-usecallback-after.png)
+![](/assets/react-native-usecallback-after.gif)
 <br></br><br></br>
