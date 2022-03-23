@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box as TUIBox, Button } from 'theme-ui'
-import Prism from '@theme-ui/prism'
 import { FaAnchor } from 'react-icons/fa'
 import { toClipboard } from 'copee'
 import { useState } from 'react'
@@ -9,10 +8,12 @@ import {
   Underline,
   Box,
   Circle,
-  Highlight,
   StrikeThrough,
   CrossedOff,
 } from '../components/Rough'
+import Highlight, { defaultProps } from "prism-react-renderer";
+import dracula from 'prism-react-renderer/themes/dracula';
+import rangeParser from 'parse-numeric-range';
 
 const heading = (Tag) => (props) => {
   if (!props.id) return <Tag {...props} />
@@ -91,16 +92,10 @@ const CopyCode = ({ code }) => {
   )
 }
 
-const CodeLabel = ({ label }) => {
-  if (!label.includes('language')) {
-    return null
+const CodeLabel = ({ language }) => {
+  if (language == undefined || language == null || language == "") {
+      return null
   }
-
-  const classes = label.split(' ')
-  const langIndex = classes.findIndex((item) => {
-    return item.includes('language')
-  })
-  const language = classes[langIndex].replace('language-', '')
 
   return (
     <TUIBox
@@ -125,26 +120,80 @@ const CodeLabel = ({ label }) => {
   )
 }
 
-const Code = ({ children, classes, code }) => {
-  return (
-    <TUIBox sx={{ position: 'relative', my: 4 }}>
-      <TUIBox
-        sx={{
-          borderRadius: '0.25rem 0.25rem 0 0',
-          bg: 'background',
-          p: 2,
-          pb: 0,
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}
-      >
-        <CodeLabel label={classes} />
-        <CopyCode code={code} />
-      </TUIBox>
-      {children}
-    </TUIBox>
-  )
+const CodeFile = ({ filename }) => {
+    if (filename == undefined || filename == null || filename == "") {
+        return null
+    }
+
+    return (
+        <TUIBox
+            sx={{
+                fontFamily: 'mono',
+                fontSize: 0,
+                color: 'copyCodeText',
+                px: 2,
+                py: 1,
+                lineHeight: 1,
+                borderRadius: '0 0 0.2rem 0.2rem',
+                userSelect: 'none',
+                height: 'auto',
+            }}
+        >
+            {filename}
+        </TUIBox>
+    )
+}
+
+const CodeBlock = ({ code, className, filename, metastring }) => {
+    let language = '';
+    if (className.includes('language')) {
+        const classArray = className.split(' ')
+        const langIndex = classArray.findIndex((item) => {
+            return item.includes('language')
+        })
+        language = classArray[langIndex].replace('language-', '')
+    }
+
+    const shouldHighlightLine = calculateLinesToHighlight(metastring);
+
+    return (
+        <TUIBox sx={{ position: 'relative', my: 4 }}>
+            <Highlight {...defaultProps} code={code} language={language} theme={dracula}>
+                {({className, style, tokens, getLineProps, getTokenProps}) => (
+                    <pre className={className} style={{...style, padding: '0px 20px 20px 20px', borderRadius:12, overflow: 'auto'}}>
+                        <div style={{ display: 'flex', justifyContent: 'center', height: 30}}>
+                            <CodeLabel language={language} />
+                            <CodeFile filename={filename} />
+                            <CopyCode code={code} />
+                        </div>
+                        {tokens.map((line, index) => {
+                          return (
+                              <div key={index}
+                                {...getLineProps({ line, key: index })}
+                                sx={shouldHighlightLine(index)? { bg: 'codeblockHighlight', display: 'block', px: 1, ml: -1, mr: -1, borderLeft: '12 solid codeblockHighlightBorder'} : {} }
+                              >
+                                  {line.map((token, key) => (
+                                      <span key={key}{...getTokenProps({ token, key })} />
+                                  ))}
+                              </div>
+                          )
+                        })}
+                    </pre>
+                )}
+            </Highlight>
+        </TUIBox>
+    )
+}
+
+const calculateLinesToHighlight = (meta) => {
+    const RE = /{([\d,-]+)}/
+    if (RE.test(meta)) {
+        const strlineNumbers = RE.exec(meta)[1]
+        const lineNumbers = rangeParser(strlineNumbers)
+        return (index) => (lineNumbers.includes(index + 1))
+    } else {
+        return () => false
+    }
 }
 
 const components = {
@@ -156,15 +205,13 @@ const components = {
   h6: heading('h6'),
   pre: (props) => props.children,
   code: (props) => (
-    <Code code={props.children} classes={props.className}>
-      <Prism {...props} />
-    </Code>
+    <CodeBlock code={props.children} className={props.className} filename={props.filename} metastring={props.metastring}>
+    </CodeBlock>
   ),
   table: (props) => <ResponsiveTable>{props.children}</ResponsiveTable>,
   Underline,
   Box,
   Circle,
-  Highlight,
   StrikeThrough,
   CrossedOff,
 }
