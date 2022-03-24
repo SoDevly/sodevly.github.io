@@ -31,7 +31,12 @@ module.exports = {
         logo: '',
       },
     },
-    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-advanced-sitemap`,
+      options: {
+        output: "/zdlath-sitemap.xml",
+      }
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
