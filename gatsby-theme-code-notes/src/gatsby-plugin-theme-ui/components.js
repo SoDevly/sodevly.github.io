@@ -130,7 +130,7 @@ const CodeFile = ({ filename }) => {
             sx={{
                 fontFamily: 'mono',
                 fontSize: 0,
-                color: 'copyCodeText',
+                color: 'codeFileText',
                 px: 2,
                 py: 1,
                 lineHeight: 1,
@@ -144,7 +144,18 @@ const CodeFile = ({ filename }) => {
     )
 }
 
-const CodeBlock = ({ code, className, filename, metastring }) => {
+const ExtraString = ({ type }) => {
+    return (
+        <span sx={{
+            pr: '20px',
+            color: type=="+"? 'codeblockAddLineText' : type=="-"? 'codeblockRemoveLineText' : ''
+        }}>
+            {type}
+        </span>
+    )
+}
+
+const CodeBlock = ({ code, className, highlightLine, addLine, removeLine, filename }) => {
     let language = '';
     if (className.includes('language')) {
         const classArray = className.split(' ')
@@ -154,26 +165,48 @@ const CodeBlock = ({ code, className, filename, metastring }) => {
         language = classArray[langIndex].replace('language-', '')
     }
 
-    const shouldHighlightLine = calculateLinesToHighlight(metastring);
+    const isHighlightLine = calculateLinesToHighlight(highlightLine);
+    const isAddLine = calculateLinesToHighlight(addLine);
+    const isRemoveLine = calculateLinesToHighlight(removeLine);
 
     return (
         <TUIBox sx={{ position: 'relative', my: 4 }}>
             <Highlight {...defaultProps} code={code} language={language} theme={dracula}>
                 {({className, style, tokens, getLineProps, getTokenProps}) => (
                     <pre className={className} style={{...style, padding: '0px 20px 20px 20px', borderRadius:12, overflow: 'auto'}}>
-                        <div style={{ display: 'flex', justifyContent: 'center', height: 30}}>
+                        <div style={{display: 'flex', justifyContent: 'center', height: 40}}>
                             <CodeLabel language={language} />
                             <CodeFile filename={filename} />
                             <CopyCode code={code} />
                         </div>
-                        {tokens.map((line, index) => {
+                        {tokens.map((line, index, tokens) => {
                           return (
                               <div key={index}
                                 {...getLineProps({ line, key: index })}
-                                sx={shouldHighlightLine(index)? { bg: 'codeblockHighlight', display: 'block', px: 1, ml: -1, mr: -1, borderLeft: '12 solid codeblockHighlightBorder'} : {} }
+                                sx={isAddLine(index) ? {
+                                        bg: 'codeblockAddLine',
+                                        display: 'block',
+                                        px: 1,
+                                        mx: -1,
+                                    }
+                                    : isRemoveLine(index) ? {
+                                            bg: 'codeblockRemoveLine',
+                                            display: 'block',
+                                            px: 1,
+                                            mx: -1,
+                                        }
+                                        : isHighlightLine(index) ? {
+                                            bg: 'codeblockHighlightLine',
+                                            display: 'block',
+                                            px: 1,
+                                            mx: -1,
+                                        }
+                                        : tokens.length-1==index? {display: 'none'} : {}
+                                }
                               >
+                                  {isAddLine(index) ? <ExtraString type={"+"}/> : isRemoveLine(index) ? <ExtraString type={"-"}/> : <ExtraString type={" "}/>}
                                   {line.map((token, key) => (
-                                      <span key={key}{...getTokenProps({ token, key })} />
+                                      <span key={key} {...getTokenProps({ token, key })} />
                                   ))}
                               </div>
                           )
@@ -205,7 +238,7 @@ const components = {
   h6: heading('h6'),
   pre: (props) => props.children,
   code: (props) => (
-    <CodeBlock code={props.children} className={props.className} filename={props.filename} metastring={props.metastring}>
+    <CodeBlock code={props.children} className={props.className} highlightLine={props.highlightLine} addLine={props.addLine} removeLine={props.removeLine} filename={props.filename}>
     </CodeBlock>
   ),
   table: (props) => <ResponsiveTable>{props.children}</ResponsiveTable>,
