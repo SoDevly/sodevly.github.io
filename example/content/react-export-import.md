@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '[React] 컴포넌트 import할 때 { }  있고 없고 차이'
-created: 2022-02-13
-modified: 2022-02-13
+created: 2022-03-13
+modified: 2022-03-13
 link: ''
 tags:
   - React
