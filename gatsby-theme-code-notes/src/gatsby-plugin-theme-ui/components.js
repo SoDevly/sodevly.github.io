@@ -128,13 +128,17 @@ const CodeFile = ({ filename }) => {
     return (
         <TUIBox
             sx={{
+                position: 'absolute',
+                minWidth: '100px',
+                top: 0,
+                left: '50%',
+                transform: 'translate(-50%, 0%)',
                 fontFamily: 'mono',
                 fontSize: 0,
                 color: 'codeFileText',
                 px: 2,
                 py: 1,
                 lineHeight: 1,
-                borderRadius: '0 0 0.2rem 0.2rem',
                 userSelect: 'none',
                 height: 'auto',
             }}
@@ -144,13 +148,14 @@ const CodeFile = ({ filename }) => {
     )
 }
 
-const ExtraString = ({ type }) => {
+const ExtraString = ({ textColor, text }) => {
     return (
         <span sx={{
-            pr: '20px',
-            color: type=="+"? 'codeblockAddLineText' : type=="-"? 'codeblockRemoveLineText' : ''
+            pr: '5px',
+            pl: '5px',
+            color: textColor
         }}>
-            {type}
+            {text}
         </span>
     )
 }
@@ -173,41 +178,27 @@ const CodeBlock = ({ code, className, highlightLine, addLine, removeLine, filena
         <TUIBox sx={{ position: 'relative', my: 4 }}>
             <Highlight {...defaultProps} code={code} language={language} theme={dracula}>
                 {({className, style, tokens, getLineProps, getTokenProps}) => (
-                    <pre className={className} style={{...style, padding: '0px 20px 20px 20px', borderRadius:12, overflow: 'auto'}}>
-                        <div style={{display: 'flex', justifyContent: 'center', height: 40}}>
+                    <pre className={className} style={{...style, paddingBottom: '10px', borderRadius:'0.5rem', overflow: 'auto'}}>
+                        <div sx={{display: 'block', textAlign: 'center', height: 40}}>
                             <CodeLabel language={language} />
                             <CodeFile filename={filename} />
                             <CopyCode code={code} />
                         </div>
                         {tokens.map((line, index, tokens) => {
-                          return (
+                            const LineBgColor = isAddLine(index) ? 'codeblockAddLine' : isRemoveLine(index) ? 'codeblockRemoveLine' : isHighlightLine(index) ? 'codeblockHighlightLine' : ''
+                            const PrefixTextColor = isAddLine(index) ? 'codeblockAddLineText' : isRemoveLine(index) ? 'codeblockRemoveLineText' : ''
+                            const LinePrefix = isAddLine(index) ? '+' : isRemoveLine(index) ? '-' : ' '
+
+                            return (
                               <div key={index}
                                 {...getLineProps({ line, key: index })}
-                                sx={isAddLine(index) ? {
-                                        bg: 'codeblockAddLine',
-                                        display: 'block',
-                                        px: 1,
-                                        mx: -1,
-                                    }
-                                    : isRemoveLine(index) ? {
-                                            bg: 'codeblockRemoveLine',
-                                            display: 'block',
-                                            px: 1,
-                                            mx: -1,
-                                        }
-                                        : isHighlightLine(index) ? {
-                                            bg: 'codeblockHighlightLine',
-                                            display: 'block',
-                                            px: 1,
-                                            mx: -1,
-                                        }
-                                        : tokens.length-1==index? {display: 'none'} : {}
-                                }
+                                sx={tokens.length-1==index? {display: 'none'} : {}}
                               >
-                                  {isAddLine(index) ? <ExtraString type={"+"}/> : isRemoveLine(index) ? <ExtraString type={"-"}/> : <ExtraString type={" "}/>}
+                                  <ExtraString textColor={PrefixTextColor} text={LinePrefix}/>
                                   {line.map((token, key) => (
-                                      <span key={key} {...getTokenProps({ token, key })} />
+                                      <span key={key} sx={{bg:LineBgColor}} {...getTokenProps({ token, key })} />
                                   ))}
+                                  <ExtraString/>
                               </div>
                           )
                         })}
