@@ -36,9 +36,9 @@ error Command failed with exit code 1.<br></br>
 
 
 # **❐ 해결방법**  
-Podfile파일에서 platform 버전을 10.0 -> 11.0으로 업데이트해주었습니다.
-```
-#platform :ios, '10.0'
+Podfile 파일에서 platform 버전을 10.0 -> 11.0으로 업데이트했습니다.
+```object-c filename=Podfile addLine={2} removeLine={1}
+platform :ios, '10.0'
 platform :ios, '11.0'
 
 target 'rnstudy' do

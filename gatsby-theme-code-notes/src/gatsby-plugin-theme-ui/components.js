@@ -92,9 +92,15 @@ const CopyCode = ({ code }) => {
   )
 }
 
-const CodeLabel = ({ language }) => {
-  if (language == undefined || language == null || language == "") {
-      return null
+const CodeLabel = ({ label, language }) => {
+  let text = label;
+  if (label == undefined || label == null || label == "") {
+      if (language == undefined || language == null || language == "" || language == "undefined") {
+          return null
+      }
+      else {
+          text = language;
+      }
   }
 
   return (
@@ -105,7 +111,7 @@ const CodeLabel = ({ language }) => {
         left: 3,
         fontFamily: 'mono',
         fontSize: 0,
-        bg: getColourFromString(language), //'contentBg',
+        bg: getColourFromString(text), //'contentBg',
         textTransform: 'uppercase',
         px: 2,
         py: 1,
@@ -115,7 +121,7 @@ const CodeLabel = ({ language }) => {
         height: 'auto',
       }}
     >
-      {language}
+      {text}
     </TUIBox>
   )
 }
@@ -160,7 +166,7 @@ const ExtraString = ({ textColor, text }) => {
     )
 }
 
-const CodeBlock = ({ code, className, highlightLine, addLine, removeLine, filename }) => {
+const CodeBlock = ({ code, className, label, filename, addLine, removeLine, highlightLine }) => {
     let language = '';
     if (className.includes('language')) {
         const classArray = className.split(' ')
@@ -170,9 +176,9 @@ const CodeBlock = ({ code, className, highlightLine, addLine, removeLine, filena
         language = classArray[langIndex].replace('language-', '')
     }
 
-    const isHighlightLine = calculateLinesToHighlight(highlightLine);
     const isAddLine = calculateLinesToHighlight(addLine);
     const isRemoveLine = calculateLinesToHighlight(removeLine);
+    const isHighlightLine = calculateLinesToHighlight(highlightLine);
 
     return (
         <TUIBox sx={{ position: 'relative', my: 4 }}>
@@ -180,7 +186,7 @@ const CodeBlock = ({ code, className, highlightLine, addLine, removeLine, filena
                 {({className, style, tokens, getLineProps, getTokenProps}) => (
                     <pre className={className} style={{...style, paddingBottom: '10px', borderRadius:'0.5rem', overflow: 'auto'}}>
                         <div sx={{display: 'block', textAlign: 'center', height: 40}}>
-                            <CodeLabel language={language} />
+                            <CodeLabel label={label} language={language}/>
                             <CodeFile filename={filename} />
                             <CopyCode code={code} />
                         </div>
@@ -229,7 +235,7 @@ const components = {
   h6: heading('h6'),
   pre: (props) => props.children,
   code: (props) => (
-    <CodeBlock code={props.children} className={props.className} highlightLine={props.highlightLine} addLine={props.addLine} removeLine={props.removeLine} filename={props.filename}>
+    <CodeBlock code={props.children} className={props.className} label={props.label} filename={props.filename} addLine={props.addLine} removeLine={props.removeLine} highlightLine={props.highlightLine}>
     </CodeBlock>
   ),
   table: (props) => <ResponsiveTable>{props.children}</ResponsiveTable>,
