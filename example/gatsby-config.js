@@ -40,8 +40,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://zdlath.github.io/',
-        sitemap: 'https://zdlath.github.io/sitemap.xml',
+        host: 'https://zdlath.github.io',
+        sitemap: 'https://zdlath.github.io/zdlath-sitemap.xml',
         policy: [{
           userAgent: '*',
           allow: '/'
