@@ -188,14 +188,18 @@ export const styles = {
     p: 2,
   },
   img: {
-    my: 4,
-    p: 3,
-    border: (theme) => `1px solid ${theme.colors.muted}`,
+    pt: 3,
+    pb: 3,
+    m: 0,
     display: 'block',
     borderRadius: 'default',
     maxWidth: '100%',
   },
   summary: {
     color: 'textStrong',
+  },
+  ul: {
+    mt: 0,
+    mb: 2,
   },
 }

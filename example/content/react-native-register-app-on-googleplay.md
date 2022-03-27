@@ -59,6 +59,7 @@ Google Play Console > 만들기 버튼을 클릭합니다.
 PNG 또는 JPEG  
 1024px x 500px  
 최대 1MB
+
 ![](/assets/react-native-register-app-on-googleplay4.png)
 
 ### **휴대전화 스크린샷 (최대 8개)**
@@ -68,6 +69,7 @@ PNG 또는 JPEG
 가로세로 비율 16:9 또는 9:16  
 각 측면 320px~3,840px  
 스크린샷당 최대 8MB
+
 ![](/assets/react-native-register-app-on-googleplay5.png)
 <br></br><br></br><br></br><br></br>
 
@@ -130,7 +132,23 @@ PNG 또는 JPEG
 
 # **❐ Google Play에 등록한 정보 확인**
 위에서 작성한 정보는 Google Play에서 아래와 같이 표시됩니다.
+
+
+<div style="width:740px; display: block">
+
 ![](/assets/react-native-register-app-on-googleplay14.png)
+
+</div>
+
+<div style="width:520px; display: block">
+
 ![](/assets/react-native-register-app-on-googleplay15.png)
+
+</div>
+
+<div style="width:460px; display: block">
+
 ![](/assets/react-native-register-app-on-googleplay16.png)
+
+</div>
 <br></br><br></br>

@@ -49,18 +49,29 @@ bundletool install-apks --apks=/경로/.apks파일이름
 ### **1) 내부테스트 버전 만들기**
 내부테스트 > 새 버전 만들기 버튼 선택 > .aab파일을 업로드하여 내부테스트 버전을 만듭니다.  
 ![](/assets/react-native-bundle-install1.png)
+<br></br>
+
 ### **2) 내부테스트할 Google Play 계정 추가**
 내부테스터 > 테스터 > 테스트할 Google Play 계정을 추가합니다.  
 ![](/assets/react-native-bundle-install2.png)
+<br></br>
+
 ### **3) 내부테스트 초대 수락**
 초대링크를 통해 초대 페이지에 들어갑니다.  
 초대 수락 버튼을 선택하여 내부테스트 초대에 수락합니다.  
 ![](/assets/react-native-bundle-install3.png)
 ![](/assets/react-native-bundle-install4.png)
+<br></br>
+
 ### **4) 앱 다운로드**
 download it on Google Play 버튼을 선택하면 Google Play > 앱 상세 페이지로 이동합니다.  
 설치 버튼을 선택하여 앱을 설치합니다.  
+
+<div style="width:380px; display: inline-block">
+
 ![](/assets/react-native-bundle-install5.png)
+
+</div>
 <br></br><br></br><br></br><br></br>
 
 

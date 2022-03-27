@@ -185,18 +185,18 @@ const CodeBlock = ({ code, className, label, filename, addLine, removeLine, high
             <Highlight {...defaultProps} code={code} language={language} theme={dracula}>
                 {({className, style, tokens, getLineProps, getTokenProps}) => (
                     <pre className={className} style={{...style, paddingBottom: '10px', borderRadius:'0.5rem', overflow: 'auto'}}>
-                        <div sx={{display: 'block', textAlign: 'center', height: 40}}>
+                        <TUIBox sx={{display: 'block', textAlign: 'center', height: 40}}>
                             <CodeLabel label={label} language={language}/>
                             <CodeFile filename={filename} />
                             <CopyCode code={code} />
-                        </div>
+                        </TUIBox>
                         {tokens.map((line, index, tokens) => {
                             const LineBgColor = isAddLine(index) ? 'codeblockAddLine' : isRemoveLine(index) ? 'codeblockRemoveLine' : isHighlightLine(index) ? 'codeblockHighlightLine' : ''
                             const PrefixTextColor = isAddLine(index) ? 'codeblockAddLineText' : isRemoveLine(index) ? 'codeblockRemoveLineText' : ''
                             const LinePrefix = isAddLine(index) ? '+' : isRemoveLine(index) ? '-' : ' '
 
                             return (
-                              <div key={index}
+                              <TUIBox key={index}
                                 {...getLineProps({ line, key: index })}
                                 sx={tokens.length-1==index? {display: 'none'} : {}}
                               >
@@ -205,7 +205,7 @@ const CodeBlock = ({ code, className, label, filename, addLine, removeLine, high
                                       <span key={key} sx={{bg:LineBgColor}} {...getTokenProps({ token, key })} />
                                   ))}
                                   <ExtraString/>
-                              </div>
+                              </TUIBox>
                           )
                         })}
                     </pre>

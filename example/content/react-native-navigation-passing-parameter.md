@@ -16,7 +16,12 @@ tags:
 ### **예시 설명**
 아래와 같은 동작을 구현해봅시다.
 - HomeScreen에서 PassingParameterScreen으로 화면 전환 시 Parameter 전달
+
+<div style="width:640px; display: block">
+
 ![](/assets/react-native-passing-parameter.png)
+
+</div>
 <br></br><br></br><br></br><br></br>
 
 

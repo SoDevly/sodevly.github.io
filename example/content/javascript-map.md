@@ -15,7 +15,7 @@ tags:
 
 # **❐ 설명**
 `map()`은 배열을 순회하며 각 요소를 특정 함수를 실행한 결과로 새로운 배열을 만들어줍니다.
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
@@ -52,7 +52,7 @@ arr.map(callback(currentValue, currentIndex, originArray), thisArg)
 
 **반환값**  
 배열의 각 요소를 callback함수를 실행한 결과로 만든 새로운 배열
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

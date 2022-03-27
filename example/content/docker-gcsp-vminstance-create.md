@@ -29,6 +29,7 @@ tags:
     부팅디스크 유형 : 표준 영구디스크  
     크기 : 100  
 - 방화벽 : HTTP 트래픽 허용 체크박스 체크  
+
 ![](/assets/vminstance-create3.png)
 ![](/assets/vminstance-create4.png)
 <br></br><br></br>

@@ -30,6 +30,7 @@ App Store Connect > 앱+ 버튼 > 신규앱 버튼을 클릭합니다.
 - 번들 ID : Certificates, Identifiers & Profiles 페이지에서 등록한 번들 ID를 선택
 - SKU : App Store에 표시되지 않는 앱의 고유한 ID 입력
 - 사용자 액세스 권한 : 앱을 볼 수 있는 사용자를 제한하려면 제한된 액세스 선택하고 모든 사용자가 접근 가능하게 할려면 전체 액세스 선택
+
 ![](/assets/react-native-register-app-on-appstore2.png)
 <br></br><br></br><br></br><br></br>
 
@@ -68,6 +69,7 @@ RGB 색상 영역에 있는 JPG 또는 PNG 형식
 앱 미리보기 최대 3개  
 M4V, MP4 또는 MOV 형식  
 최대 크기 500MB
+
 ![](/assets/react-native-register-app-on-appstore3.png)
 
 ### **프로모션 텍스트 (170자 이내)**

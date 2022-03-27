@@ -15,7 +15,7 @@ tags:
 
 # **❐ 설명**
 `filter()`는 배열에서 특정 조건을 만족하는 요소만 필터하여 새로운 배열을 만들어줍니다.  
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
@@ -52,7 +52,7 @@ arr.filter(callback(currentValue, currentIndex, originArray), thisArg)
 
 **반환값**  
 필터 조건을 만족하는 요소로만 이루어진 새로운 배열. 어떤 요소도 필터 조건을 만족하지 않는다면 빈 배열을 반환  
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

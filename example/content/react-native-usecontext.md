@@ -36,8 +36,13 @@ UseContextScreen
 
 - 상위 컴포넌트(UseContextScreen)에서 데이터(userInfo) 정의
 - useContext를 이용하여 하위 컴포넌트와 데이터(userInfo) 공유
-- 하위 컴포넌트(UseContextChildrenComponent)에서 데이터(userInfo) 사용
+- 하위 컴포넌트(UseContextChildrenComponent)에서 데이터(userInfo) 사용  
+
+<div style="width:360px; display: block">
+
 ![](/assets/react-native-usecontext.gif)
+
+</div>
 <br></br><br></br><br></br><br></br>
 
 

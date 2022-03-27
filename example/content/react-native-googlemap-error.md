@@ -29,7 +29,7 @@ tags:
 Specs satisfying the `GoogleMaps (= 5.1.0), GoogleMaps` dependency were found, but they required a higher minimum deployment target.<br></br>
 error Command failed with exit code 1.<br></br>
 </pre>
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

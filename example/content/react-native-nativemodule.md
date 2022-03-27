@@ -31,7 +31,18 @@ React Native 앱을 개발하다보면 플랫폼(Android/iOS) API 접근이 필�
 - iOS 단말에서 'Native Module 함수 호출'버튼 클릭하면 "Hi! I'm iOS" 얼럿 뜸
 - 얼럿을 띄우는 함수를 각 플랫폼(Android/iOS)에 Callback 함수로 넘겨줌
 - 각 플랫폼(Android/iOS)에서는 Callback 함수를 이용하여 얼럿 문구를 넘겨줌
-![](/assets/react-native-nativemodule-android.gif)  ![](/assets/react-native-nativemodule-ios.gif)
+
+<div style="width:380px; margin-right:20px; display: inline-block">
+
+![](/assets/react-native-nativemodule-android.gif)
+
+</div>
+
+<div style="width:380px; display: inline-block">
+
+![](/assets/react-native-nativemodule-ios.gif)
+
+</div>
 <br></br><br></br><br></br><br></br>
 
 

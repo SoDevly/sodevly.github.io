@@ -31,7 +31,12 @@ useState를 이용하여 아래와 같은 로직을 구현해봅시다.
 - number라고 부르는 상태 변수 정의
 - [더하기]버튼 선택 시, number + 1 값으로 상태 변경
 - [빼기]버튼 선택 시, number -1 값으로 상태 변경  
+
+<div style="width:860px; display: block">
+
 ![](/assets/react-native-usestate.png)
+
+</div>
 <br></br><br></br><br></br><br></br>
 
 

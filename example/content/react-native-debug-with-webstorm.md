@@ -27,6 +27,7 @@ Configuration 정보를 입력합니다.
 - Name : Configuration 이름 입력
 - Platform : Android 선택
 - Arguments : Android앱 실행 시 필요한 인자 입력
+
 ![](/assets/react-native-debug-with-webstorm3.png)
 <br></br><br></br>
 
@@ -43,6 +44,7 @@ Configuration 정보를 입력합니다.
 - Name : Configuration 이름 입력
 - Platform : iOS 선택
 - Arguments : iOS앱 실행 시 필요한 인자 입력
+
 ![](/assets/react-native-debug-with-webstorm5.png)
 <br></br><br></br>
 
@@ -64,7 +66,12 @@ Android앱과 React Native Debugger가 실행됩니다.
 <br></br>
 
 Status: Waitting이라면 개발자옵션 > Debug 메뉴를 선택합니다.
+
+<div style="width:400px; display: block">
+
 ![](/assets/react-native-debug-with-webstorm9.png)
+
+</div>
 <br></br>
 
 Status: Debugger session active로 변경됩니다.
@@ -88,7 +95,12 @@ iOS앱과 React Native Debugger가 실행됩니다.
 <br></br>
 
 개발자옵션 > Debug with Chrome 메뉴를 선택합니다.
+
+<div style="width:400px; display: block">
+
 ![](/assets/react-native-debug-with-webstorm13.png)
+
+</div>
 <br></br>
 
 Status: Debugger session active로 변경됩니다.

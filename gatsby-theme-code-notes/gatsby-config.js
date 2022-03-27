@@ -68,7 +68,7 @@ module.exports = (options) => {
                 maxWidth: 900,
                 linkImagesToOriginal: false,
                 disableBgImage: true,
-                wrapperStyle: `margin: 1.5rem 0;`,
+                wrapperStyle: `margin: 0;`,
               },
             },
             'gatsby-remark-gifs',
