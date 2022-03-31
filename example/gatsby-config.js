@@ -25,6 +25,7 @@ module.exports = {
         logo: '',
       },
     },
+    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
@@ -35,7 +36,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://zdlath.github.io',
-        sitemap: 'https://zdlath.github.io/zdlath-sitemap.xml',
+        sitemap: 'https://zdlath.github.io/sitemap/sitemap-index.xml',
         policy: [{
           userAgent: '*',
           allow: '/'
