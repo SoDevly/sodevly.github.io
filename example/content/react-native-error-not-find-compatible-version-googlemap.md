@@ -5,7 +5,7 @@ created: 2022-03-15
 modified: 2022-03-15
 link: ''
 tags:
-  - React Native
+- React Native
 ---
 <br></br>
 
@@ -13,7 +13,7 @@ tags:
 
 
 
-# **❐ Error 로그** 
+# **❐ Error 로그**
 <pre>
 [!] CocoaPods could not find compatible versions for pod "GoogleMaps":<br></br>
 　　In Podfile:<br></br>
@@ -35,7 +35,7 @@ error Command failed with exit code 1.<br></br>
 
 
 
-# **❐ 해결방법**  
+# **❐ 해결방법**
 Podfile 파일에서 platform 버전을 10.0 -> 11.0으로 업데이트했습니다.
 ```undefined filename=Podfile addLine={2} removeLine={1}
 platform :ios, '10.0'
