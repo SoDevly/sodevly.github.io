@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://zdlath.github.io/zdlath-sitemap.xml
+Sitemap: https://zdlath.github.io/sitemap/sitemap-index.xml
 Host: https://zdlath.github.io
