@@ -14,12 +14,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: `ca-pub-3153449982002378`,
-      },
-    },
-    {
       resolve: 'gatsby-theme-code-notes',
       options: {
         contentPath: 'content',

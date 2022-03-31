@@ -66,6 +66,9 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="google-site-verification" content="0tJmOJBeKEWGHlvM6HFkMSd7envmM3fSyWyPnsxdMnk" />
         <meta name="naver-site-verification" content="a8ed9f75df3b7753105aba9b0651907f69b65cf3" />
+        <script async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3153449982002378"
+              crossOrigin="anonymous"></script>
         <link rel="canonical" href={"https://zdlath.github.io"+path}/>
         {openSearch && openSearch.siteUrl && (
           <link

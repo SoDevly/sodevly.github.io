@@ -18,7 +18,6 @@
   "dependencies": {
     "gatsby": "^3.10.2",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
-    "gatsby-plugin-google-adsense": "^1.1.3",
     "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-theme-code-notes": "*",
     "react": "^17.0.2",
