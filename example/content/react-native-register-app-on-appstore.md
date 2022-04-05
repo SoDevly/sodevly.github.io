@@ -148,6 +148,9 @@ M4V, MP4 또는 MOV 형식
 # **❐ 일반 정보 > 앱이 수집하는 개인정보 등록**
 ### **개인정보 처리방침 URL**
 개인정보처리방침 URL을 입력합니다.
+
+### **앱에서 수집하는 데이터와 데이터 사용 방식**
+앱에서 수집하는 데이터와 데이터 사용 방식에 대하여 선택합니다.
 ![](/assets/react-native-register-app-on-appstore13.png)
 <br></br><br></br><br></br><br></br>
 
@@ -157,5 +160,14 @@ M4V, MP4 또는 MOV 형식
 
 # **❐ App Store에 등록한 정보 확인**
 위에서 작성한 정보는 App Store에서 아래와 같이 표시됩니다.
+<div style="width:540px; display: block">
+
 ![](/assets/react-native-register-app-on-appstore14.png)
+
+</div>
+<div style="width:580px; display: block">
+
+![](/assets/react-native-register-app-on-appstore15.png)
+
+</div>
 <br></br><br></br>
