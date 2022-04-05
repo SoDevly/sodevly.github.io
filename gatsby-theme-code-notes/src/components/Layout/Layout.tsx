@@ -66,9 +66,9 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="google-site-verification" content="0tJmOJBeKEWGHlvM6HFkMSd7envmM3fSyWyPnsxdMnk" />
         <meta name="naver-site-verification" content="c46dda06715aef42b8f0a105b7edb6aff6b19894" />
-        <script async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3153449982002378"
-              crossOrigin="anonymous"></script>
+          <script async
+                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3153449982002378"
+                  crossOrigin="anonymous"></script>
         <link rel="canonical" href={"https://sodevly.github.io"+path}/>
         {openSearch && openSearch.siteUrl && (
           <link
