@@ -218,10 +218,10 @@ tab을 사용하여 들여쓰기를 할 수 있습니다.
 
 **[입력]**  
 ```markdown
-[![](/assets/photo.jpg)](https://github.com/zdlath)
+[![](/assets/photo.jpg)](https://github.com/zdlath/rnstudy)
 ```
 **[결과]**  
-[![](/assets/photo.jpg)](https://github.com/zdlath)
+[![](/assets/photo.jpg)](https://github.com/zdlath/rnstudy)
 
 <br></br><br></br><br></br><br></br>
 

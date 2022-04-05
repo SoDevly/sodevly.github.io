@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: '',
-    description: 'Sohee의 개발 블로그',
-    keywords: ['React Native', 'React', '프로그래밍', 'App Developer', '앱개발자', 'IT'],
-    siteUrl: `https://zdlath.github.io`,
+    description: 'SoDevly의 개발 블로그',
+    keywords: ['React Native', 'React', '프로그래밍', 'App Developer', '앱개발자', "Web Front Developer", "웹개발자", 'IT'],
+    siteUrl: `https://sodevly.github.io`,
   },
   plugins: [
     {
@@ -25,18 +25,17 @@ module.exports = {
         logo: '',
       },
     },
-    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-advanced-sitemap`,
       options: {
-        output: "/zdlath-sitemap.xml",
+        output: "/sitemap.xml",
       }
     },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://zdlath.github.io',
-        sitemap: 'https://zdlath.github.io/sitemap/sitemap-index.xml',
+        host: 'https://sodevly.github.io',
+        sitemap: 'https://sodevly.github.io/sitemap.xml',
         policy: [{
           userAgent: '*',
           allow: '/'
@@ -90,8 +89,8 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: "Sohee Develop Blog RSS Feed",
-            link: "https://zdlath.github.io",
+            title: "SoDevly Develop Blog RSS Feed",
+            link: "https://sodevly.github.io",
           },
         ],
       },

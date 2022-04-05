@@ -23,7 +23,7 @@ let으로 선언한 변수는 컴포넌트가 리렌더링되면 값이 초기�
 <br></br>
 
 `useRef`는 <u>특정 컴포넌트를 선택할 수 있게 도와주는 hook입니다.</u>  
-[useRef (1) 게시글 이동 ](https://zdlath.github.io/react-native-useref1)  
+[useRef (1) 게시글 이동 ](https://sodevly.github.io/react-native-useref1)  
 <br></br><br></br><br></br><br></br>
 
 

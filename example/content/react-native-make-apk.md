@@ -17,7 +17,7 @@ tags:
 ### **Release용 KeyStore 생성**
 react native 프로젝트를 생성하면 기본적으로 Debug용 KeyStore 파일(debug.keystore)은 생성됩니다.  
 Release용 KeyStore 파일은 개발자가 생성해줘야합니다.  
-[KeyStore 생성 방법](https://zdlath.github.io/react-native-keystore)은 여기서 자세히 설명하겠습니다.
+[KeyStore 생성 방법](https://sodevly.github.io/react-native-keystore)은 여기서 자세히 설명하겠습니다.
 <br></br>
 
 

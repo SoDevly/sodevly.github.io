@@ -69,7 +69,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         <script async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3153449982002378"
               crossOrigin="anonymous"></script>
-        <link rel="canonical" href={"https://zdlath.github.io"+path}/>
+        <link rel="canonical" href={"https://sodevly.github.io"+path}/>
         {openSearch && openSearch.siteUrl && (
           <link
             rel="search"

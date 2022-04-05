@@ -95,7 +95,7 @@ git tag
 ```
 git ls-remote --tags
 
-From https://github.com/zdlath/zdlath.github.io.git  
+From https://github.com/zdlath/rnstudy.git
 15a5c25bb0e7330de2acb15e8d6b3f62613a1392        refs/tags/1.0.0  
 16a5c23ba0e7890de2adb15e8d6b3f62613c1391        refs/tags/1.1.0  
 17a5c22be0e8830de2bcb15e8d6b3f62613c1394        refs/tags/2.0.0  
@@ -119,7 +119,7 @@ ex)
 git push -u origin v2.2.1
 
 Total 0 (delta 0), reused 0 (delta 0)  
-To https://github.com/zdlath/zdlath.github.io.git  
+To https://github.com/zdlath/rnstudy.git
  \* [new tag]           v2.2.1 -> v2.2.1
 ```
 <br></br>

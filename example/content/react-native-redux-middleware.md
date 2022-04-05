@@ -31,7 +31,7 @@ tags:
 
 # **❐ 예시**
 ### **예시 설명**
-앞에 [Redux 게시글](https://zdlath.github.io/react-native-redux)에서 구현한 로직에서 Middleware 2개를 추가하여 구현해보고, Redux Middleware의 아키텍쳐를 이해해봅시다.
+앞에 [Redux 게시글](https://sodevly.github.io/react-native-redux)에서 구현한 로직에서 Middleware 2개를 추가하여 구현해보고, Redux Middleware의 아키텍쳐를 이해해봅시다.
 - \+ 버튼을 클릭하면 number state값이 +1 증가  
   \- 버튼을 클릭하면 number state값이 -1 감소
 - name input값이 바뀌면 name state값이 바뀜  
