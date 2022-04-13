@@ -13,7 +13,7 @@ tags:
 
 
 # **❐ .nvmrc란?**
-.nvmrc는 NVM(node version manager)의 개별 프로젝트를 위한 설정 파일입니다.
+.nvmrc는 NVM(node version manager)의 개별 프로젝트를 위한 설정 파일입니다.  
 .nvmrc 설정 파일을 이용하여 프로젝트별 사용할 Node.js 버전을 명시할 수 있습니다.
 <br></br><br></br><br></br><br></br>
 
