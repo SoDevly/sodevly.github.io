@@ -50,7 +50,7 @@ Product > Archive 메뉴를 선택합니다.
 ### **배포 방식 선택**
 App Store Connect 선택 > Next 버튼을 클릭합니다.
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testflight6.png)
 
@@ -63,7 +63,7 @@ Upload 선택 > Next 버튼을 클릭합니다.
 - Export : ipa 파일로 앱을 내보내기
            (Transporter 앱을 이용하여 ipa 파일을 TestFlight에 업로드할 수 있습니다.)
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testflight7.png)
 
@@ -73,7 +73,7 @@ Upload 선택 > Next 버튼을 클릭합니다.
 ### **배포 옵션 선택**
 기본 상태 그대로 옵션 선택 > Next 버튼을 클릭합니다.
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testfligh8.png)
 
@@ -83,7 +83,7 @@ Upload 선택 > Next 버튼을 클릭합니다.
 ### **인증서 선택**
 배포 인증서, 프로비저닝 파일 선택 > Next 버튼을 클릭합니다.
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testfligh9.png)
 
@@ -94,7 +94,7 @@ Upload 선택 > Next 버튼을 클릭합니다.
 ### **TestFlight에 앱 업로드**
 업로드 중으로 기다립니다.
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testfligh10.png)
 
@@ -102,7 +102,7 @@ Upload 선택 > Next 버튼을 클릭합니다.
 
 업로드 완료가 되었습니다.
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testfligh11.png)
 

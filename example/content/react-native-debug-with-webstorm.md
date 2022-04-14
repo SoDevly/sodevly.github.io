@@ -67,7 +67,7 @@ Android앱과 React Native Debugger가 실행됩니다.
 
 Status: Waitting이라면 개발자옵션 > Debug 메뉴를 선택합니다.
 
-<div style="width:400px; display: block">
+<div style="max-width:400px; display: block">
 
 ![](/assets/react-native-debug-with-webstorm9.png)
 
@@ -96,7 +96,7 @@ iOS앱과 React Native Debugger가 실행됩니다.
 
 개발자옵션 > Debug with Chrome 메뉴를 선택합니다.
 
-<div style="width:400px; display: block">
+<div style="max-width:400px; display: block">
 
 ![](/assets/react-native-debug-with-webstorm13.png)
 

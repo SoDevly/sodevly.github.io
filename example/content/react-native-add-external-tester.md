@@ -71,7 +71,7 @@ TestFlight에 업로드한 앱 버전들이 보입니다.
 ### **초대 수락하기**
 초대 메일 > View in TestFlight 버튼을 클릭합니다.
 
-<div style="width:420px; display: block">
+<div style="max-width:420px">
 
 ![](/assets/react-native-add-external-tester8.png)
 
@@ -79,7 +79,7 @@ TestFlight에 업로드한 앱 버전들이 보입니다.
 
 리딤코드를 복사합니다.
 
-<div style="width:420px; display: block">
+<div style="max-width:420px">
 
 ![](/assets/react-native-add-external-tester9.png)
 
@@ -88,7 +88,7 @@ TestFlight에 업로드한 앱 버전들이 보입니다.
 TestFlight앱 > Redeem(교환) 버튼을 클릭 > 리딤코드 입력 > Redeem 버튼을 클릭합니다.  
 만약 TestFlight앱이 설치되어 있지 않다면 App Store에서 TestFlight 앱을 다운로드 받습니다.
 
-<div style="width:420px; display: block">
+<div style="max-width:420px">
 
 ![](/assets/react-native-add-external-tester10.png)
 
@@ -97,7 +97,7 @@ TestFlight앱 > Redeem(교환) 버튼을 클릭 > 리딤코드 입력 > Redeem �
 초대받은 앱이 보이는 것을 확인할 수 있습니다.  
 초대받은 앱 옆에 install 버튼을 클릭하여 앱을 다운로드 받습니다.
 
-<div style="width:420px; display: block">
+<div style="max-width:420px">
 
 ![](/assets/react-native-add-external-tester11.png)
 

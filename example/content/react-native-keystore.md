@@ -25,21 +25,21 @@ Google Play에 Android앱을 배포할 때 KeyStore로 서명한 APK 또는 Bund
 
 # **❐ KeyStore 생성 방법**
 ### 1) Build > Generate Signed Bundle / APK... 메뉴 클릭
-<div style="width:800px; display: block">
+<div style="max-width:800px; display: block">
 
 ![](/assets/react-native-keystore1.png)
 
 </div>
 
 ### 2) Generate Signed Bundle or APK 팝업 > Android App Bundle 또는 APK 선택 > Next 버튼 클릭
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-keystore2.png)
 
 </div>
 
 ### 3) Generate Signed Bundle or APK 팝업 > Create new... 버튼 클릭
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-keystore3.png)
 
@@ -55,7 +55,7 @@ Google Play에 Android앱을 배포할 때 KeyStore로 서명한 APK 또는 Bund
 - Key > Validity (years): 유효기간 입력 (25년을 권장함)  
 - Key > Certificate: 개발자 정보 입력  
 
-<div style="width:680px; display: block">
+<div style="max-width:680px; display: block">
 
 ![](/assets/react-native-keystore4.png)
 

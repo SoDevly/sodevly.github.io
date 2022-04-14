@@ -160,12 +160,12 @@ M4V, MP4 또는 MOV 형식
 
 # **❐ App Store에 등록한 정보 확인**
 위에서 작성한 정보는 App Store에서 아래와 같이 표시됩니다.
-<div style="width:540px; display: block">
+<div style="max-width:540px; display: block">
 
 ![](/assets/react-native-register-app-on-appstore14.png)
 
 </div>
-<div style="width:580px; display: block">
+<div style="max-width:580px; display: block">
 
 ![](/assets/react-native-register-app-on-appstore15.png)
 

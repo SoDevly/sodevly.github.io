@@ -77,12 +77,21 @@ TestFlight에 업로드한 앱 버전들이 보입니다.
 
 ### **초대 수락하기**
 초대 메일 > View in TestFlight 버튼을 클릭합니다.
+<div style="max-width:420px">
+
 ![](/assets/react-native-add-internal-tester9.png)
+</div>
 
 TestFlight 앱 > 수락 버튼을 클릭합니다.  
 만약 TestFlight앱이 설치되어 있지 않다면 App Store에서 TestFlight 앱을 다운로드 받습니다.
+<div style="max-width:420px">
+
 ![](/assets/react-native-add-internal-tester10.png)
+</div>
 
 설치 버튼을 클릭하여 앱을 다운로드 받습니다.
+<div style="max-width:420px">
+
 ![](/assets/react-native-add-internal-tester11.png)
+</div>
 <br></br><br></br>

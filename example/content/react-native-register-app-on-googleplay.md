@@ -134,19 +134,19 @@ PNG 또는 JPEG
 위에서 작성한 정보는 Google Play에서 아래와 같이 표시됩니다.
 
 
-<div style="width:740px; display: block">
+<div style="max-width:740px; display: block">
 
 ![](/assets/react-native-register-app-on-googleplay14.png)
 
 </div>
 
-<div style="width:520px; display: block">
+<div style="max-width:520px; display: block">
 
 ![](/assets/react-native-register-app-on-googleplay15.png)
 
 </div>
 
-<div style="width:460px; display: block">
+<div style="max-width:460px; display: block">
 
 ![](/assets/react-native-register-app-on-googleplay16.png)
 

@@ -67,7 +67,7 @@ bundletool install-apks --apks=/경로/.apks파일이름
 download it on Google Play 버튼을 선택하면 Google Play > 앱 상세 페이지로 이동합니다.  
 설치 버튼을 선택하여 앱을 설치합니다.  
 
-<div style="width:380px; display: inline-block">
+<div style="max-width:380px; display: inline-block">
 
 ![](/assets/react-native-bundle-install5.png)
 

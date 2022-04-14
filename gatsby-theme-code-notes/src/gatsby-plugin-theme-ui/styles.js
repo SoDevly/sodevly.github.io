@@ -36,7 +36,7 @@ export const styles = {
     fontWeight: 'body',
     color: 'text',
     mt: 0,
-    mb: '1.25rem',
+    mb: '0rem',
   },
   h1: {
     ...heading,

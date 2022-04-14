@@ -33,7 +33,7 @@ PropsScreen
 - 상위 컴포넌트(PropsScreen)에서 하위 컴포넌트(PropsComponent)로 product, price 데이터 전달
 - 하위 컴포넌트(PropsComponent)에서 전달받은 데이터 사용
 
-<div style="width:360px; display: block">
+<div style="max-width:360px; display: block">
 
 ![](/assets/react-native-props.png)
 
