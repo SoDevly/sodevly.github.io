@@ -66,8 +66,8 @@ module.exports = {
                   description: edge.node.frontmatter.title,
                   title: edge.node.frontmatter.title,
                   date: edge.node.frontmatter.created,
-                  url: site.siteMetadata.siteUrl + "/" + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + "/" + edge.node.fields.slug,
+                  url: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug + '/',
+                  guid: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug + '/',
                 });
               });
             },

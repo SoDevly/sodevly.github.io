@@ -85,7 +85,7 @@ export const TagNav: FunctionComponent<TagNavProps> = ({
             fontWeight: activeTag === 'untagged' ? 'bold' : undefined,
             bg: activeTag === 'untagged' ? 'navHover' : undefined,
           }}
-          to={`/tag/untagged`}
+          to={`/tag/untagged/`}
           as={GatsbyLink}
           onClick={() => setQuery('')}
         >

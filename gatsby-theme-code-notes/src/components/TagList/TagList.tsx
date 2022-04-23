@@ -38,7 +38,7 @@ export const TagList: FunctionComponent<TagListProps> = ({
         const tagName = slugify(item)
         const tagColor = getColourFromString(tagName)
         const tagLink =
-          basePath === '/' ? `/tag/${tagName}` : `${basePath}/tag/${tagName}`
+          basePath === '/' ? `/tag/${tagName}/` : `${basePath}/tag/${tagName}/`
         if (asLinks) {
           return (
             <Link

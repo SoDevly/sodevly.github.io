@@ -22,7 +22,7 @@ export const BackLinks: React.FC<IProps> = ({ references }) => (
       {references.map((ref) => {
         return (
           <li key={`${ref.slug}-item`}>
-            <Link href={`/${ref.slug.toLowerCase()}`}>
+            <Link href={`/${ref.slug.toLowerCase()}/`}>
               {ref.frontmatter.title}
             </Link>
           </li>
