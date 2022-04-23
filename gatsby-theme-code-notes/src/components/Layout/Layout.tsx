@@ -55,16 +55,16 @@ export const Layout: FunctionComponent<LayoutProps> = ({
     <Fragment>
       <Helmet
         key="app-metadata"
-        titleTemplate={`%s · ${description}`}
-        defaultTitle={description}
+        titleTemplate={`%s`}
+        defaultTitle={title}
       >
         <html lang="ko" />
         <meta charSet="utf-8" />
         <title>{title}</title>
-        <meta name="description" content={title} />
+        <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta property="og:title" content={title} />
-        <meta name="og:description" content={title} />
+        <meta name="og:description" content={description} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="google-site-verification" content="0tJmOJBeKEWGHlvM6HFkMSd7envmM3fSyWyPnsxdMnk" />
         <meta name="naver-site-verification" content="c46dda06715aef42b8f0a105b7edb6aff6b19894" />
@@ -195,7 +195,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
               <Image src={logo} variant="logo" alt="logo" />
             </Box>
           )}
-          {showDescriptionInSidebar && description && (
+          {showDescriptionInSidebar && (
             <Box sx={{ mb: 3 }}>
               <Text
                 sx={{
@@ -204,7 +204,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
                   fontWeight: 'extrabold',
                 }}
               >
-                {description}
+                  SoDevly의 개발 블로그
               </Text>
             </Box>
           )}

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: '',
-    description: 'SoDevly의 개발 블로그',
+    title: 'SoDevly의 개발 블로그',
+    description: 'React Native, React 위주의 앱/웹프론트 기술블로그입니다.',
     keywords: ['React Native', 'React', '프로그래밍', 'App Developer', '앱개발자', "Web Front Developer", "웹개발자", 'IT'],
     siteUrl: `https://sodevly.github.io/`,
   },
