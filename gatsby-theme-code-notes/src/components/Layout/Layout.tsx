@@ -45,6 +45,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({
     description,
     logo,
     openSearch,
+    keywords,
   } = useSiteMetadata()
   const [navOpen, setNavOpen] = useState(false)
   const [colorMode, setColorMode] = useColorMode()
@@ -57,18 +58,19 @@ export const Layout: FunctionComponent<LayoutProps> = ({
         titleTemplate={`%s · ${description}`}
         defaultTitle={description}
       >
-        <html lang="en" />
+        <html lang="ko" />
         <meta charSet="utf-8" />
         <title>{title}</title>
-        <meta property="og:title" content={title} />
         <meta name="description" content={title} />
+        <meta name="keywords" content={keywords} />
+        <meta property="og:title" content={title} />
         <meta name="og:description" content={title} />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="google-site-verification" content="0tJmOJBeKEWGHlvM6HFkMSd7envmM3fSyWyPnsxdMnk" />
         <meta name="naver-site-verification" content="c46dda06715aef42b8f0a105b7edb6aff6b19894" />
-          <script async
-                  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3153449982002378"
-                  crossOrigin="anonymous"></script>
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3153449982002378"
+            crossOrigin="anonymous"></script>
         <link rel="canonical" href={"https://sodevly.github.io"+path}/>
         {openSearch && openSearch.siteUrl && (
           <link

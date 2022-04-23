@@ -17,6 +17,7 @@ export const useSiteMetadata = () => {
           }
           showDate
           basePath
+          keywords
         }
       }
     }
