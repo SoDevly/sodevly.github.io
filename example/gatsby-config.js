@@ -3,7 +3,7 @@ module.exports = {
     title: '',
     description: 'SoDevly의 개발 블로그',
     keywords: ['React Native', 'React', '프로그래밍', 'App Developer', '앱개발자', "Web Front Developer", "웹개발자", 'IT'],
-    siteUrl: `https://sodevly.github.io`,
+    siteUrl: `https://sodevly.github.io/`,
   },
   plugins: [
     {
@@ -34,7 +34,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://sodevly.github.io',
+        host: 'https://sodevly.github.io/',
         sitemap: 'https://sodevly.github.io/sitemap.xml',
         policy: [{
           userAgent: '*',
@@ -66,8 +66,8 @@ module.exports = {
                   description: edge.node.frontmatter.title,
                   title: edge.node.frontmatter.title,
                   date: edge.node.frontmatter.created,
-                  url: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug + '/',
-                  guid: site.siteMetadata.siteUrl + '/' + edge.node.fields.slug + '/',
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug + '/',
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug + '/',
                 });
               });
             },
@@ -90,7 +90,7 @@ module.exports = {
             `,
             output: '/rss.xml',
             title: "SoDevly Develop Blog RSS Feed",
-            link: "https://sodevly.github.io",
+            link: "https://sodevly.github.io/",
           },
         ],
       },

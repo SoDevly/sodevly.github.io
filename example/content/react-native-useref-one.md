@@ -22,7 +22,7 @@ ex) 스크롤바 위치를 가져오거나 설정해야하는 상황, 입력필�
 <br></br>
 
 `useRef`는 <u>컴포넌트 리렌더링없이 상태 값을 관리할 수 있는 hook입니다.</u>  
-[useRef (2) 게시글 이동](https://sodevly.github.io/react-native-useref-two)  
+[useRef (2) 게시글 이동](https://sodevly.github.io/react-native-useref-two/)  
 <br></br><br></br><br></br><br></br>
 
 

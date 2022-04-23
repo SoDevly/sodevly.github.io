@@ -355,7 +355,7 @@ yarn android:dev:d
 
 ### **미리 설정한 빌드환경으로 Android앱 생성하기**
 ###### **Release용 KeyStore 생성**
-[KeyStore 생성 방법](https://sodevly.github.io/react-native-keystore)은 여기서 자세히 설명하겠습니다.
+[KeyStore 생성 방법](https://sodevly.github.io/react-native-keystore/)은 여기서 자세히 설명하겠습니다.
 <br></br>
 
 ###### **Release용 KeyStore 정보 저장**

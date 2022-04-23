@@ -11,7 +11,7 @@ tags:
 
 
 # **❐ App Store에 앱 등록 및 정보 입력하기**
-[App Store에 앱 등록하기 - 앱 스토어 정보 등록하기](https://sodevly.github.io/react-native-register-app-on-appstore) 페이지를 참고해주세요.
+[App Store에 앱 등록하기 - 앱 스토어 정보 등록하기](https://sodevly.github.io/react-native-register-app-on-appstore/) 페이지를 참고해주세요.
 <br></br><br></br>
 
 
@@ -19,7 +19,7 @@ tags:
 
 
 # **❐ iOS앱 TestFlight에 배포하기**
-[iOS앱 TestFlight에 배포하기](https://sodevly.github.io/react-native-upload-app-on-testflight) 페이지를 참고해주세요.
+[iOS앱 TestFlight에 배포하기](https://sodevly.github.io/react-native-upload-app-on-testflight/) 페이지를 참고해주세요.
 <br></br><br></br>
 
 
