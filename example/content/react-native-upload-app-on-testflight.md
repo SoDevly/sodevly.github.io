@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: 'iOS앱 TestFlight에 배포하기'
-created: 2022-02-26
-modified: 2022-02-26
+created: 2022-04-18
+modified: 2022-04-18
 link: ''
 tags:
   - React Native
@@ -10,7 +10,29 @@ tags:
 <br></br>
 
 
- 
+# **❐ App Store에 앱 등록 및 정보 입력하기**
+[App Store에 앱 등록 및 정보 입력하는 방법](https://sodevly.github.io/react-native-register-app-on-appstore/)은 여기서 자세히 설명하겠습니다.
+<br></br><br></br><br></br><br></br>
+
+
+
+
+
+# **❐ iOS 인증서 생성하기**
+### **CSR 파일 생성**
+[CSR 파일 생성 방법](https://sodevly.github.io/react-native-create-csr/)은 여기서 자세히 설명하겠습니다.
+
+### **Identifier 생성**
+[Identifier 생성 방법](https://sodevly.github.io/react-native-create-identifier/)은 여기서 자세히 설명하겠습니다.
+
+### **Certificate 생성**
+[Certificate 생성 방법](https://sodevly.github.io/react-native-create-certificate/)은 여기서 자세히 설명하겠습니다.
+
+### **Provisioning Profile 생성**
+[Provisioning Profile 생성 방법](https://sodevly.github.io/react-native-create-provisioning-profile/)은 여기서 자세히 설명하겠습니다.
+<br></br><br></br><br></br><br></br>
+
+
 
 
 # **❐ 앱 빌드 정보 및 환경 설정**
@@ -81,8 +103,8 @@ Upload 선택 > Next 버튼을 클릭합니다.
 <br></br>
 
 ### **인증서 선택**
-배포 인증서, 프로비저닝 파일 선택 > Next 버튼을 클릭합니다.
-
+배포 인증서, 프로비저닝 파일 선택 > Next 버튼을 클릭합니다.  
+앱 정보를 확인한 후 Upload 버튼을 클릭합니다.
 <div style="max-width:680px; display: block">
 
 ![](/assets/react-native-upload-app-on-testfligh9.png)

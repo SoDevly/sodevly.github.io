@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '프로젝트별 Node.js 버전 다르게 세팅하는 방법 (.nvmrc)'
-created: 2022-04-13
-modified: 2022-04-13
+created: 2021-05-21
+modified: 2021-05-21
 link: ''
 tags:
   - React Native

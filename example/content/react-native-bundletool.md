@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: 'App Bundle 파일(.aab)로 앱 설치하기'
-created: 2021-11-03
-modified: 2021-11-03
+created: 2022-04-23
+modified: 2022-04-23
 link: ''
 tags:
   - React Native

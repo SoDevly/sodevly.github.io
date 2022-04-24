@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: 'App Store에 앱 등록하기 - 앱 스토어 정보 등록하기'
-created: 2022-03-02
-modified: 2022-03-02
+created: 2022-04-02
+modified: 2022-04-02
 link: ''
 tags:
   - React Native

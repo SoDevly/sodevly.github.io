@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: 'Google Play에 앱 등록하기 - 앱 스토어 정보 등록하기'
-created: 2022-03-01
-modified: 2022-03-01
+created: 2022-04-01
+modified: 2022-04-01
 link: ''
 tags:
   - React Native

@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: 'Android앱 APK/AAB 생성하기'
-created: 2021-10-05
-modified: 2021-10-05
+created: 2022-04-17
+modified: 2022-04-17
 link: ''
 tags:
   - React Native

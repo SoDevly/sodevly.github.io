@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '[React Native] iOS앱 App Store에 배포하기'
-created: 2022-04-02
-modified: 2022-04-02
+created: 2022-04-22
+modified: 2022-04-22
 link: ''
 tags:
   - React Native
@@ -10,9 +10,28 @@ tags:
 <br></br>
 
 
+
 # **❐ App Store에 앱 등록 및 정보 입력하기**
-[App Store에 앱 등록하기 - 앱 스토어 정보 등록하기](https://sodevly.github.io/react-native-register-app-on-appstore/) 페이지를 참고해주세요.
-<br></br><br></br>
+[App Store에 앱 등록 및 정보 입력하는 방법](https://sodevly.github.io/react-native-register-app-on-appstore/)은 여기서 자세히 설명하겠습니다.
+<br></br><br></br><br></br><br></br>
+
+
+
+
+
+# **❐ iOS 인증서 생성하기**
+### **CSR 파일 생성**
+[CSR 파일 생성 방법](https://sodevly.github.io/react-native-create-csr/)은 여기서 자세히 설명하겠습니다.
+
+### **Identifier 생성**
+[Identifier 생성 방법](https://sodevly.github.io/react-native-create-identifier/)은 여기서 자세히 설명하겠습니다.
+
+### **Certificate 생성**
+[Certificate 생성 방법](https://sodevly.github.io/react-native-create-certificate/)은 여기서 자세히 설명하겠습니다.
+
+### **Provisioning Profile 생성**
+[Provisioning Profile 생성 방법](https://sodevly.github.io/react-native-create-provisioning-profile/)은 여기서 자세히 설명하겠습니다.
+<br></br><br></br><br></br><br></br>
 
 
 

@@ -11,7 +11,15 @@ tags:
 
 
 # **❐ Google Play에 앱 등록 및 정보 입력하기**
-[Google Play에 앱 등록하기 - 앱 스토어 정보 등록하기](https://sodevly.github.io/react-native-register-app-on-googleplay/) 페이지를 참고해주세요.
+[Google Play에 앱 등록 및 정보 입력하는 방법](https://sodevly.github.io/react-native-register-app-on-googleplay/)은 여기서 자세히 설명하겠습니다.
+<br></br><br></br>
+
+
+
+
+
+# **❐ Android 인증서 생성하기**
+[Android 인증서 생성하는 방법](https://sodevly.github.io/react-native-keystore/)은 여기서 자세히 설명하겠습니다.
 <br></br><br></br>
 
 
@@ -19,7 +27,7 @@ tags:
 
 
 # **❐ Android앱 AAB 생성하기**
-[Android앱 APK/AAB 생성하기](https://sodevly.github.io/react-native-make-apk/) 페이지를 참고해주세요.
+[Android앱 APK/AAB 생성하는 방법](https://sodevly.github.io/react-native-make-apk/)은 여기서 자세히 설명하겠습니다.
 <br></br><br></br>
 
 

@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: 'TestFlight 내부 테스터 추가하기'
-created: 2022-03-05
-modified: 2022-03-05
+created: 2022-04-24
+modified: 2022-04-24
 link: ''
 tags:
   - React Native
