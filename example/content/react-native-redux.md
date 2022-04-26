@@ -91,7 +91,7 @@ src
 ㅤㅤㅤㅤㅤㅤ├ counter.js       //Action 정의, Action Creator 정의, State 정의, Reducer 정의  
 ㅤㅤㅤㅤㅤㅤ├ userInfo.js      //Action 정의, Action Creator 정의, State 정의, Reducer 정의  
 ㅤㅤ├ screen  
-ㅤㅤㅤㅤ├ rudux  
+ㅤㅤㅤㅤ├ redux  
 ㅤㅤㅤㅤㅤㅤ├ ReduxScreen.js   //Store에서 관리하는 State를 디스플레이하고, dispatch(action)을 호출하여 State를 변경시키는 화면  
 <br></br><br></br><br></br><br></br>
 

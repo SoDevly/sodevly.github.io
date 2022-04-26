@@ -234,54 +234,6 @@ export default rootReducer;
 
 
 
-###### **App.js 파일 작성**
-```javascript
-import React from 'react';
-import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { enableScreens } from 'react-native-screens';
-import { createStore, applyMiddleware } from 'redux';
-import { Provider } from 'react-redux'
-import rootReducer from './src/redux/modules';
-import Middleware1 from './src/redux/middlewares/Middleware1';
-import Middleware2 from './src/redux/middlewares/Middleware2';
-import { default as HomeScreen } from "./src/screen/HomeScreen";
-import { default as ReduxScreen } from "./src/screen/redux/ReduxScreen";
-...생략
-
-enableScreens();
-const Stack = createStackNavigator();
-
-function App() {
-  //creactStore() 함수를 이용하여 Store를 생성합니다.
-  //rootReducer를 첫번째 파라미터로 전달하며, Middleware를 두번째 파라미터로 전달합니다.
-  //const store = createStore(rootReducer);
-  const store = createStore(rootReducer, applyMiddleware(Middleware1, Middleware2));
-  
-  //Provider 컴포넌트는 컴포넌트들이 Redux의 Store에 접근 가능하도록 해주는 컴포넌트입니다.  
-  //컴포넌트의 Root 위치에 Provider 컴포넌트로 감싸줍니다.  
-  return (
-    <Provider store={store}>
-      <NavigationContainer>
-        <Stack.Navigator  initialRouteName = "HomeScreen">
-          <Stack.Screen name="HomeScreen" component={HomeScreen} />        
-          <Stack.Screen name="ReduxScreen" component={ReduxScreen} />
-          ...생략
-        </Stack.Navigator>
-      </NavigationContainer>
-    </Provider>
-  );
-}
-
-export default App;
-```
-<br></br><br></br><br></br><br></br>
-
-
-
-
-
 ###### **ReduxScreen.js 파일 작성**
 ```javascript
 import React from 'react';
