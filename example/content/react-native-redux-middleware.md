@@ -36,7 +36,7 @@ tags:
   \- 버튼을 클릭하면 number state값이 -1 감소
 - name input값이 바뀌면 name state값이 바뀜  
   age input값이 바뀌면 age state값이 바뀜
-- Middleware1, Middleware1 추가
+- Middleware1, Middleware2 추가
 <br></br><br></br><br></br><br></br>
 
 
@@ -67,24 +67,19 @@ src
 ###### **Middleware1.js 파일 작성**
 ```javascript
 const Middleware1 = store => next => action => {
-    console.log("3. Middleware1 호출");
-    console.log("  [parameter] action : ", action);
+  //Reducer가 호출되기 전에 사전 작업 추가
+  console.log('[Middleware1] Reducer가 호출되기 전에 사전 작업');
 
-    //Reducer가 호출되기 전에 사전 작업 추가
-    console.log("Reducer가 호출되기 전에 사전 작업 1...");
-    
-    //next() 함수를 통해 다음 Middleware에게 Action을 전달합니다.
-    //다음 Middleware가 없다면 Reducer에게 Action을 전달합니다.
-    const result = next(action);
+  //next() 함수를 통해 다음 Middleware에게 Action을 전달합니다.
+  //다음 Middleware가 없다면 Reducer에게 Action을 전달합니다.
+  const result = next(action);
 
-    //Reducer가 호출된 후에 사후 작업 추가
-    console.log("Reducer가 호출된 후에 사후 작업 1...");
+  //Reducer가 호출된 후에 사후 작업 추가
+  console.log('[Middleware1] Reducer가 호출된 후에 사후 작업');
+  return result;
+};
 
-    console.log("  [return] result (Middleware1) : ", result);
-    return result;
-  };
-  
-  export default Middleware1;
+export default Middleware1;
 ```
 <br></br><br></br><br></br><br></br>
 
@@ -95,24 +90,19 @@ const Middleware1 = store => next => action => {
 ###### **Middleware2.js 파일 작성**
 ```javascript
 const Middleware2 = store => next => action => {
-    console.log("3. Middleware2 호출");
-    console.log("  [parameter] action : ", action);
+  //Reducer가 호출되기 전에 사전 작업 추가
+  console.log('[Middleware2] Reducer가 호출되기 전에 사전 작업');
 
-    //Reducer가 호출되기 전에 사전 작업 추가
-    console.log("Reducer가 호출되기 전에 사전 작업 2...");
-    
-    //next() 함수를 통해 다음 Middleware에게 Action을 전달합니다.
-    //다음 Middleware가 없다면 Reducer에게 Action을 전달합니다.
-    const result = next(action);
+  //next() 함수를 통해 다음 Middleware에게 Action을 전달합니다.
+  //다음 Middleware가 없다면 Reducer에게 Action을 전달합니다.
+  const result = next(action);
 
-    //Reducer가 호출된 후에 사후 작업 추가
-    console.log("Reducer가 호출된 후에 사후 작업 2...");
+  //Reducer가 호출된 후에 사후 작업 추가
+  console.log('[Middleware2] Reducer가 호출된 후에 사후 작업');
+  return result;
+};
 
-    console.log("  [return] result (Middleware2) : ", result);
-    return result;
-  };
-  
-  export default Middleware2;
+export default Middleware2;
 ```
 <br></br><br></br><br></br><br></br>
 
