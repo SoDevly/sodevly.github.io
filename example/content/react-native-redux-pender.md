@@ -46,11 +46,11 @@ yarn add redux redux-pender
 
 
 ### **예시 코드**
-GET_DATA_ACTION 액션을 정의합니다.  
-GET_DATA 액션 생성 함수를 정의합니다.  
-promiseDataReducer 리듀서를 정의합니다.  
-GET_DATA 액션이 dispath되면 getDataAPI()가 실행되고, promiseDataReducer 리듀서 안에 API를 요청했으면 onPending(), 성공 응답받으면 onSuccess(), 실패 응답을 받으면 onFailure()이 실행됩니다.
 ###### **promiseData.js 파일 작성**
+GET_DATA 액션을 정의합니다.  
+GET_DATA_ACTION 액션 생성 함수를 정의합니다.  
+promiseDataReducer 리듀서를 정의합니다.  
+GET_DATA 액션이 디스패치되면 getDataAPI()가 실행되고, promiseDataReducer 리듀서 안에 API를 요청했으면 onPending(), 성공 응답받으면 onSuccess(), 실패 응답을 받으면 onFailure()이 실행됩니다.
 ```javascript
 import {createAction, handleActions} from 'redux-actions';
 import {pender} from 'redux-pender';
@@ -220,6 +220,8 @@ const ReduxPenderScreen = () => {
   //useDispatch는 Store의 함수를 사용 할 수 있게 해주는 Hook 입니다.
   //dispatch(action) 함수는 State를 변화시키기 위해 Action을 발생시킵니다.
   const dispatch = useDispatch();
+  
+  //Get Promise Data 버튼 클릭 시, GET_DATA_ACTION 액션을 디스패치합니다.
   const onGetPromiseData = () => {
     console.log('2. dispatch(GET_DATA_ACTION(1)) 함수 호출');
     dispatch(GET_DATA_ACTION(1));
@@ -275,6 +277,6 @@ API 응답 기다리는 중일 때
 ![](/assets/react-native-redux-pender-success.png)
 
 실패 응답받은 경우
-![](/assets/rreact-native-redux-pender-fail.png)
+![](/assets/react-native-redux-pender-fail.png)
 
 <br></br><br></br>
