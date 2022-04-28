@@ -14,7 +14,7 @@ tags:
 
 
 # **❐ redux-pender 이란?**
-`redux-pender`는 <u>Promise 기반 액션들을 관리하는 미들웨어가 포함되어있는 라이브러리입니다.</u>입니다.  
+`redux-pender`는 <u>Promise 기반 액션들을 관리하는 미들웨어가 포함되어있는 라이브러리</u>입니다.  
 <br></br><br></br><br></br><br></br>
 
 
@@ -24,7 +24,7 @@ tags:
 # **❐ Package 설치**
 redux-pender package를 설치합니다.
 ```
-yarn add redux redux-pender
+yarn add redux-pender
 ```
 <br></br><br></br><br></br><br></br>
 
@@ -124,15 +124,16 @@ const promiseDataReducer = handleActions(
 );
 export default promiseDataReducer;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **rootReducer.js 파일 작성**
+위에서 생성한 promiseDataReducer 리듀서를 combineReducers() 함수 안에 추가합니다.  
 penderReducer은 비동기 액션의 상태를 추적해주는 리듀서입니다.  
-combineReducers안에 penderReducer를 추가해 줍니다.
+penderReducer 리듀서도 combineReducers() 함수 안에 추가합니다.
 ```javascript
 import {combineReducers} from 'redux';
 import {penderReducer} from 'redux-pender';
@@ -148,14 +149,14 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **App.js 파일 작성**
-penderMiddleware를 추가해줍니다.
+createStore() 함수의 두번째 파라미터에 penderMiddleware를 추가해줍니다.
 ```javascript
 import React from 'react';
 import 'react-native-gesture-handler';
@@ -195,13 +196,14 @@ function App() {
 
 export default App;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **ReduxPenderScreen.js 파일 작성**
+Get Promise Data 버튼 클릭하면 GET_DATA_ACTION 액션이 디스패치됩니다.
 ```javascript
 import React from 'react';
 import {View, Text, Button, TextInput, StyleSheet} from 'react-native';
@@ -263,7 +265,7 @@ const styles = StyleSheet.create({
 
 export default ReduxPenderScreen;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

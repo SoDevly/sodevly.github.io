@@ -91,7 +91,7 @@ export default userInfoReducer;
 # **❐ Package 설치**
 redux-action package를 설치합니다.
 ```
-yarn add redux redux-action
+yarn add redux-action
 ```
 <br></br><br></br><br></br><br></br>
 
@@ -115,6 +115,9 @@ yarn add redux redux-action
 
 ### **예시 코드**
 ###### **count.js 파일 작성**
+INCREASE, DECREASE 액션을 정의합니다.  
+INCREASE_ACTION, DECREASE_ACTION 액션 생성 함수를 정의합니다.  
+handleActions() 함수를 이용하여 counterReducer 리듀서를 정의합니다.
 ```javascript
 import {createAction, handleActions} from 'redux-actions';
 
@@ -157,13 +160,16 @@ const counterReducer = handleActions(
 );
 export default counterReducer;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **userInfo.js 파일 작성**
+CHANGE_NAME, CHANGE_AGE 액션을 정의합니다.  
+CHANGE_NAME_ACTION, CHANGE_AGE_ACTION 액션 생성 함수를 정의합니다.  
+handleActions() 함수를 이용하여 userInfoReducer 리듀서를 정의합니다.
 ```javascript
 import {createAction, handleActions} from 'redux-actions';
 
@@ -207,13 +213,14 @@ const userInfoReducer = handleActions(
 );
 export default userInfoReducer;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **rootReducer.js 파일 작성**
+위에서 생성한 counterReducer, userInfoReducer 리듀서를 combineReducers() 함수 안에 추가합니다.
 ```javascript
 import {combineReducers} from 'redux';
 import counterReducer from './counter';
@@ -228,13 +235,63 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
-###### **ReduxScreen.js 파일 작성**
+###### **App.js 파일 작성**
+```javascript
+import React from 'react';
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import { enableScreens } from 'react-native-screens';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux'
+import rootReducer from './src/redux/modules';
+import { default as HomeScreen } from "./src/screen/HomeScreen";
+import { default as ReduxActionScreen } from "./src/screen/redux/ReduxActionScreen";
+...생략
+
+enableScreens();
+const Stack = createStackNavigator();
+
+function App() {
+  //creactStore() 함수를 이용하여 Store를 생성합니다.
+  //rootReducer를 첫번째 파라미터로 전달하며, Middleware를 두번째 파라미터로 전달합니다.
+  const store = createStore(rootReducer, applyMiddleware(Middleware1, Middleware2));
+
+  
+  //Provider 컴포넌트는 컴포넌트들이 Redux의 Store에 접근 가능하도록 해주는 컴포넌트입니다.  
+  //컴포넌트의 Root 위치에 Provider 컴포넌트로 감싸줍니다.  
+  return (
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator  initialRouteName = "HomeScreen">
+          <Stack.Screen name="HomeScreen" component={HomeScreen} />        
+          <Stack.Screen name="ReduxActionScreen" component={ReduxActionScreen} />
+          ...생략
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
+  );
+}
+
+export default App;
+```
+<br></br><br></br>
+
+
+
+
+
+###### **ReduxActionScreen.js 파일 작성**
+\+ 버튼을 클릭하면 INCREASE_ACTION 액션을 디스패치합니다.  
+\- 버튼을 클릭하면 DECREASE_ACTION 액션을 디스패치합니다.  
+이름 입력 필드에 이름을 입력하면 CHANGE_NAME_ACTION 액션을 디스패치합니다.  
+나이 입력 필드에 나이를 입력하면 CHANGE_AGE_ACTION 액션을 디스패치합니다.
 ```javascript
 import React from 'react';
 import {View, Text, Button, TextInput, StyleSheet} from 'react-native';
@@ -306,7 +363,7 @@ const styles = StyleSheet.create({
 
 export default ReduxScreen;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

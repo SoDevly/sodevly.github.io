@@ -101,6 +101,9 @@ src
 
 ### **예시 코드**
 ###### **count.js 파일 작성**
+INCREASE, DECREASE 액션을 정의합니다.  
+createIncreaseAction, createDecreaseAction 액션 생성 함수를 정의합니다.  
+counterReducer 리듀서를 정의합니다.
 ```javascript
 //Action 타입 정의
 const INCREASE = 'counter/INCREASE';
@@ -154,13 +157,16 @@ export default function counterReducer(state = initialState, action) {
   return newState;
 }
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **userInfo.js 파일 작성**
+CHANGE_NAME, CHANGE_AGE 액션을 정의합니다.  
+createChangeNameAction, crateChangeAgeAction 액션 생성 함수를 정의합니다.  
+userInfoReducer 리듀서를 정의합니다.
 ```javascript
 //Action 타입 정의
 const CHANGE_NAME = 'userInfo/CHANGE_NAME';
@@ -221,13 +227,14 @@ export default function userInfoReducer(state = initialState, action) {
   return newState;
 }
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **rootReducer.js 파일 작성**
+위에서 생성한 counterReducer, userInfoReducer 리듀서를 combineReducers() 함수 안에 추가합니다.
 ```javascript
 import {combineReducers} from 'redux';
 import counterReducer from './counter';
@@ -242,13 +249,15 @@ const rootReducer = combineReducers({
 
 export default rootReducer;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **App.js 파일 작성**
+creactStore() 함수를 이용하여 Store를 생성합니다.  
+컴포넌트의 Root 위치에 Provider 컴포넌트로 감싸줍니다.
 ```javascript
 import React from 'react';
 import 'react-native-gesture-handler';
@@ -287,13 +296,17 @@ function App() {
 
 export default App;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 
 
 ###### **ReduxScreen.js 파일 작성**
+\+ 버튼을 클릭하면 INCREASE_ACTION 액션을 디스패치합니다.  
+\- 버튼을 클릭하면 DECREASE_ACTION 액션을 디스패치합니다.  
+이름 입력 필드에 이름을 입력하면 CHANGE_NAME_ACTION 액션을 디스패치합니다.  
+나이 입력 필드에 나이를 입력하면 CHANGE_AGE_ACTION 액션을 디스패치합니다.
 ```javascript
 import React from 'react';
 import {View, Text, Button, TextInput, StyleSheet} from 'react-native';
@@ -372,7 +385,7 @@ const styles = StyleSheet.create({
 
 export default ReduxScreen;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

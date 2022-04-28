@@ -81,7 +81,7 @@ const Middleware1 = store => next => action => {
 
 export default Middleware1;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
@@ -104,7 +104,7 @@ const Middleware2 = store => next => action => {
 
 export default Middleware2;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
@@ -132,7 +132,6 @@ const Stack = createStackNavigator();
 function App() {
   //creactStore() 함수를 이용하여 Store를 생성합니다.
   //rootReducer를 첫번째 파라미터로 전달하며, Middleware를 두번째 파라미터로 전달합니다.
-  //const store = createStore(rootReducer);
   const store = createStore(rootReducer, applyMiddleware(Middleware1, Middleware2));
   
   //Provider 컴포넌트는 컴포넌트들이 Redux의 Store에 접근 가능하도록 해주는 컴포넌트입니다.  
@@ -152,7 +151,7 @@ function App() {
 
 export default App;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
