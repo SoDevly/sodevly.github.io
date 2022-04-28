@@ -220,9 +220,8 @@ import { Provider } from 'react-redux'
 import rootReducer, {rootSaga} from './src/redux/modules/rootReducer';
 import penderMiddleware from 'redux-pender';
 import createSagaMiddleware from 'redux-saga';
-import rootReducer from './src/redux/modules';
 import { default as HomeScreen } from "./src/screen/HomeScreen";
-import { default as ReduxPenderScreen } from "./src/screen/redux/ReduxPenderScreen";
+import { default as ReduxSagaScreen } from "./src/screen/redux/ReduxSagaScreen";
 ...생략
 
 enableScreens();
@@ -316,7 +315,7 @@ const styles = StyleSheet.create({
 
 export default ReduxSagaScreen;
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
