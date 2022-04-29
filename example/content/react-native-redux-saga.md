@@ -16,7 +16,7 @@ tags:
 # **❐ redux-saga 이란?**
 `redux-saga`는 <u>애플리케이션의 사이드 이팩트를 더 쉽게 관리하고, 더 효율적으로 실행하고, 더 쉽게 테스트하고, 오류를 더 잘 처리하도록 하는 것을 목표로 하는 라이브러리</u>입니다.  
 Action을 구독하는 Watcher, 실제 작업을 수행하는 Worker로 구성되어있습니다.  
-액션을 모니터링하고 있다가, 특정 액션이 발생하면 이에 따라 특정 작업을 하는 방식으로 사용합니다.
+특정 액션을 모니터링하고 있다가 해당 액션이 발생하면 제너레이터 함수를 실행하여 비동기 작업을 처리한 후 액션을 디스패치합니다.
 <br></br><br></br><br></br><br></br>
 
 
@@ -98,8 +98,10 @@ yarn add redux-saga
 
 ### **예시 코드**
 ###### **counter3.js 파일 작성**
-INCREASE3_ASYNC, DECREASE3_ASYNC 액션을 정의합니다.  
-INCREASE3_ASYNC_ACTION, DECREASE3_ASYNC_ACTION 액션 생성 함수를 정의합니다.  
+INCREASE3_ASYNC, DECREASE3_ASYNC 사가 액션을 정의합니다.  
+INCREASE3_ASYNC_ACTION, DECREASE3_ASYNC_ACTION 사가 액션 생성 함수를 정의합니다.  
+increaseSaga(), decreaseSaga() Worker Saga를 정의합니다.  
+counterSaga() Watcher Saga를 정의합니다.  
 handleActions() 함수를 이용하여 counter3Reducer 리듀서를 정의합니다.
 ```javascript
 import {createAction, handleActions} from 'redux-actions';
@@ -108,6 +110,7 @@ import {delay, put, takeEvery, takeLatest} from 'redux-saga/effects';
 //Action 타입 정의
 const INCREASE3 = 'counter/INCREASE3';
 const DECREASE3 = 'counter/DECREASE3';
+//Saga Action 타입 정의
 const INCREASE3_ASYNC = 'counter/INCREASE3_ASYNC';
 const DECREASE3_ASYNC = 'counter/DECREASE3_ASYNC';
 
@@ -131,6 +134,7 @@ function* decreaseSaga() {
     yield delay(1000);
     yield put(DECREASE3_ACTION());
 }
+//Watcher Saga 정의
 export function* counterSaga() {
     console.log('3. counterSaga 호출');
     yield takeEvery(INCREASE3_ASYNC_ACTION, increaseSaga);
