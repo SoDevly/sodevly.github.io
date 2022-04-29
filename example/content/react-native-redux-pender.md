@@ -158,11 +158,6 @@ export default rootReducer;
 ###### **App.js 파일 작성**
 createStore() 함수의 두번째 파라미터에 penderMiddleware를 추가해줍니다.
 ```javascript
-import React from 'react';
-import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { enableScreens } from 'react-native-screens';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
 import penderMiddleware from 'redux-pender';
@@ -205,10 +200,9 @@ export default App;
 ###### **ReduxPenderScreen.js 파일 작성**
 Get Promise Data 버튼 클릭하면 GET_DATA_ACTION 액션이 디스패치됩니다.
 ```javascript
-import React from 'react';
-import {View, Text, Button, TextInput, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {GET_DATA_ACTION} from '../../redux/modules/promiseData';
+...생략
 
 const ReduxPenderScreen = () => {
   //useSelector는 Store의 State를 조회하는 Hook입니다.
@@ -247,21 +241,7 @@ const ReduxPenderScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
-  textInput: {
-    fontSize: 20,
-    borderWidth: 1,
-    borderColor: '#000000',
-    margin: 10,
-  },
-  text: {
-    fontSize: 20,
-  },
-});
+...생략
 
 export default ReduxPenderScreen;
 ```

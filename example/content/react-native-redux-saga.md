@@ -210,11 +210,6 @@ sagaMiddleware를 생성합니다.
 그리고 createStore() 함수의 두번째 파라미터에 sagaMiddleware를 추가해줍니다.  
 그 다음 sagaMiddleware를 실행해 줍니다.
 ```javascript
-import React from 'react';
-import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { enableScreens } from 'react-native-screens';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
 import rootReducer, {rootSaga} from './src/redux/modules/rootReducer';
@@ -267,13 +262,12 @@ export default App;
 \+ 버튼을 클릭하면 INCREASE3_ASYNC_ACTION 액션을 디스패치합니다.  
 \- 버튼을 클릭하면 DECREASE3_ASYNC_ACTION 액션을 디스패치합니다.
 ```javascript
-import React from 'react';
-import {View, Text, Button, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {
   INCREASE3_ASYNC_ACTION,
   DECREASE3_ASYNC_ACTION,
 } from '../../redux/modules/counter3';
+...생략
 
 const ReduxSagaScreen = () => {
   //useSelector는 Store의 State를 조회하는 Hook입니다.
@@ -303,15 +297,7 @@ const ReduxSagaScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
-  text: {
-    fontSize: 20,
-  },
-});
+...생략
 
 export default ReduxSagaScreen;
 ```

@@ -243,11 +243,6 @@ export default rootReducer;
 
 ###### **App.js 파일 작성**
 ```javascript
-import React from 'react';
-import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { enableScreens } from 'react-native-screens';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux'
 import rootReducer from './src/redux/modules';
@@ -293,14 +288,13 @@ export default App;
 이름 입력 필드에 이름을 입력하면 CHANGE_NAME_ACTION 액션을 디스패치합니다.  
 나이 입력 필드에 나이를 입력하면 CHANGE_AGE_ACTION 액션을 디스패치합니다.
 ```javascript
-import React from 'react';
-import {View, Text, Button, TextInput, StyleSheet} from 'react-native';
 import {useDispatch, useSelector} from 'react-redux';
 import {INCREASE_ACTION, DECREASE_ACTION} from '../../redux/modules/counter';
 import {
   CHANGE_NAME_ACTION,
   CHANGE_AGE_ACTION,
 } from '../../redux/modules/userInfo';
+...생략
 
 const ReduxScreen = () => {
   //useSelector는 Store의 State를 조회하는 Hook입니다.
@@ -345,21 +339,7 @@ const ReduxScreen = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#ffffff',
-  },
-  textInput: {
-    fontSize: 20,
-    borderWidth: 1,
-    borderColor: '#000000',
-    margin: 10,
-  },
-  text: {
-    fontSize: 20,
-  },
-});
+...생략
 
 export default ReduxScreen;
 ```

@@ -112,11 +112,6 @@ export default Middleware2;
 
 ###### **App.js 파일 작성**
 ```javascript
-import React from 'react';
-import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { enableScreens } from 'react-native-screens';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
 import rootReducer from './src/redux/modules';

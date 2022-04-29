@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] redux-logger 설명 및 예제'
+title: '[React Native] Redux 디버깅 하기 (react-native-debugger, redux-devtools-extension)'
 created: 2022-04-30
 modified: 2022-04-30
 link: ''
@@ -11,42 +11,31 @@ tags:
 
 
 
-
-
-# **❐ redux-saga 이란?**
-`redux-logger`는 <u>redux관련 log를 자동으로 출력해주는 라이브러리</u>입니다.
-<br></br><br></br><br></br><br></br>
-
-
-
-
-
-# **❐ Package 설치**
-redux-logger package를 설치합니다.
+# **❐ React Native Debugger Tool 설치**
+react-native-debugger를 설치합니다.
 ```
-yarn add redux-logger
+brew update && brew cask install react-native-debugger
 ```
+
+React Native Debugger가 설치되었습니다.
+![](/assets/react-native-debugger1.png)
 <br></br><br></br><br></br><br></br>
 
 
 
 
 
-# **❐ 예시**
-### **예시 설명**
-앞에 [redux-saga 게시글](https://sodevly.github.io/react-native-redux-saga/)에서 구현한 로직에 redux-logger를 적용하여 봅시다.  
-redux-logger 적용 전/후 차이도 확인해 봅시다.
-<br></br><br></br><br></br><br></br>
+# **❐ redux-devtools-extension 라이브러리 연동**
+### **Package 설치**
+redux-devtools-extension package를 설치합니다.
+```
+yarn add redux-devtools-extension
+```
+<br></br>
 
-
-
-
-
-### **예시 코드**
+### **소스 수정**
 ###### **App.js 파일 작성**
-logger를 생성합니다.  
-그리고 createStore() 함수의 두번째 파라미터에 logger를 추가해줍니다.  
-미들웨어가 여러개인 경우, logger를 제일 마지막에 추가해줘야합니다.
+미들웨어를 composeWithDevTools() 함수로 감싸줍니다.
 ```javascript
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
@@ -54,6 +43,7 @@ import rootReducer, {rootSaga} from './src/redux/modules/rootReducer';
 import penderMiddleware from 'redux-pender';
 import createSagaMiddleware from 'redux-saga';
 import {createLogger} from 'redux-logger';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import { default as HomeScreen } from "./src/screen/HomeScreen";
 import { default as ReduxSagaScreen } from "./src/screen/redux/ReduxSagaScreen";
 ...생략
@@ -72,7 +62,9 @@ function App() {
     //rootReducer를 첫번째 파라미터로 전달하며, Middleware를 두번째 파라미터로 전달합니다.
     const store = createStore(
         rootReducer,
-        applyMiddleware(penderMiddleware(), sagaMiddleware, logger),
+        composeWithDevTools(
+            applyMiddleware(penderMiddleware(), sagaMiddleware, logger),
+        ),
     );
 
     //rootSaga를 실행해줍니다.
@@ -94,17 +86,22 @@ function App() {
 
 export default App;
 ```
-<br></br><br></br>
+<br></br><br></br><br></br><br></br>
 
 
 
 
 
-###### **로그 확인**
-redux-logger 적용 전
-![](/assets/react-native-redux-logger1.png)
+# **❐ Redux 디버깅하는 방법**
+1) App과 React Native Debug Tool을 실행합니다.  
+ 
+2) 디버깅 모드를 실행합니다.  
+\- Android : ⌘+M을 눌러 개발 메뉴를 열고, Debug를 선택합니다.  
+\- iOS : ⌘+D을 눌러 개발 메뉴를 열고, Debug with Chrome를 선택합니다.
+![](/assets/react-native-debugger2.png)
 
-redux-logger 적용 후
-![](/assets/react-native-redux-logger2.png)
+3) 액션을 디스패치합니다.  
+디스패치한 액션명, 이전 상태와 이후 상태값 등을 확인할 수 있습니다.
+![](/assets/react-native-debugger3.png)
 
 <br></br><br></br>
