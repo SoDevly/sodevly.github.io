@@ -1,8 +1,8 @@
 ---
 emoji: 💻
-title: '[React Native] React Native Debugger를 이용하여 Redux 디버깅 하기'
-created: 2022-04-30
-modified: 2022-04-30
+title: '[React Native] Flipper를 이용하여 Redux 디버깅 하기'
+created: 2022-05-01
+modified: 2022-05-01
 link: ''
 tags:
   - React Native
@@ -11,14 +11,14 @@ tags:
 
 
 
-# **❐ React Native Debugger Tool 설치**
-react-native-debugger를 설치합니다.
+# **❐ Flipper Tool 설치**
+Flipper를 설치합니다.
 ```
-brew update && brew cask install react-native-debugger
+brew install --cask flipper
 ```
 
-React Native Debugger가 설치되었습니다.
-![](/assets/react-native-debugger1.png)
+Flipper가 설치되었습니다.
+![](/assets/react-native-redux-debugger-plugin-for-flipper1.png)
 <br></br><br></br><br></br><br></br>
 
 
@@ -27,15 +27,17 @@ React Native Debugger가 설치되었습니다.
 
 # **❐ 앱에 라이브러리 연동**
 ### **Package 설치**
-redux-devtools-extension package를 설치합니다.
+redux-flipper, react-native-flipper package를 설치합니다.
 ```
-yarn add redux-devtools-extension
+yarn add redux-flipper react-native-flipper
+# for iOS
+cd ios && pod install
 ```
 <br></br>
 
 ### **소스 수정**
 ###### **App.js 파일 작성**
-미들웨어를 composeWithDevTools() 함수로 감싸줍니다.
+flipperReduxDebugger를 미들웨어에 추가해줍니다.
 ```javascript
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux'
@@ -57,13 +59,21 @@ function App() {
 
     //logger를 생성합니다.
     const logger = createLogger();
-  
+
+    //redux flipper debugger를 생성합니다.
+    const flipperReduxDebugger = require('redux-flipper').default;
+    
     //creactStore() 함수를 이용하여 Store를 생성합니다.
     //rootReducer를 첫번째 파라미터로 전달하며, Middleware를 두번째 파라미터로 전달합니다.
     const store = createStore(
         rootReducer,
         composeWithDevTools(
-            applyMiddleware(penderMiddleware(), sagaMiddleware, logger),
+            applyMiddleware(
+                penderMiddleware(),
+                sagaMiddleware,
+                flipperReduxDebugger(),
+                logger,
+            ),
         ),
     );
 
@@ -92,16 +102,14 @@ export default App;
 
 
 
-# **❐ Redux 디버깅하는 방법**
-1) App과 React Native Debug Tool을 실행합니다.  
- 
-2) 디버깅 모드를 실행합니다.  
-\- Android : ⌘+M을 눌러 개발 메뉴를 열고, Debug를 선택합니다.  
-\- iOS : ⌘+D을 눌러 개발 메뉴를 열고, Debug with Chrome를 선택합니다.
-![](/assets/react-native-debugger2.png)
+# **❐ Flipper를 이용하여 Redux 디버깅하는 방법**
+1) App과 Flipper을 실행합니다.
+
+2) Flipper의 Redux Debugger 메뉴를 선택합니다.
+![](/assets/react-native-redux-debugger-plugin-for-flipper2.png)
 
 3) 액션을 디스패치합니다.  
-디스패치한 액션명, 이전 상태와 이후 상태값 등을 확인할 수 있습니다.
-![](/assets/react-native-debugger3.png)
+디스패치한 액션명, Store안에 변경된 상태 값 등을 확인할 수 있습니다.
+![](/assets/react-native-redux-debugger-plugin-for-flipper3.png)
 
 <br></br><br></br>
