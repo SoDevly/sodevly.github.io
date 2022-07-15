@@ -27,38 +27,45 @@ Action을 구독하는 Watcher, 실제 작업을 수행하는 Worker로 구성�
 redux-saga/effects는 미들웨어에 의해 수행되는 명령을 담고 있는 javascript 객체입니다.  
 
 - all()  
-여러개의 사가를 묶어줍니다.
+여러개의 사가를 묶어줍니다.  
 
 - put()  
 특정 액션을 디스패치합니다.  
-ex) yield put({ type: 'LOG_IN_SUCCESS', data: result.data });
+ex) yield put({ type: 'LOG_IN_SUCCESS', data: result.data });  
+
+- take()  
+해당 액션이 dispatch되면 제너레이터를 next한다.  
+ex) yield take('LOG_IN', logIn);  
 
 - takeLatest()  
 특정 액션 타입에 대하여 디스패치된 가장 마지막 액션만 처리합니다.  
 예를 들어서 특정 액션을 처리하고 있는 동안 동일한 타입의 새로운 액션이 디스패치되면 기존에 하던 작업을 무시 처리하고 새로운 작업을 시작합니다.  
-ex) yield takeLatest(DECREASE3_ASYNC_ACTION, decreaseSaga);
+ex) yield takeLatest(DECREASE3_ASYNC_ACTION, decreaseSaga);  
 
 - takeEvery()  
 특정 액션 타입에 대하여 디스패치된 모든 액션을 처리합니다.  
-ex) yield takeEvery(INCREASE3_ASYNC_ACTION, increaseSaga);
-  
-- take()
-특정 액션이 디스패치될 때까지 기다립니다.  
-특정 액션이 디스패치된 후 다음 소스를 실행합니다.  
-ex) yield take('REQUEST_ORDER');
+ex) yield takeEvery(INCREASE3_ASYNC_ACTION, increaseSaga);  
+
+- call()  
+함수를 동기적으로 실행합니다.  
+ex) yield call(fn, action.payload)  
 
 - fork()  
-다른 task로 시작합니다.  
-ex) yield fork(childTask);
+함수를 비동기적으로 실행합니다.  
+ex) yield fork(childTask);  
+
+- race()  
+2개의 작업을 수행할 것이지만 하나가 끝나면 다른 작업을 자동으로 취소합니다.  
+ex) yield race({  
+      task: call(timerTickWorkerSaga, ...args),  
+      cancel: take(STOP)  
+    })  
 
 - join()  
 다른 task의 종료를 기다립니다.
 
 - delay()  
 설정된 시간만큼 지연시킵니다.
-
-- call()  
-주어진 함수를 실행합니다.
 
 - cancel()  
 fork()된 task를 취소시킵니다.
