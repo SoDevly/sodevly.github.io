@@ -173,23 +173,23 @@ React Native로 Android 개발하기 위해서 JDK(Java Development Kit)를 설�
 
 아래 명령어를 실행하여 JDK를 설치합니다.
 ```
-brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
+brew tap homebrew/cask-versions
+brew install --cask temurin11
 ```
 아래 명령어를 실행하여 JDK가 잘 설치되었는지 확인합니다.
 ```
 java -version
 
-openjdk version "1.8.0_292"
-OpenJDK Runtime Environment (AdoptOpenJDK)(build 1.8.0_292-b10)
-OpenJDK 64-Bit Server VM (AdoptOpenJDK)(build 25.292-b10, mixed mode)
+openjdk version "11.0.15" 2022-04-19
+OpenJDK Runtime Environment Temurin-11.0.15+10 (build 11.0.15+10)
+OpenJDK 64-Bit Server VM Temurin-11.0.15+10 (build 11.0.15+10, mixed mode)
 ```
 JDK를 설치하면 Java 컴파일러도 같이 설치됩니다.  
 아래의 명령어를 실행하여 Java 컴파일러도 잘 설치되었는지 확인합니다.
 ```
 javac -version
 
-javac 1.8.0_292
+javac 11.0.15
 ```
 <br></br><br></br><br></br><br></br>
 

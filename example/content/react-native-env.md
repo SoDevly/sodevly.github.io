@@ -104,7 +104,7 @@ APP_API_URL=https://stg-rnstudy.com/api/app
 ```
 <br></br>
 
-env 폴더 안에 .evn.product 파일을 생성합니다.  
+env 폴더 안에 .env.product 파일을 생성합니다.  
 파일 안에는 개발환경이 product일 때 사용하는 환경변수를 정의합니다.
 ```
 ENV=PRODUCT
