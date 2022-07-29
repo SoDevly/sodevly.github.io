@@ -18,12 +18,12 @@ tags:
 
 
 # **❐ Redis 설치**
-brew를 이용하여 redis를 설치합니다.
+brew를 이용하여 Redis를 설치합니다.
 ```
 brew install redis
 ```
 
-Redis 버전 확인을 확인합니다.
+Redis 버전을 확인합니다.
 ```
 redis-server --version
 ```
@@ -33,7 +33,7 @@ redis-server --version
 
 
 
-# **❐ Redis 명령어**
+# **❐ redis-cli 명령어**
 ### **Redis 접속하기**
 ```
 redis-cli -h {접속할 호스트} -p {접속할 포트}
@@ -57,7 +57,7 @@ dbsize
 keys {패턴}
 ```
 keys 명령어는 키가 많으면 키를 찾는 소요시간이 길어질 수 있습니다.  
-이 때, redis의 one thread 정책 특성 때문에 키를 찾는 동안 다른 작업을 하지 못하게 됩니다.  
+이 때, Redis의 one thread 정책 특성 때문에 키를 찾는 동안 다른 작업을 하지 못하게 됩니다.  
 따라서 keys 명령어보단 page, cusor 개념이 들어간 scan 명령어로 대체하여 사용하는 것이 좋습니다.  
 처음 시작 cusor index는 0입니다.  
 ```
