@@ -11,10 +11,8 @@ tags:
 
 
 
-
-
 # **❐ Error 로그**
-```
+```undefined isWrap
 (생략...)
 e: /Users/sohee/Desktop/rnstudy/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/ScreenWindowTraits.kt: (245, 27): 'let((T) -> R): R' is only available since Kotlin 1.3.50 and cannot be used in Kotlin 1.3
 e: /Users/sohee/Desktop/rnstudy/node_modules/react-native-screens/android/src/main/java/com/swmansion/rnscreens/SearchViewFormatter.kt: (48, 26): 'let((T) -> R): R' is only available since Kotlin 1.3.50 and cannot be used in Kotlin 1.3
@@ -27,8 +25,6 @@ Execution failed for task ':react-native-screens:compileDebugKotlin'.
 (생략...)
 ```
 <br></br><br></br>
-
-
 
 
 

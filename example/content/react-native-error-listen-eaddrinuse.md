@@ -13,20 +13,22 @@ tags:
 
 # **❐ 현상**
 React Native 실행 시 아래 Error가 발생하면서 실행되지 않았습니다.
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
 # **❐ Error 로그** 
+```undefined isWrap
 error listen EADDRINUSE: address already in use :::8081.
-<br></br><br></br><br></br><br></br>
+```
+<br></br><br></br>
 
 
 
 # **❐ 원인**
 이미 사용중인 Port라서 발생한 에러입니다.  
 주로 비정상 종료로 인해 해당 Port를 사용하는 프로세스가 정상적으로 종료되지 않았거나 다른 프로세스에서 해당 Port를 이미 사용 중인 경우 발생합니다.
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

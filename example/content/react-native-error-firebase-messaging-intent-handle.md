@@ -11,14 +11,13 @@ tags:
 
 
 
-# **❐ 현상**
-TargetSdkVersion 31(Android 12)로 업데이트한 후 Android앱에서 PUSH를 못 받는 현상이 발생하였습니다.
-<br></br><br></br><br></br><br></br>
+TargetSdkVersion 31(Android 12)로 업데이트한 후 Android앱에서 PUSH를 받지 못함
+<br></br><br></br>
 
 
 
 # **❐ Error 로그** 
-```
+```undefined isWrap
 FATAL EXCEPTION: Firebase-Messaging-Intent-Handle
 Process: com.sohee.rnstudy, PID: 5845
 java.lang.IllegalArgumentException: com.sohee.rnstudy: Targeting S+ (version 31 and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE be specified when creating a PendingIntent.
@@ -29,7 +28,7 @@ at android.app.PendingIntent.getActivity(PendingIntent.java:444)
 at android.app.PendingIntent.getActivity(PendingIntent.java:408)
 (생략...)
 ```
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 
@@ -42,7 +41,7 @@ Android 12를 타겟팅하면 변경되는 동작 중 아래 동작 변경사항
 
 > Android 12를 타겟팅하는 앱 동작 변경사항 : https://developer.android.com/about/versions/12/behavior-changes-12?hl=ko
 
-<br></br><br></br><br></br><br></br>
+<br></br><br></br>
 
 
 

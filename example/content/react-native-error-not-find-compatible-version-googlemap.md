@@ -11,27 +11,21 @@ tags:
 
 
 
-
-
 # **❐ Error 로그**
-<pre>
-[!] CocoaPods could not find compatible versions for pod "GoogleMaps":<br></br>
-　　In Podfile:<br></br>
-　　　　react-native-google-maps (from `../node_modules/react-native-maps`) was resolved to 0.30.1, which depends on<br></br>
-　　　　　　Google-Maps-iOS-Utils (= 3.10.3) was resolved to 3.10.3, which depends on<br></br>
-　　　　　　　　GoogleMaps<br></br>
+```
+[!] CocoaPods could not find compatible versions for pod "GoogleMaps":
+　　In Podfile:
+　　　　react-native-google-maps (from `../node_modules/react-native-maps`) was resolved to 0.30.1, which depends on
+　　　　　　Google-Maps-iOS-Utils (= 3.10.3) was resolved to 3.10.3, which depends on
+　　　　　　　　GoogleMaps
 
-<br></br>
-　　　　react-native-google-maps (from `../node_modules/react-native-maps`) was resolved to 0.30.1, which depends on<br></br>
-　　　　　　GoogleMaps (= 5.1.0)<br></br>
-<br></br>
+　　　　react-native-google-maps (from `../node_modules/react-native-maps`) was resolved to 0.30.1, which depends on
+　　　　　　GoogleMaps (= 5.1.0)
 
-Specs satisfying the `GoogleMaps (= 5.1.0), GoogleMaps` dependency were found, but they required a higher minimum deployment target.<br></br>
-error Command failed with exit code 1.<br></br>
-</pre>
+Specs satisfying the `GoogleMaps (= 5.1.0), GoogleMaps` dependency were found, but they required a higher minimum deployment target.
+error Command failed with exit code 1.
+```
 <br></br><br></br>
-
-
 
 
 

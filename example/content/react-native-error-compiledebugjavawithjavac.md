@@ -11,14 +11,12 @@ tags:
 
 
 
-
-
 # **❐ Error 로그** 
+```undefined isWrap
 Task :@react-native-firebase_messaging:compileDebugJavaWithJavac FAILED'  
 (생략...)
+```
 <br></br><br></br>
-
-
 
 
 

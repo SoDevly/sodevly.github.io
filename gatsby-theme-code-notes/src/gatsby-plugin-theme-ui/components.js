@@ -158,15 +158,15 @@ const ExtraString = ({ textColor, text }) => {
     return (
         <span sx={{
             pr: '5px',
-            pl: '5px',
-            color: textColor
+            color: textColor,
+            userSelect: 'none',
         }}>
             {text}
         </span>
     )
 }
 
-const CodeBlock = ({ code, className, label, filename, addLine, removeLine, highlightLine }) => {
+const CodeBlock = ({ code, className, label, filename, addLine, removeLine, highlightLine, isWrap }) => {
     let language = '';
     if (className.includes('language')) {
         const classArray = className.split(' ')
@@ -179,13 +179,18 @@ const CodeBlock = ({ code, className, label, filename, addLine, removeLine, high
     const isAddLine = calculateLinesToHighlight(addLine);
     const isRemoveLine = calculateLinesToHighlight(removeLine);
     const isHighlightLine = calculateLinesToHighlight(highlightLine);
+    const hasExtraString = (addLine || removeLine) ? true : false
+
+    const addStyle = {
+        whiteSpace: isWrap? 'pre-wrap' : 'pre',
+    }
 
     return (
         <TUIBox sx={{ position: 'relative', my: 4 }}>
             <Highlight {...defaultProps} code={code} language={language} theme={dracula}>
                 {({className, style, tokens, getLineProps, getTokenProps}) => (
-                    <pre className={className} style={{...style, paddingBottom: '10px', borderRadius:'0.5rem', overflow: 'auto'}}>
-                        <TUIBox sx={{display: 'block', textAlign: 'center', height: 40}}>
+                    <pre className={className} style={{...style, ...addStyle, padding: '15px 0px 10px 15px', borderRadius:'0.5rem', overflow: 'auto'}}>
+                        <TUIBox sx={{display: 'block', textAlign: 'center', height: 26}}>
                             <CodeLabel label={label} language={language}/>
                             <CodeFile filename={filename} />
                             <CopyCode code={code} />
@@ -193,18 +198,19 @@ const CodeBlock = ({ code, className, label, filename, addLine, removeLine, high
                         {tokens.map((line, index, tokens) => {
                             const LineBgColor = isAddLine(index) ? 'codeblockAddLine' : isRemoveLine(index) ? 'codeblockRemoveLine' : isHighlightLine(index) ? 'codeblockHighlightLine' : ''
                             const PrefixTextColor = isAddLine(index) ? 'codeblockAddLineText' : isRemoveLine(index) ? 'codeblockRemoveLineText' : ''
-                            const LinePrefix = isAddLine(index) ? '+' : isRemoveLine(index) ? '-' : ' '
+                            const PrefixText = isAddLine(index) ? '+' : isRemoveLine(index) ? '-' : ' '
 
                             return (
                               <TUIBox key={index}
                                 {...getLineProps({ line, key: index })}
                                 sx={tokens.length-1==index? {display: 'none'} : {}}
                               >
-                                  <ExtraString textColor={PrefixTextColor} text={LinePrefix}/>
+                                  {hasExtraString &&
+                                      <ExtraString textColor={PrefixTextColor} text={PrefixText}/>
+                                  }
                                   {line.map((token, key) => (
                                       <span key={key} sx={{bg:LineBgColor}} {...getTokenProps({ token, key })} />
                                   ))}
-                                  <ExtraString/>
                               </TUIBox>
                           )
                         })}
@@ -235,7 +241,7 @@ const components = {
   h6: heading('h6'),
   pre: (props) => props.children,
   code: (props) => (
-    <CodeBlock code={props.children} className={props.className} label={props.label} filename={props.filename} addLine={props.addLine} removeLine={props.removeLine} highlightLine={props.highlightLine}>
+    <CodeBlock code={props.children} className={props.className} label={props.label} filename={props.filename} addLine={props.addLine} removeLine={props.removeLine} highlightLine={props.highlightLine} isWrap={props.isWrap}>
     </CodeBlock>
   ),
   table: (props) => <ResponsiveTable>{props.children}</ResponsiveTable>,

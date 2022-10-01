@@ -13,19 +13,17 @@ tags:
 
 
 
-# **❐ Error 로그** 
+# **❐ Error 로그**
+```undefined isWrap
 ERROR  Error: Element type is invalid: expected a string (for built-in components) or a class/function (for composite components) but got: undefined. You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.
-<br></br><br></br><br></br><br></br>
-
-
+```
+<br></br><br></br>
 
 
 
 # **❐ 원인**
 컴포넌트를 import하는 방식이 잘못되서 발생한 오류입니다.
-<br></br><br></br><br></br><br></br>
-
-
+<br></br><br></br>
 
 
 
@@ -39,9 +37,7 @@ ERROR  Error: Element type is invalid: expected a string (for built-in component
 import { PropsComponent } from "../component/PropsComponent";
 import PropsComponent from "../component/PropsComponent";
 ```
-<br></br><br></br><br></br><br></br>
-
-
+<br></br><br></br>
 
 
 

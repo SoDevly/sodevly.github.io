@@ -10,11 +10,10 @@ tags:
 <br></br>
 
 
-
-
-
 # **❐ Error 로그** 
+```undefined isWrap
 error Failed to build iOS project. We ran "xcodebuild" command but it exited with error code 65.
+```
 <br></br><br></br>
 
 
