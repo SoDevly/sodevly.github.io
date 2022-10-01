@@ -11,6 +11,11 @@ tags:
 
 
 
+firebase 라이브러리 버전을 최신 버전으로 업데이트한 후, 빌드 시 아래 Error가 발생함
+<br></br><br></br>
+
+
+
 # **❐ Error 로그**
 ```undefined isWrap
 The Swift pod `FirebaseCoreInternal` depends upon `GoogleUtilities`, which does not define modules. To opt into those targets generating module maps (which is necessary to import them from Swift when building as static libraries), you may set `use_modular_headers!` globally in your Podfile, or specify `:modular_headers => true` for particular dependencies.

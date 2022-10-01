@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] Module 'FirebaseCore' not found'
+title: "[React Native] Module 'FirebaseCore' not found"
 created: 2022-09-30
 modified: 2022-09-30
 link: ''
