@@ -166,7 +166,7 @@ exports.createPages = async ({ graphql, actions }, options) => {
 
   // Create the notes landing page
   createPage({
-    path: path.join('timer'),
+    path: path.join('timer/'),
     component: path.join(__dirname, './src/templates', 'timer.js'),
     context: {
       tags: slugifiedTags,
