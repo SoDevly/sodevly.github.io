@@ -11,6 +11,7 @@ tags:
 
 
 
+# **❐ 현상**
 TargetSdkVersion 31(Android 12)로 업데이트한 후 Android앱에서 PUSH를 받지 못함
 <br></br><br></br>
 

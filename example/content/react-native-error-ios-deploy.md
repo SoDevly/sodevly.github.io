@@ -1,6 +1,6 @@
 ---
 emoji: 💻
-title: '[React Native] iOS단말로 앱 실행 실패 (error Failed to install the app on the device because we couldn't execute the "ios-deploy" command)'
+title: '[React Native] react-native run-ios --device [아이폰 이름] 실행 실패 (ios-deploy)'
 created: 2022-11-02
 modified: 2022-11-02
 link: ''
@@ -12,9 +12,9 @@ tags:
 
 
 # **❐ 현상**
-아래 명령어로 iOS단말로 앱을 실행하려고 하였으나 Error가 발생하며 앱이 실행되지 않았습니다.
+아래 명령어로 아이폰으로 앱을 실행하려고 하였으나 Error가 발생하며 앱이 실행되지 않음
 ```
-react-native run-ios --device [아이폰 장비 이름]
+react-native run-ios --device [아이폰 이름]
 ```
 <br></br><br></br>
 

@@ -11,6 +11,7 @@ tags:
 
 
 
+# **❐ 현상**
 apk 생성 시 아래 Error가 발생하면서 apk 생성에 실패함
 <br></br><br></br>
 
