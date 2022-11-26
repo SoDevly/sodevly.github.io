@@ -1,8 +1,8 @@
 ---
 emoji: 💻
 title: '[React Native] iOS단말로 앱 실행 실패 (error Failed to install the app on the device because we couldn't execute the "ios-deploy" command)'
-created: 2022-11-01
-modified: 2022-11-01
+created: 2022-11-02
+modified: 2022-11-02
 link: ''
 tags:
   - React Native
